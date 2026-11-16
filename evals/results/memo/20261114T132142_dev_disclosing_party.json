@@ -1,0 +1,204 @@
+{
+ "component": "memo",
+ "split": "dev",
+ "n": 3,
+ "timestamp": "20261114T132142",
+ "git": "no-commit",
+ "config": {
+  "playbook": "disclosing_party",
+  "upstream_nli": "llm-gpt-oss-120b-nli_v3-medium-full",
+  "system_model": "openai/gpt-oss-120b",
+  "judge_model": "qwen/qwen3.8-27b",
+  "prompt_hash": "854c5039cbac",
+  "judge_prompt_hash": "4192ce4bef59"
+ },
+ "metrics": {
+  "coverage": 1.0,
+  "n_issues": 11,
+  "spurious_items": 0,
+  "citation_relevance": 1.0,
+  "n_citations": 4,
+  "violation_items_cited": 1.0,
+  "faithfulness": 0.6363636363636364,
+  "n_judged": 11,
+  "recommendation_consistency": 1,
+  "mean_words": 212.33333333333334
+ },
+ "records": [
+  {
+   "doc_id": "dev/3",
+   "n_issues": 4,
+   "covered": 4,
+   "spurious": 0,
+   "n_citations": 3,
+   "relevant_citations": 3,
+   "violation_items": 2,
+   "violation_items_cited": 2,
+   "n_judged": 4,
+   "supported": 4,
+   "unsupported": [],
+   "recommendation_ok": true,
+   "memo": {
+    "summary": "This is a two‑way confidentiality and non‑disclosure agreement for evaluating a joint technology development. The contract poses moderate risk because it limits protection of unmarked disclosures, permits a retained copy after return, and omits required notice for compelled disclosure and a non‑solicitation clause. The client’s policy therefore recommends negotiating changes. The main reasons are to broaden the definition of confidential information, prohibit any retention, add a notice‑before‑disclosure provision, and include a staff‑non‑solicitation restriction.",
+    "recommendation": "negotiate",
+    "issues": [
+     {
+      "rule_id": "R05",
+      "headline": "Requirement to mark or identify confidential information",
+      "explanation": "The agreement obliges the Disclosing Party to mark confidential information (span 18) and requires oral disclosures to be identified and summarized in writing within 30 days (span 19), which limits protection for informal engineering disclosures.",
+      "ask": "Remove the marking/identification requirement and state that all information disclosed by the Disclosing Party, whether or not marked, is confidential if a reasonable person would understand it to be confidential.",
+      "fallback": "Accept marking for written information if oral and visual disclosures are covered by the reasonable‑person standard.",
+      "citations": [
+       18,
+       19
+      ]
+     },
+     {
+      "rule_id": "R10",
+      "headline": "Retention of confidential information after return/destruction",
+      "explanation": "Clause 48 permits the Receiving Party to retain one copy of confidential information with its legal representative for regulatory or insurance purposes, contrary to the preferred position of no retention.",
+      "ask": "The Receiving Party shall not retain any copies, extracts or other reproductions of the Confidential Information after its return or destruction.",
+      "fallback": "Allow copies retained solely in automatic electronic back‑ups, which remain subject to confidentiality obligations.",
+      "citations": [
+       48
+      ]
+     },
+     {
+      "rule_id": "R08",
+      "headline": "No notice before compelled disclosure",
+      "explanation": "The agreement contains no provision requiring the Receiving Party to notify the Disclosing Party if it is compelled by law, regulation or court to disclose confidential information, leaving the client unable to seek protective measures.",
+      "ask": "If the Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information, it shall, to the extent legally permitted, give the Disclosing Party prompt prior written notice and reasonable assistance to seek a protective order.",
+      "fallback": "Accept notice as soon as practicable instead of prior notice.",
+      "citations": []
+     },
+     {
+      "rule_id": "R12",
+      "headline": "No prohibition on soliciting the Disclosing Party’s staff",
+      "explanation": "The contract does not contain any clause preventing the Receiving Party from soliciting employees of the Disclosing Party, which could risk loss of key talent.",
+      "ask": "For twelve (12) months after the Agreement date, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+      "fallback": "Exclude general job advertisements not targeted at the Disclosing Party’s staff.",
+      "citations": []
+     }
+    ]
+   },
+   "words": 197
+  },
+  {
+   "doc_id": "dev/7",
+   "n_issues": 3,
+   "covered": 3,
+   "spurious": 0,
+   "n_citations": 1,
+   "relevant_citations": 1,
+   "violation_items": 1,
+   "violation_items_cited": 1,
+   "n_judged": 3,
+   "supported": 3,
+   "unsupported": [],
+   "recommendation_ok": true,
+   "memo": {
+    "summary": "This is a mutual non‑disclosure agreement covering a wide range of confidential information, including technical data, commercial details and patient information. The agreement imposes a marking requirement that would leave many informal disclosures unprotected and omits high‑severity protections such as a reverse‑engineering ban and a non‑solicitation clause. Although the numeric risk score is low (22.4/100), these gaps create material risk, so the policy advises negotiating the NDA.",
+    "recommendation": "negotiate",
+    "issues": [
+     {
+      "rule_id": "R05",
+      "headline": "Contract requires marking of confidential information",
+      "explanation": "The definition of Confidential Information in clause 24 states that information must be indicated in writing or labelled as “Confidential” (or confirmed in writing within fifteen days for oral disclosures). This marking requirement would leave many informal engineering disclosures unprotected, which is contrary to the client’s need for blanket protection.",
+      "ask": "Amend the definition so that Confidential Information includes any information disclosed that a reasonable person would understand to be confidential given its nature and the circumstances, regardless of labeling.",
+      "fallback": "Accept marking for written information if oral and visual disclosures are covered by the reasonable‑person standard.",
+      "citations": [
+       24
+      ]
+     },
+     {
+      "rule_id": "R02",
+      "headline": "No prohibition on reverse engineering",
+      "explanation": "The agreement contains no clause restricting the Receiving Party from reverse‑engineering, disassembling, decompiling or analysing prototypes, firmware binaries or any other objects that embody the Disclosing Party’s Confidential Information. Without such a restriction, the client’s core IP could be exposed when physical prototypes are shared.",
+      "ask": "Insert a clause prohibiting the Receiving Party from reverse‑engineering, disassembling, decompiling or analysing any prototypes, samples, software or other objects that embody the Disclosing Party’s Confidential Information.",
+      "fallback": "Allow analysis that is strictly necessary for the Purpose, with prior written consent.",
+      "citations": []
+     },
+     {
+      "rule_id": "R12",
+      "headline": "No non‑solicitation clause for employees",
+      "explanation": "The agreement is silent on non‑solicitation of the Disclosing Party’s personnel. This leaves the client’s engineers and other staff unprotected from being poached after they have been involved in the evaluation process.",
+      "ask": "Add a non‑solicitation provision that, for twelve months after the Agreement date, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+      "fallback": "Exclude general job advertisements not targeted at the client’s staff.",
+      "citations": []
+     }
+    ]
+   },
+   "words": 193
+  },
+  {
+   "doc_id": "dev/9",
+   "n_issues": 4,
+   "covered": 4,
+   "spurious": 0,
+   "n_citations": 0,
+   "relevant_citations": 0,
+   "violation_items": 0,
+   "violation_items_cited": 0,
+   "n_judged": 4,
+   "supported": 0,
+   "unsupported": [
+    {
+     "rule_id": "R02",
+     "reason": "The memo claims the contract is silent on reverse engineering, but no spans are cited to verify the absence of such a clause."
+    },
+    {
+     "rule_id": "R07",
+     "reason": "The memo claims the contract does not cover oral disclosures, but no spans are cited to verify the absence of such a clause."
+    },
+    {
+     "rule_id": "R11",
+     "reason": "The memo claims the contract lacks a confidentiality provision regarding the existence of the agreement, but no spans are cited to verify this absence."
+    },
+    {
+     "rule_id": "R12",
+     "reason": "The memo claims the contract lacks a non-solicitation clause, but no spans are cited to verify this absence."
+    }
+   ],
+   "recommendation_ok": true,
+   "memo": {
+    "summary": "This is a non‑negotiable confidentiality and non‑disclosure agreement for a transportation data challenge where Boston Public Schools will share student routing data with a vendor. The contract includes standard confidentiality duties and therefore has a low overall risk score (18.1/100), but it omits several critical protections Lumen Robotics requires, such as a reverse‑engineering ban, coverage of oral disclosures, confidentiality of the agreement’s existence, and a non‑solicitation clause. Because those gaps expose Lumen’s IP and business interests, the client’s policy advises negotiating the agreement rather than signing it as‑is. The decision is driven mainly by the high‑severity missing reverse‑engineering restriction and other missing clauses that are standard for Lumen’s NDAs.",
+    "recommendation": "negotiate",
+    "issues": [
+     {
+      "rule_id": "R02",
+      "headline": "No prohibition on reverse engineering prototypes or software",
+      "explanation": "The agreement does not contain any clause that prevents the Vendor from reverse engineering, disassembling, decompiling, or analysing any prototypes, samples, software or other objects that embody the Confidential Information. This matters because Lumen Robotics will provide physical prototypes and firmware binaries, and reverse engineering could expose core IP.",
+      "ask": "Insert a clause stating that the Receiving Party shall not reverse engineer, disassemble, decompile, or analyse any prototypes, samples, software, or other objects embodying the Disclosing Party’s Confidential Information.",
+      "fallback": "Allow analysis that is strictly necessary for the Purpose, with prior written consent.",
+      "citations": []
+     },
+     {
+      "rule_id": "R07",
+      "headline": "Oral disclosures are not covered as Confidential Information",
+      "explanation": "The contract does not state that Confidential Information includes information disclosed verbally or visually during meetings, demonstrations, or site visits. Without this, oral statements could be used freely, risking leakage of sensitive data.",
+      "ask": "Add language that Confidential Information includes information disclosed orally or visually, including during meetings, demonstrations and site visits.",
+      "fallback": "Require the Receiving Party to summarise oral disclosures in writing within 30 days.",
+      "citations": []
+     },
+     {
+      "rule_id": "R11",
+      "headline": "Existence of the agreement is not kept confidential",
+      "explanation": "The agreement lacks a provision prohibiting either party from disclosing that the agreement was negotiated or exists. Lumen Robotics wants to keep the partnership confidential to avoid influencing fundraising.",
+      "ask": "Include a clause that neither party shall disclose the existence or terms of the Agreement or that negotiations are taking place without the other party’s prior written consent.",
+      "fallback": "",
+      "citations": []
+     },
+     {
+      "rule_id": "R12",
+      "headline": "No restriction on soliciting Lumen Robotics staff",
+      "explanation": "The contract does not contain a non‑solicitation clause preventing the Vendor from hiring Lumen Robotics employees with whom it interacts. This could lead to loss of key talent.",
+      "ask": "Add a non‑solicitation provision that for twelve (12) months after the Effective Date, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+      "fallback": "Exclude general job advertisements not targeted at our staff.",
+      "citations": []
+     }
+    ]
+   },
+   "words": 247
+  }
+ ]
+}

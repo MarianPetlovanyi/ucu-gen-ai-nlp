@@ -1,0 +1,14 @@
+# HTTPS for the public host name (Let's Encrypt, issued automatically once DNS points here).
+# auth.caddy holds the demo login (HTTP basic auth, bcrypt hash), made by deploy/set_login.sh.
+{$DOMAIN} {
+	encode zstd gzip
+	import /etc/caddy/auth.caddy
+	reverse_proxy web:3000
+}
+
+# Plain HTTP on the bare IP, so the demo can be checked before the DNS record propagates.
+# Same login; prefer the https:// host name, because over plain HTTP the password is not encrypted.
+http:// {
+	import /etc/caddy/auth.caddy
+	reverse_proxy web:3000
+}

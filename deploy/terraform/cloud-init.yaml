@@ -1,0 +1,14 @@
+#cloud-config
+# Base host only: Docker + swap. The app itself is synced and started by deploy/deploy.sh.
+package_update: true
+packages:
+  - docker.io
+  - docker-compose-v2
+  - rsync
+swap:
+  filename: /swapfile
+  size: 2G
+  maxsize: 2G
+runcmd:
+  - systemctl enable --now docker
+  - mkdir -p /srv/nda

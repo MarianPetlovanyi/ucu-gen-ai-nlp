@@ -1,0 +1,3571 @@
+{
+ "component": "judge_validation",
+ "split": "dev",
+ "n": 61,
+ "timestamp": "20261114T135721",
+ "git": "no-commit",
+ "config": {
+  "judge_model": "qwen/qwen3.8-27b",
+  "parts": "A"
+ },
+ "metrics": {
+  "A1_accuracy": 0.8813725490196078,
+  "A1_macro_f1": 0.8299125051083652,
+  "A1_kappa_vs_gold": 0.7917823009894643,
+  "A1_n_pairs": 1020,
+  "A_failed_docs": 1,
+  "A1_kappa_vs_system": 0.7588399096306414,
+  "A1_system_kappa_vs_gold": 0.7134691889258749,
+  "A2_known_good_fixed": 1,
+  "A2_known_bad_still_issue": 0.8588709677419355,
+  "A2_n": 248
+ },
+ "records": {
+  "A": [
+   {
+    "doc_id": "dev/3",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "Entailment",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Contradiction",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/7",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/9",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/10",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "NotMentioned",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/12",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/13",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Entailment",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/14",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "NotMentioned",
+     "nda-7": "NotMentioned",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/15",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "NotMentioned",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "Contradiction",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/16",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/17",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "Contradiction"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/19",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "NotMentioned",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/20",
+    "judge": {
+     "nda-1": "Contradiction",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Contradiction"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/27",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/28",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "Contradiction"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/29",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "Entailment",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/32",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Contradiction"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/33",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/35",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/37",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/39",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "Contradiction",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "Contradiction"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/44",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "NotMentioned",
+     "nda-7": "Contradiction",
+     "nda-8": "NotMentioned",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/45",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/54",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "NotMentioned",
+     "nda-10": "NotMentioned",
+     "nda-11": "Entailment",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "Contradiction",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/56",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/61",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/63",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/64",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/70",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "NotMentioned",
+     "nda-8": "NotMentioned",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/71",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "NotMentioned",
+     "nda-7": "Entailment",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/72",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "Entailment",
+     "nda-19": "NotMentioned",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/73",
+    "judge": {
+     "nda-1": "Contradiction",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "Contradiction",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/75",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/79",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/81",
+    "judge": {
+     "nda-1": "Contradiction",
+     "nda-2": "NotMentioned",
+     "nda-3": "Entailment",
+     "nda-4": "NotMentioned",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R01",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/82",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "Entailment",
+     "nda-20": "Contradiction"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/152",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "Entailment",
+     "nda-12": "Entailment",
+     "nda-13": "NotMentioned",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/205",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/381",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "NotMentioned",
+     "nda-7": "NotMentioned",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "NotMentioned",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/398",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "NotMentioned",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/405",
+    "judge": {
+     "nda-1": "Contradiction",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "NotMentioned",
+     "nda-20": "Contradiction"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/406",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/411",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "NotMentioned",
+     "nda-7": "Contradiction",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/435",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "Entailment",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/440",
+    "judge": {
+     "nda-1": "Contradiction",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "Entailment",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "Contradiction",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R04",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/456",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "NotMentioned",
+     "nda-3": "NotMentioned",
+     "nda-4": "NotMentioned",
+     "nda-5": "NotMentioned",
+     "nda-7": "NotMentioned",
+     "nda-8": "NotMentioned",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/478",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Contradiction"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/482",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Contradiction",
+     "nda-8": "NotMentioned",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/486",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "NotMentioned",
+     "nda-5": "NotMentioned",
+     "nda-7": "Entailment",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "NotMentioned",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R01",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/488",
+    "judge": {
+     "nda-1": "Entailment",
+     "nda-2": "NotMentioned",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "Entailment",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/507",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R04",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/547",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/563",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "NotMentioned",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/575",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "NotMentioned",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Contradiction",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R11",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R11",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/582",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "NotMentioned",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R07",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R07",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/586",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/590",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "Entailment",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "Entailment",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/595",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "NotMentioned",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "Entailment",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/598",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "Entailment",
+     "nda-18": "NotMentioned",
+     "nda-19": "NotMentioned",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/605",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "NotMentioned",
+     "nda-5": "NotMentioned",
+     "nda-7": "Entailment",
+     "nda-8": "NotMentioned",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "NotMentioned",
+     "nda-16": "NotMentioned",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "NotMentioned"
+    },
+    "good": [
+     {
+      "rule": "R01",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R03",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R08",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R01",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R03",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R08",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   },
+   {
+    "doc_id": "dev/610",
+    "judge": {
+     "nda-1": "NotMentioned",
+     "nda-2": "Contradiction",
+     "nda-3": "Entailment",
+     "nda-4": "Entailment",
+     "nda-5": "Entailment",
+     "nda-7": "Entailment",
+     "nda-8": "Entailment",
+     "nda-10": "Entailment",
+     "nda-11": "NotMentioned",
+     "nda-12": "Entailment",
+     "nda-13": "Entailment",
+     "nda-15": "Entailment",
+     "nda-16": "Entailment",
+     "nda-17": "NotMentioned",
+     "nda-18": "NotMentioned",
+     "nda-19": "Entailment",
+     "nda-20": "Entailment"
+    },
+    "good": [
+     {
+      "rule": "R02",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "OK"
+     }
+    ],
+    "bad": [
+     {
+      "rule": "R02",
+      "status_after": "MISSING"
+     },
+     {
+      "rule": "R09",
+      "status_after": "OK"
+     },
+     {
+      "rule": "R12",
+      "status_after": "MISSING"
+     }
+    ]
+   }
+  ]
+ }
+}

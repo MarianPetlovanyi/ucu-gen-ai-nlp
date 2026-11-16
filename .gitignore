@@ -1,0 +1,22 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+.cache/
+.ruff_cache/
+.pytest_cache/
+models/
+web/node_modules/
+web/.next/
+web/next-env.d.ts
+deploy/terraform/.terraform/
+deploy/terraform/*.tfstate*
+deploy/terraform/*.tfplan
+deploy/terraform/terraform.tfvars
+deploy/.known_hosts
+deploy/.credentials
+deploy/auth.caddy
+
+# video narration notes, kept local
+docs/video_script.md

@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars (git-ignored) only for non-secret overrides.
+# The token goes in the environment, not in a file:  export TF_VAR_do_token=...
+# region       = "lon1"
+# size         = "s-2vcpu-4gb"
+# ssh_key_name = "mlops-digitalocean"
+# domain       = "ucu.nlp.justsolution.co"
+# ssh_cidrs    = ["203.0.113.7/32"]

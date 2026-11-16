@@ -1,0 +1,179 @@
+# Playbook of the same company, "Lumen Robotics", when WE RECEIVE information (e.g. evaluating a supplier's
+# technology). Same NLI labels, opposite business logic: we want freedom to operate and low compliance burden.
+# Stance semantics: see disclosing_party.yaml.
+
+name: "Lumen Robotics: we receive"
+perspective: receiving_party
+scoring:  # business weights for the risk score (0 = no issues, 100 = every scored rule is an issue)
+  severity_weights: {high: 3, medium: 2, low: 1}
+  status_weights: {VIOLATION: 1.0, MISSING: 0.75, REVIEW: 0.25, OK: 0.0, INFO: 0.0}
+  # recommendation: sign if no high/medium issue and risk <= sign_max_risk; reject if risk >= reject_min_risk
+  sign_max_risk: 10
+  reject_min_risk: 60
+rules:
+  - id: S01
+    hypothesis: nda-12
+    title: We may independently develop similar technology
+    stance: must_entail
+    severity: high
+    rationale: Our own R&D must never be blocked by having looked at a supplier's information.
+    preferred_clause: >-
+      Nothing in this Agreement shall restrict the Receiving Party from independently developing information,
+      products or technology similar to the Confidential Information without use of the Confidential Information.
+    fallback: Accept a burden to show independent development by contemporaneous written records.
+
+  - id: S02
+    hypothesis: nda-13
+    title: Information from third parties is free to use
+    stance: must_entail
+    severity: medium
+    rationale: We may legitimately receive similar information elsewhere.
+    preferred_clause: >-
+      Confidential Information does not include information that the Receiving Party lawfully obtains from a third
+      party without a duty of confidentiality.
+    fallback: None.
+
+  - id: S03
+    hypothesis: nda-5
+    title: We may share with our employees
+    stance: must_entail
+    severity: high
+    rationale: Evaluation requires our engineering team to see the information.
+    preferred_clause: >-
+      The Receiving Party may disclose Confidential Information to its employees who need to know it for the Purpose
+      and who are bound by confidentiality obligations.
+    fallback: None.
+
+  - id: S04
+    hypothesis: nda-7
+    title: We may share with advisors and consultants
+    stance: must_entail
+    severity: medium
+    rationale: Lawyers, auditors and contract engineers take part in evaluations.
+    preferred_clause: >-
+      The Receiving Party may disclose Confidential Information to its professional advisors, consultants and
+      contractors who need to know it for the Purpose and who are bound by confidentiality obligations.
+    fallback: Accept a list of named advisors.
+
+  - id: S05
+    hypothesis: nda-20
+    title: We may keep archival copies
+    stance: must_entail
+    severity: medium
+    rationale: Legal and back-up policies require us to retain records.
+    preferred_clause: >-
+      The Receiving Party may retain copies of Confidential Information to the extent required by law or by its bona
+      fide document retention or back-up policies, subject to continuing confidentiality.
+    fallback: Accept retention limited to legal counsel's files.
+
+  - id: S06
+    hypothesis: nda-18
+    title: No restriction on hiring
+    stance: must_not_entail
+    severity: medium
+    rationale: Non-solicitation clauses restrict our recruiting in a small talent market.
+    preferred_clause: ""
+    fallback: Accept non-solicitation limited to 6 months and excluding general advertisements.
+
+  - id: S07
+    hypothesis: nda-1
+    title: Only marked information is confidential
+    stance: must_entail
+    severity: medium
+    rationale: We need certainty about what is covered.
+    preferred_clause: >-
+      Information shall be Confidential Information only if it is marked as confidential when disclosed in writing,
+      or identified as confidential at the time of oral disclosure and confirmed in writing within thirty (30) days.
+    fallback: Accept the reasonable-person standard in addition to marking.
+
+  - id: S08
+    hypothesis: nda-17
+    title: We may make working copies
+    stance: must_entail
+    severity: low
+    rationale: Engineers need to copy documents into internal systems.
+    preferred_clause: >-
+      The Receiving Party may make such copies of the Confidential Information as are reasonably necessary for the
+      Purpose.
+    fallback: None.
+
+  - id: S09
+    hypothesis: nda-11
+    title: Reverse-engineering ban
+    stance: review_if_entailed
+    severity: low
+    rationale: Acceptable, but check it does not prohibit normal testing of samples.
+    preferred_clause: ""
+    fallback: Carve out testing reasonably necessary for the Purpose.
+
+  - id: S10
+    hypothesis: nda-10
+    title: Confidentiality of the agreement itself
+    stance: review_if_entailed
+    severity: low
+    rationale: We may need to disclose supplier relationships to investors.
+    preferred_clause: ""
+    fallback: Carve out disclosure to investors and acquirers under confidentiality.
+
+  - id: S11
+    hypothesis: nda-19
+    title: Survival of obligations
+    stance: review_if_entailed
+    severity: low
+    rationale: Check that survival is time-limited, not perpetual.
+    preferred_clause: ""
+    fallback: Cap survival at three (3) years.
+
+  - id: S12
+    hypothesis: nda-4
+    title: Limited use
+    stance: info
+    severity: low
+    rationale: Standard.
+    preferred_clause: ""
+    fallback: ""
+
+  - id: S13
+    hypothesis: nda-8
+    title: Notice on compelled disclosure
+    stance: info
+    severity: low
+    rationale: Standard.
+    preferred_clause: ""
+    fallback: ""
+
+  - id: S14
+    hypothesis: nda-15
+    title: No licensing
+    stance: info
+    severity: low
+    rationale: Standard.
+    preferred_clause: ""
+    fallback: ""
+
+  - id: S15
+    hypothesis: nda-16
+    title: Return of information
+    stance: info
+    severity: low
+    rationale: Standard.
+    preferred_clause: ""
+    fallback: ""
+
+  - id: S16
+    hypothesis: nda-3
+    title: Verbal information included
+    stance: info
+    severity: low
+    rationale: Standard.
+    preferred_clause: ""
+    fallback: ""
+
+  - id: S17
+    hypothesis: nda-2
+    title: Only technical information
+    stance: info
+    severity: low
+    rationale: Favourable to us if present, but not required.
+    preferred_clause: ""
+    fallback: ""

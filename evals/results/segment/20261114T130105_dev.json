@@ -1,0 +1,3487 @@
+{
+ "component": "segment",
+ "split": "dev",
+ "n": 61,
+ "timestamp": "20261114T130105",
+ "git": "no-commit",
+ "config": {
+  "limit": null
+ },
+ "metrics": {
+  "oracle/lines": {
+   "span_p": 0.6318953323903819,
+   "span_r": 0.3546338559237944,
+   "span_f1": 0.45430278378034833,
+   "n_gold_spans": 5039,
+   "evidence_recall": 0.2505694760820046,
+   "n_evidence_spans": 878,
+   "boundary_f1": 0.7218951392761974
+  },
+  "oracle/rules": {
+   "span_p": 0.8575336220651926,
+   "span_r": 0.746576701726533,
+   "span_f1": 0.7982176957352004,
+   "n_gold_spans": 5039,
+   "evidence_recall": 0.7824601366742597,
+   "n_evidence_spans": 878,
+   "boundary_f1": 0.9265961420375688
+  },
+  "e2e/lines": {
+   "span_p": 0.5358811040339703,
+   "span_r": 0.2504465171661044,
+   "span_f1": 0.3413578577224776,
+   "n_gold_spans": 5039,
+   "evidence_recall": 0.1847206385404789,
+   "n_evidence_spans": 877
+  },
+  "e2e/rules": {
+   "span_p": 0.8010523678276121,
+   "span_r": 0.6344512800158761,
+   "span_f1": 0.7080841638981173,
+   "n_gold_spans": 5039,
+   "evidence_recall": 0.6955530216647663,
+   "n_evidence_spans": 877
+  }
+ },
+ "records": [
+  {
+   "doc_id": "dev/3",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 76,
+   "n_gold": 97,
+   "tp": 64,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7835051546391752,
+   "boundary_f1": 0.8786127167630058,
+   "ev_n": 18,
+   "ev_found": 8,
+   "ev_missed": [
+    "The Parties are willing to exchange Confidential Information in the form of certain scientific, technical and commercial information, that will includ",
+    "(the “Permitted Purpose”) subject to the terms and conditions of this Agreement.",
+    "In respect of Confidential Information disclosed in documentary form, model or any other tangible form, this shall be marked by the Disclosing Party a",
+    "The Receiving Party undertakes to permit access to the Confidential Information only to its Representatives or employees who require access to such In",
+    "The Receiving party must, at the end of this Agreement or within seven days following written instruction by the Disclosing Party to do so, return or "
+   ]
+  },
+  {
+   "doc_id": "dev/7",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 132,
+   "n_gold": 208,
+   "tp": 85,
+   "boundary_p": 1.0,
+   "boundary_r": 0.6346153846153846,
+   "boundary_f1": 0.7764705882352941,
+   "ev_n": 22,
+   "ev_found": 12,
+   "ev_missed": [
+    "Confidential Information does not include information:",
+    "2.1",
+    "In consideration of the mutual exchange and disclosure of Confidential Information, each party undertakes in relation to the other party's Confidentia",
+    "4.3",
+    "In the event of termination of this Agreement, the Company shall when directed to do so by AHPL, and instruct all its agents and sub-contractors to er"
+   ]
+  },
+  {
+   "doc_id": "dev/9",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 73,
+   "n_gold": 144,
+   "tp": 40,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5069444444444444,
+   "boundary_f1": 0.6728110599078341,
+   "ev_n": 7,
+   "ev_found": 0,
+   "ev_missed": [
+    "Any individual person or organization who is identified to receive and utilize the confidential information applicable to the related Challenge, wheth",
+    "VENDOR acknowledges that in the course of providing services to BPS and its students, only VENDOR and its employees or representatives will be given o",
+    "Nothing in this Agreement may be construed to allow any Party to maintain, use, disclose, or share Confidential Information in a manner not allowed un",
+    "Authorized vendors shall strictly comply with all federal and state laws that apply to the use and release of Confidential Information, including but ",
+    "VENDOR shall immediately notify BPS (see below) in writing of any subpoena, court order or other legal process seeking or purporting to compel disclos"
+   ]
+  },
+  {
+   "doc_id": "dev/10",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 84,
+   "n_gold": 112,
+   "tp": 67,
+   "boundary_p": 1.0,
+   "boundary_r": 0.75,
+   "boundary_f1": 0.8571428571428571,
+   "ev_n": 9,
+   "ev_found": 5,
+   "ev_missed": [
+    "In addition, except as set forth in section 2.06, without the prior written consent of the Disclosing Party, neither the Receiving Party nor its Repre",
+    "The Receiving Party shall not, in any manner, derive any benefit, directly or indirectly, from the Confidential Information or the use of such Confide",
+    "Except as set forth in Section 2.06, the Receiving Party shall not disclose any of the Confidential Information or other facts directly related to the",
+    "The termination of this CNDA, or the completion or abandonment of the Permitted Purpose, shall not affect the survival of the non-disclosure obligatio"
+   ]
+  },
+  {
+   "doc_id": "dev/12",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 42,
+   "n_gold": 61,
+   "tp": 26,
+   "boundary_p": 1.0,
+   "boundary_r": 0.6885245901639344,
+   "boundary_f1": 0.8155339805825244,
+   "ev_n": 9,
+   "ev_found": 3,
+   "ev_missed": [
+    "1.1",
+    "With the understanding that CLIENT’s Formulations and Processing Procedures are proprietary to CLIENT, to the extent that CLIENT shall disclose to BRO",
+    "3.3",
+    "Rightfully receives without obligation of confidentiality from a third party;",
+    "If BROOKS is legally compelled (whether by regulatory request, deposition, interrogatory, request for documents, subpoena, civil investigation, demand"
+   ]
+  },
+  {
+   "doc_id": "dev/13",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 59,
+   "n_gold": 149,
+   "tp": 25,
+   "boundary_p": 1.0,
+   "boundary_r": 0.3959731543624161,
+   "boundary_f1": 0.5673076923076923,
+   "ev_n": 34,
+   "ev_found": 1,
+   "ev_missed": [
+    "4. “Confidential Information” means a Party’s energy management system model data provided or to be provided by a Disclosing Party to another Party.",
+    "Confidential Information shall be disclosed only to Reviewing Representatives and only used to enable a Party to perform its Transmission Functions.",
+    "9. “Reviewing Representative” means an employee of a Party who has signed or electronically signed a Non-Disclosure Certificate and who is a principal",
+    "A Reviewing Representative shall not have access to any Confidential Information unless that Reviewing Representative is required to have the informat",
+    "A Reviewing Representative may make copies or Notes of Confidential Information that shall be subject to this Agreement."
+   ]
+  },
+  {
+   "doc_id": "dev/14",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 16,
+   "n_gold": 23,
+   "tp": 12,
+   "boundary_p": 1.0,
+   "boundary_r": 0.6956521739130435,
+   "boundary_f1": 0.8205128205128205,
+   "ev_n": 3,
+   "ev_found": 3,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/15",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 25,
+   "n_gold": 35,
+   "tp": 19,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7142857142857143,
+   "boundary_f1": 0.8333333333333333,
+   "ev_n": 10,
+   "ev_found": 7,
+   "ev_missed": [
+    "For the purposes of this Agreement the term confidential information includes proprietary materials and information relating thereto including without",
+    "4. Under the terms of this Agreement there is no explicit or implied transfer of ownership to the receiving party of any drawings, documents or softwa",
+    "PROVIDED that the obligations herein undertaken will not apply to:"
+   ]
+  },
+  {
+   "doc_id": "dev/16",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 27,
+   "n_gold": 52,
+   "tp": 12,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5192307692307693,
+   "boundary_f1": 0.6835443037974684,
+   "ev_n": 13,
+   "ev_found": 2,
+   "ev_missed": [
+    "1. Recipient may be provided with access to selected information (oral, written, or electronic) of the other (including of any of the Corporations) wh",
+    "Some of the information in each of these categories is confidential in nature or constitutes a trade secret.",
+    "This information received from a party (including of any of the Corporations), either orally or in writing, during the course of the Project shall be ",
+    "3. Recipient shall not disclose Confidential Information to any person or entity, except its employees or partners involved in the Project, or to use ",
+    "Access to or disclosure of Confidential Information by Recipient shall be limited to those employees or partners covered by a then effective legal obl"
+   ]
+  },
+  {
+   "doc_id": "dev/17",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 32,
+   "n_gold": 96,
+   "tp": 15,
+   "boundary_p": 1.0,
+   "boundary_r": 0.3333333333333333,
+   "boundary_f1": 0.5,
+   "ev_n": 5,
+   "ev_found": 0,
+   "ev_missed": [
+    "d. The contractor, the contractor's employees, and any subcontractor and subcontractor's employees will access the VA information, software, applicati",
+    "The contractor will take reasonable steps to ensure that it will allow only those contractor and subcontractor employees who need to see the VA materi",
+    "f. The contractor and its employees shall not make any copies of any VA information, including software or applications that are not copyrighted, exce",
+    "Prior to any disclosure pursuant to a court order, the contractor shall promptly notify VA of the court order and provide VA with a copy by fax or e-m",
+    "k. Upon completion or termination of the contract for any reason, the contractor will immediately deliver all VA records, data, copies of VA records a"
+   ]
+  },
+  {
+   "doc_id": "dev/19",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 41,
+   "n_gold": 72,
+   "tp": 19,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5694444444444444,
+   "boundary_f1": 0.7256637168141593,
+   "ev_n": 7,
+   "ev_found": 3,
+   "ev_missed": [
+    "2. Access/Use of Confidential Information: Subject to the terms and conditions of this Agreement, Confidant may use the Confidential Information only ",
+    "5. Continuing Obligations and Remedies:",
+    "The obligations of Confidant under this Agreement shall not terminate but shall continue without limitation of time.",
+    "6. No License Granted: Confidant acknowledges and agrees that all rights in and to Confidential Information are and shall remain the sole property of "
+   ]
+  },
+  {
+   "doc_id": "dev/20",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 36,
+   "n_gold": 62,
+   "tp": 21,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5806451612903226,
+   "boundary_f1": 0.7346938775510204,
+   "ev_n": 12,
+   "ev_found": 4,
+   "ev_missed": [
+    "2.1",
+    "For the purpose of this Agreement, “Confidential Information” means any information received by a Party (the “Receiving Party”) regarding the other Pa",
+    "This Agreement will not be deemed to restrict either Party from complying with a lawfully issued governmental order, order of a court of competent jur",
+    "The Parties shall only use Confidential Information for the purpose of negotiation and/or evaluation of any co-operation between the Parties.",
+    "The Parties shall not disclose Confidential Information to any third party, other than to their officers, employees or consultants (engaged in the mat"
+   ]
+  },
+  {
+   "doc_id": "dev/27",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 39,
+   "n_gold": 97,
+   "tp": 13,
+   "boundary_p": 1.0,
+   "boundary_r": 0.4020618556701031,
+   "boundary_f1": 0.573529411764706,
+   "ev_n": 11,
+   "ev_found": 1,
+   "ev_missed": [
+    "Each Party receiving Confidential Information (as defined below) (each, a \"Recipient,\" and together, the \"Recipients\"), is receiving confidential disc",
+    "Confidential Information can be in any form (e.g. electronic, digital, analog, hard copy or oral).",
+    "Confidential Information may be used only to the extent reasonably required for the purposes of evaluating, producing or carrying out the Transaction;",
+    "The obligations of confidentiality in this Agreement do not extend to any item of Confidential Information which",
+    "(ii) is lawfully received by a Recipient from a third party not known to the Recipient to be under a similar confidential agreement to this Agreement "
+   ]
+  },
+  {
+   "doc_id": "dev/28",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 47,
+   "n_gold": 76,
+   "tp": 36,
+   "boundary_p": 1.0,
+   "boundary_r": 0.618421052631579,
+   "boundary_f1": 0.7642276422764228,
+   "ev_n": 15,
+   "ev_found": 5,
+   "ev_missed": [
+    "1. “Confidential Information” means information that relates to the purpose stated in Section 2 below that has been designated as proprietary by the d",
+    "Confidential Information may be disclosed in written or other tangible form (including magnetic media) or by oral, visual or other means.",
+    "The Recipient may disclose Confidential Information received hereunder to",
+    "(i) its Affiliates, to its employees and agents, and its Affiliates’ employees and agents, who have a need to know the Confidential Information, and w",
+    "Confidential Information shall be used solely for the Purpose and shall not otherwise be disclosed to any third party without the prior written consen"
+   ]
+  },
+  {
+   "doc_id": "dev/29",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 22,
+   "n_gold": 56,
+   "tp": 13,
+   "boundary_p": 1.0,
+   "boundary_r": 0.39285714285714285,
+   "boundary_f1": 0.5641025641025641,
+   "ev_n": 12,
+   "ev_found": 0,
+   "ev_missed": [
+    "CI means Discloser’s non-public written information, in any form, and all copies, summaries and extracts which is identified in writing as confidentia",
+    "CI does not include information that",
+    "(C) becomes known to Recipient, free of any confidentiality obligations, from a source other than Discloser, or",
+    "(D) is independently developed by Recipient without use of CI.",
+    "Recipient will not reproduce, use, disseminate, or disclose CI to any person or entity, except to its employees and authorized representatives (i.e., "
+   ]
+  },
+  {
+   "doc_id": "dev/32",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 25,
+   "n_gold": 91,
+   "tp": 4,
+   "boundary_p": 1.0,
+   "boundary_r": 0.27472527472527475,
+   "boundary_f1": 0.4310344827586208,
+   "ev_n": 14,
+   "ev_found": 0,
+   "ev_missed": [
+    "“Confidential Information” means confidential and proprietary information (regardless of whether such Confidential Information is in written, oral, vi",
+    "(a) that consists of Trade Secrets (as hereinafter defined), discoveries, technical, engineering, financial, pricing and/or other business data and do",
+    "(c) that is marked as confidential, proprietary or privileged by the disclosing party.",
+    "The receiving party is entitled to use the Confidential Information of the disclosing party solely for the purpose of quoting and manufacturing produc",
+    "No public announcement or disclosure of the purpose set forth in this Agreement is to be made by either party unless such announcement has been approv"
+   ]
+  },
+  {
+   "doc_id": "dev/33",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 83,
+   "n_gold": 108,
+   "tp": 62,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7685185185185185,
+   "boundary_f1": 0.869109947643979,
+   "ev_n": 15,
+   "ev_found": 11,
+   "ev_missed": [
+    "Each party may disclose the Confidential Information of the other party:",
+    "No right or licence is granted to either party in relation to the other party's Confidential Information except as expressly set out in this Agreement",
+    "Without prejudice to the generality of Clause 8.2, each party may retain:",
+    "Neither party shall disclose or announce the Purpose to another person without the prior written consent of the other party (such consent not to be un"
+   ]
+  },
+  {
+   "doc_id": "dev/35",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 108,
+   "n_gold": 156,
+   "tp": 68,
+   "boundary_p": 1.0,
+   "boundary_r": 0.6923076923076923,
+   "boundary_f1": 0.8181818181818181,
+   "ev_n": 20,
+   "ev_found": 12,
+   "ev_missed": [
+    "During the course of the proposed discussions, the Parties anticipate that the Disclosing Party will disclose Confidential Information to the Receivin",
+    "For purposes of this Agreement, \"Confidential Information\" shall include, without limitation, any information or other data relating to the Disclosing",
+    "Accordingly, the Receiving Party hereby undertakes to the Disclosing Party that, for as long as this Agreement remains in force, it will (and it will ",
+    "4.2.4 not divulge or permit access to the Confidential Information to any person except to those of its employees, officers, directors, representative",
+    "Should the Receiving Party or any of its employees, officers, directors, representatives, advisers or Affiliates be obliged by any law, or a valid ord"
+   ]
+  },
+  {
+   "doc_id": "dev/37",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 112,
+   "n_gold": 147,
+   "tp": 87,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7619047619047619,
+   "boundary_f1": 0.8648648648648648,
+   "ev_n": 24,
+   "ev_found": 16,
+   "ev_missed": [
+    "In consideration of the Disclosing Party providing Confidential Information, at its discretion, to the Receiving Party, the Receiving Party shall:",
+    "The Receiving Party may disclose Confidential Information to those of its directors, officers, employees, consultants and professional advisers and au",
+    "The Receiving Party and each Receiving Party Authorised Person shall be entitled to disclose Confidential Information to the extent that it is require",
+    "Before making a disclosure pursuant to Clause 3.2, the Receiving Party or relevant Receiving Party Authorised Person shall, if the circumstances permi",
+    "On receipt of an Information Return Notice, the Receiving Party shall:"
+   ]
+  },
+  {
+   "doc_id": "dev/39",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 45,
+   "n_gold": 64,
+   "tp": 30,
+   "boundary_p": 1.0,
+   "boundary_r": 0.703125,
+   "boundary_f1": 0.8256880733944955,
+   "ev_n": 8,
+   "ev_found": 5,
+   "ev_missed": [
+    "By signing this agreement the Bidder is stating that it will keep all Confidential Information (as defined in paragraph 4) in strict confidence and on",
+    "Within ten (10) days after award and/or completion of the IFB, or upon demand by the County, all Confidential Information, including all photographs, ",
+    "The successful Bidder shall destroy all Confidential Information within ten (10) days after final Project completion."
+   ]
+  },
+  {
+   "doc_id": "dev/44",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 13,
+   "n_gold": 32,
+   "tp": 3,
+   "boundary_p": 1.0,
+   "boundary_r": 0.40625,
+   "boundary_f1": 0.5777777777777777,
+   "ev_n": 9,
+   "ev_found": 0,
+   "ev_missed": [
+    "1. “Confidential Information” shall mean all information, whether communicated in oral, written, electronic or other form, furnished by BOMI or prepar",
+    "Without BOMI’s prior written consent, which may be given or withheld by BOMI in its sole and absolute discretion, Attendee will not at any time, wheth",
+    "(a) disclose any Confidential Information to any third party nor give any third party access thereto, nor",
+    "(b) use any Confidential Information except as required in taking the Test.",
+    "6. Attendee acknowledges that all"
+   ]
+  },
+  {
+   "doc_id": "dev/45",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 32,
+   "n_gold": 47,
+   "tp": 23,
+   "boundary_p": 1.0,
+   "boundary_r": 0.6808510638297872,
+   "boundary_f1": 0.810126582278481,
+   "ev_n": 12,
+   "ev_found": 5,
+   "ev_missed": [
+    "1. “Confidential Information” is defined as any device, graphics, written information, or information in other tangible forms that is disclosed by a d",
+    "Information disclosed orally or visually and identified at that time as “Confidential” shall be considered “Confidential Information” if it is reduced",
+    "2. Unless otherwise expressly authorized by the disclosing party, the receiving party agrees to retain the “Confidential Information” in confidence fo",
+    "During this period the receiving party shall not disclose the received “Confidential Information” to any third party, and shall not use the received “",
+    "The receiving party further agrees to use the same degree of care, but no less than a reasonable degree of care, with any “Confidential Information” a"
+   ]
+  },
+  {
+   "doc_id": "dev/54",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 48,
+   "n_gold": 58,
+   "tp": 39,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8275862068965517,
+   "boundary_f1": 0.9056603773584906,
+   "ev_n": 11,
+   "ev_found": 4,
+   "ev_missed": [
+    "For the purposes of this non-disclosure agreement, the term 'confidential information' means information which is designated as 'confidential' or – wh",
+    "5. The DISCLOSEE may not make confidential information available within its enterprise or organisation other than to staff who necessarily require it ",
+    "7. As with the confidential information, no results obtained from that information may be disclosed to any third parties or made available otherwise w",
+    "8. Any and all confidential information, including any and all protected and other rights created and/or produced in connection with the confidential ",
+    "The DISCLOSEE cannot deduce any rights from knowing the information and knowhow the DISCLOSER provides in respect of applying for protected rights aga"
+   ]
+  },
+  {
+   "doc_id": "dev/56",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 53,
+   "n_gold": 72,
+   "tp": 41,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7361111111111112,
+   "boundary_f1": 0.8480000000000001,
+   "ev_n": 16,
+   "ev_found": 13,
+   "ev_missed": [
+    "2. The Recipient shall be entitled to disclose the Confidential Information to its employees, contractors and advisers and Group Parties, provided tha",
+    "h. Neither disclosure of Confidential Information, nor this Agreement shall be construed as",
+    "(iii) granting to either Party any rights by license or otherwise, express or implied, under any patent, copyright, trademark, trade secret or other i"
+   ]
+  },
+  {
+   "doc_id": "dev/61",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 39,
+   "n_gold": 65,
+   "tp": 29,
+   "boundary_p": 1.0,
+   "boundary_r": 0.6,
+   "boundary_f1": 0.7499999999999999,
+   "ev_n": 21,
+   "ev_found": 11,
+   "ev_missed": [
+    "Company agrees that access to the Confidential Information shall be given by it only to those of its employees who have a need to know to engage in th",
+    "3. Company shall not",
+    "(i) use any portion of the Confidential Information for any purpose except to evaluate the RFP, including assessment of each Statement of Work under t",
+    "(ii) disclose the Confidential Information or any part of it to any third party without the prior written consent of the AOC; provided, however, that ",
+    "(c) is received from a third party free to disclose it to Company;"
+   ]
+  },
+  {
+   "doc_id": "dev/63",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 32,
+   "n_gold": 60,
+   "tp": 17,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5333333333333333,
+   "boundary_f1": 0.6956521739130436,
+   "ev_n": 15,
+   "ev_found": 7,
+   "ev_missed": [
+    "(d) use, and require its",
+    "Representatives to use, the Confidential Information only for the purpose expressly stated herein; provided that nothing in this Agreement is intended",
+    "4. Receiving Party may disclose the Confidential Information of Disclosing Party pursuant to a valid order issued by a court or governmental agency; p",
+    "(a) prior written notice of such order, and",
+    "7. All Confidential Information shall remain the exclusive property of Disclosing Party unless such Confidential Information is sold by Disclosing Par"
+   ]
+  },
+  {
+   "doc_id": "dev/64",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 126,
+   "n_gold": 255,
+   "tp": 73,
+   "boundary_p": 1.0,
+   "boundary_r": 0.49411764705882355,
+   "boundary_f1": 0.6614173228346457,
+   "ev_n": 15,
+   "ev_found": 2,
+   "ev_missed": [
+    "B. “Delivering Party” has furnished, is furnishing, or will be furnishing, either directly or indirectly through a representative, to the other party ",
+    "SuchF information provided, whether provided in documentary, oral, visual, electronic, tangible or any other form, including without limitation, in th",
+    "Non-tangible information will be Information only to the extent that it is first disclosed in non-tangible form and is orally identified at the time o",
+    "Accordingly, the parties wish to ensure that the Information provided by the Delivering Party will only be disclosed or used in strict accordance with",
+    "The term “Information” shall not include any Information which:"
+   ]
+  },
+  {
+   "doc_id": "dev/69",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 50,
+   "n_gold": 115,
+   "tp": 20,
+   "boundary_p": 1.0,
+   "boundary_r": 0.43478260869565216,
+   "boundary_f1": 0.6060606060606061,
+   "ev_n": 19,
+   "ev_found": 2,
+   "ev_missed": [
+    "oral, (including any information furnished prior to the execution of this Agreement) related to the products, services, technology, business, customer",
+    "All such Information shall be identified as confidential and/or proprietary in accordance with the following:",
+    "(i) in the case of written or electronic information, such Information shall be identified at the time of disclosure with an appropriate legend, marki",
+    "(ii) in the case of visual information, such Information shall be identified as confidential at the time of disclosure or as soon thereafter as is rea",
+    "(iii) with respect to oral information, such information shall be reduced to written or language form, marked as confidential with an appropriate lege"
+   ]
+  },
+  {
+   "doc_id": "dev/70",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 22,
+   "n_gold": 37,
+   "tp": 13,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5945945945945946,
+   "boundary_f1": 0.7457627118644068,
+   "ev_n": 6,
+   "ev_found": 1,
+   "ev_missed": [
+    "This information may include, but is not limited to, patient health records, as well as information regarding human resources, payroll, fiscal matters",
+    "I hereby agree as follows:",
+    "I understand that I may access and/or use FAU Confidential Information, Restricted Data and Sensitive Data only as necessary to perform my job-related",
+    " I understand that upon termination of my employment/affiliation/association with FAU, I will immediately return or destroy, as appropriate, any FAU ",
+    "I understand that my confidentiality obligations under this Agreement will continue after the termination of this Agreement and after termination of m"
+   ]
+  },
+  {
+   "doc_id": "dev/71",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 14,
+   "n_gold": 35,
+   "tp": 7,
+   "boundary_p": 1.0,
+   "boundary_r": 0.4,
+   "boundary_f1": 0.5714285714285715,
+   "ev_n": 3,
+   "ev_found": 0,
+   "ev_missed": [
+    "Prospect and Prospect’s Broker acknowledge that all information and materials provided by Listing Broker regarding the above-referenced Property is co",
+    "Prospect’s and Prospect’s Broker’s dissemination of any information and materials provided by Listing Broker will be limited to attorneys, accountants",
+    "Listing Broker, Prospect, and Prospect’s Broker agree not to disclose to any other person the fact that any discussions or negotiations are taking pla"
+   ]
+  },
+  {
+   "doc_id": "dev/72",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 67,
+   "n_gold": 100,
+   "tp": 46,
+   "boundary_p": 1.0,
+   "boundary_r": 0.67,
+   "boundary_f1": 0.8023952095808384,
+   "ev_n": 14,
+   "ev_found": 5,
+   "ev_missed": [
+    "6. The undersigned and its Representatives shall under no circumstances contact directly or indirectly any of the residents, partners or former partne",
+    "(i) to ask any questions regarding the possible acquisition of all or part of the Assets,",
+    "(ii) to request additional information or regarding the contents of any of the Information previously obtained,",
+    "(iii) to request a facility tour or meeting, or",
+    "(iv) for any other reason, except in the ordinary course of business;"
+   ]
+  },
+  {
+   "doc_id": "dev/73",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 82,
+   "n_gold": 201,
+   "tp": 41,
+   "boundary_p": 1.0,
+   "boundary_r": 0.4079601990049751,
+   "boundary_f1": 0.5795053003533569,
+   "ev_n": 39,
+   "ev_found": 2,
+   "ev_missed": [
+    "(a) “Confidential Information” shall include all information pertaining to the Assignors and their respective affiliates, employees, salespersons, ind",
+    "(i) information that relates to the Assignors’ trade secrets, products, services, product specifications, data, inventions, ideas, techniques, know-ho",
+    "(ii) all information concerning the Assignors’ business and affairs, operations, finances, assets, liabilities, forecasts, historical financial statem",
+    "(iii) third party confidential information in the custody or care of the Disclosing Party to the extent the same is subject to a duty of confidentiali",
+    "(iv) all offering documents and materials (including offering memoranda, supplements thereto and similar documents);"
+   ]
+  },
+  {
+   "doc_id": "dev/75",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 37,
+   "n_gold": 64,
+   "tp": 22,
+   "boundary_p": 1.0,
+   "boundary_r": 0.578125,
+   "boundary_f1": 0.7326732673267327,
+   "ev_n": 9,
+   "ev_found": 1,
+   "ev_missed": [
+    "Any and all information, including but not limited to, location, financial information, title reports, surveys, and other agreements, documents, mater",
+    "Investor shall keep the Confidential Information permanently and strictly confidential, and not to disclose or divulge any Confidential Information to",
+    "Investor is strictly prohibited from publishing any news release, public announcement, denial or confirmation with respect to the Development, this Ag",
+    "Investor’s use of the Confidential Information shall solely be for the purpose of evaluating the Property and the Development.",
+    "If the Investor elects not to proceed with the Development, or if the undersigned is informed that the Property is no longer available for purchase or"
+   ]
+  },
+  {
+   "doc_id": "dev/79",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 30,
+   "n_gold": 65,
+   "tp": 14,
+   "boundary_p": 1.0,
+   "boundary_r": 0.46153846153846156,
+   "boundary_f1": 0.631578947368421,
+   "ev_n": 11,
+   "ev_found": 0,
+   "ev_missed": [
+    "The term \"Confidential Information\" shall mean and include that technical and non-technical information disclosed by CIF to Dealer relating to:",
+    "(a) CIF's website, information system, and related software and discs, and any data and information contained therein,",
+    "(b) information and specifications on CIF's products, and their design, cost, manufacture, marketing, and sale, and",
+    "(c) the existence, terms and subject matter of this Agreement.",
+    "Confidential Information shall not include information that:"
+   ]
+  },
+  {
+   "doc_id": "dev/81",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 28,
+   "n_gold": 59,
+   "tp": 17,
+   "boundary_p": 1.0,
+   "boundary_r": 0.4745762711864407,
+   "boundary_f1": 0.6436781609195402,
+   "ev_n": 14,
+   "ev_found": 4,
+   "ev_missed": [
+    "The confidential, proprietary and trade secret information of the disclosing party (“Confidential Information”) to be disclosed hereunder is",
+    "(i) information in tangible form that bears a “confidential,” “proprietary,” “secret,” or similar legend, and",
+    "(ii) discussions relating to that information whether those discussions occur prior to, concurrent with, or following disclosure of the information.",
+    "However, the disclosing party’s information in tangible form that does not bear any of these legends, and discussions relating to that information, sh",
+    "The receiving party will not disclose any of the disclosing party’s Confidential Information to any employees or to any third parties except to the re"
+   ]
+  },
+  {
+   "doc_id": "dev/82",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 38,
+   "n_gold": 41,
+   "tp": 35,
+   "boundary_p": 1.0,
+   "boundary_r": 0.926829268292683,
+   "boundary_f1": 0.9620253164556963,
+   "ev_n": 8,
+   "ev_found": 8,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/152",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 34,
+   "n_gold": 48,
+   "tp": 24,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7083333333333334,
+   "boundary_f1": 0.8292682926829268,
+   "ev_n": 10,
+   "ev_found": 4,
+   "ev_missed": [
+    "1. Each party may disclose to the other party confidential and/or proprietary information (hereinafter “the Information”) including but not limited to",
+    "5. The parties each agree not to undertake or have undertaken any analysis on the products or the technology supplied by the other parties to determin",
+    "It is explicitly agreed that the composition of the material AddiFlex as well as the manufacturing process used to produce AddiFlex shall not be the s",
+    "7. Both parties may only make such copies as are strictly necessary for the purposes identified in 1.",
+    "above and for disclosures that are not in breach of this agreement."
+   ]
+  },
+  {
+   "doc_id": "dev/205",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 47,
+   "n_gold": 94,
+   "tp": 25,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5,
+   "boundary_f1": 0.6666666666666666,
+   "ev_n": 23,
+   "ev_found": 2,
+   "ev_missed": [
+    "1.1. “Confidential Information” shall mean information that is revealed by or obtained through a party (whether in writing, orally or by any other mea",
+    "(i) all forms and types of financial, business, scientific, technical, economic, or engineering information including, for example, pricing, strategie",
+    "(ii) information traditionally recognized as trade secrets;",
+    "(iii) all data and information about a party’s customers (current, former or prospective) and Employees and Advisors (as such terms are defined below)",
+    "(iv) the terms and conditions of this Agreement (including, without limitation, the Disclosure Purpose); and"
+   ]
+  },
+  {
+   "doc_id": "dev/381",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 81,
+   "n_gold": 115,
+   "tp": 60,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7043478260869566,
+   "boundary_f1": 0.826530612244898,
+   "ev_n": 5,
+   "ev_found": 3,
+   "ev_missed": [
+    "Selling Parties recognize and acknowledge that the Company's trade secrets and all other confidential and proprietary information of a business, finan",
+    "In the event that any Selling Party is requested pursuant to, or required by, Applicable Laws, regulation or rules of any securities exchange or by le"
+   ]
+  },
+  {
+   "doc_id": "dev/398",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 66,
+   "n_gold": 99,
+   "tp": 49,
+   "boundary_p": 1.0,
+   "boundary_r": 0.6666666666666666,
+   "boundary_f1": 0.8,
+   "ev_n": 12,
+   "ev_found": 1,
+   "ev_missed": [
+    "1.02 \"COMPETE\" OR \"COMPETING\" shall mean with respect to the Business:",
+    "(ii) hiring, soliciting or attempting to hire or solicit any employee of the Division or Purchasers as of the Closing Date either on Seller's behalf o",
+    "Seller acknowledges that such confidential information includes, without limitation, financial information concerning the Business, the names and addr",
+    "For purposes of this Agreement \"trade secrets\" means any information that derives independent value from being secret.",
+    "Confidential Information shall not include any information or documents that"
+   ]
+  },
+  {
+   "doc_id": "dev/405",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 50,
+   "n_gold": 89,
+   "tp": 35,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5617977528089888,
+   "boundary_f1": 0.7194244604316548,
+   "ev_n": 13,
+   "ev_found": 1,
+   "ev_missed": [
+    "You and your representatives (as defined herein) will treat confidentially any information (whether written or oral) that either we or our financial a",
+    "The term \"Evaluation Materials\" includes information furnished to you orally or in writing (whatever the form or storage medium) or gathered by inspec",
+    "The term \"Evaluation Materials\" does not include information which",
+    "(ii) was or becomes available to you or your representatives on a non-confidential basis from a source other than the Company or its representatives, ",
+    "(iii) is independently developed by you."
+   ]
+  },
+  {
+   "doc_id": "dev/406",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 31,
+   "n_gold": 66,
+   "tp": 19,
+   "boundary_p": 1.0,
+   "boundary_r": 0.4696969696969697,
+   "boundary_f1": 0.6391752577319588,
+   "ev_n": 22,
+   "ev_found": 0,
+   "ev_missed": [
+    "1. a.",
+    "\"Proprietary Information\" means information including, but not limited to clients, pricing and information which is related to the business of Health ",
+    "(1) derives economic value, actual or potential, from not being generally known to other persons who can obtain economic value from its disclosure or ",
+    "(2) is the subject of efforts by Health Card that are reasonable under the circumstances to maintain its secrecy, including without limitation",
+    "(i) with respect to information which has been reduced to tangible form, marking such information clearly and conspicuously with a legend identifying "
+   ]
+  },
+  {
+   "doc_id": "dev/411",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 26,
+   "n_gold": 46,
+   "tp": 19,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5652173913043478,
+   "boundary_f1": 0.7222222222222222,
+   "ev_n": 2,
+   "ev_found": 0,
+   "ev_missed": [
+    "(a) Each of Stockholders severally agrees that such Stockholder shall not, at any time following the effectiveness of the Merger, print, publish, divu",
+    "(c) In the event that a Stockholder is requested pursuant to subpoena or other legal process to disclose any of the Confidential Information, such Sto"
+   ]
+  },
+  {
+   "doc_id": "dev/435",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 32,
+   "n_gold": 55,
+   "tp": 18,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5818181818181818,
+   "boundary_f1": 0.735632183908046,
+   "ev_n": 18,
+   "ev_found": 7,
+   "ev_missed": [
+    "2. Except as set forth in this Section 2, all Confidential Information shall be in tangible form and shall be marked as Confidential or proprietary in",
+    "If the Confidential Information is disclosed orally or visually, it shall be identified as such at the time of disclosure and confirmed in a writing t",
+    "3. Each of the parties agrees that it will not make use of, disseminate, or in any way disclose any Confidential Information of the other party to any",
+    "Each of the parties agrees that it shall disclose Confidential Information of the other party only to those of its employees who need to know such inf",
+    "4. There shall be no liability for disclosure or use of Confidential Information which is"
+   ]
+  },
+  {
+   "doc_id": "dev/440",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 46,
+   "n_gold": 78,
+   "tp": 27,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5897435897435898,
+   "boundary_f1": 0.7419354838709677,
+   "ev_n": 22,
+   "ev_found": 2,
+   "ev_missed": [
+    "1. This Agreement shall apply to:",
+    "(a) confidential or proprietary exchanged material and information (in written, taped or computerized form or format) that is clearly and prominently ",
+    "(b) the existence and substance of oral and written communications between the parties about the potential strategic alliance, acquisition or other bu",
+    "(c) the existence of the discussions between Company and Kaplan about the potential strategic alliance, acquisition or other business relationship.",
+    "(Subparagraphs"
+   ]
+  },
+  {
+   "doc_id": "dev/456",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 14,
+   "n_gold": 20,
+   "tp": 9,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7,
+   "boundary_f1": 0.8235294117647058,
+   "ev_n": 4,
+   "ev_found": 2,
+   "ev_missed": [
+    "2. No rights or obligations other than expressly recited herein are to be implied here from.",
+    "Nothing except that expressly stated herein shall affect either party's present or prospective rights under any country's patent laws, or be construed"
+   ]
+  },
+  {
+   "doc_id": "dev/478",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 55,
+   "n_gold": 82,
+   "tp": 43,
+   "boundary_p": 1.0,
+   "boundary_r": 0.6707317073170732,
+   "boundary_f1": 0.8029197080291971,
+   "ev_n": 19,
+   "ev_found": 3,
+   "ev_missed": [
+    "2. For purposes of this Agreement, Proprietary Information shall mean, without limitation, computer programs, code, algorithms, names and expertise of",
+    "Proprietary Information shall be designated as such in writing by the Disclosing Party by appropriate legend or stamp, or, if first disclosed in a non",
+    "Notwithstanding the foregoing, the components of the System are hereby deemed to be Proprietary Information and as such are protected in accordance wi",
+    "3. The Receiving Party shall preserve Proprietary Information received from the Disclosing Party in confidence by exercising at least the same degree ",
+    "The Receiving Party shall ensure that all copies of Proprietary Information stored electronically on its server, tape backup or on the hard drives of "
+   ]
+  },
+  {
+   "doc_id": "dev/482",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 27,
+   "n_gold": 32,
+   "tp": 23,
+   "boundary_p": 1.0,
+   "boundary_r": 0.84375,
+   "boundary_f1": 0.9152542372881356,
+   "ev_n": 8,
+   "ev_found": 7,
+   "ev_missed": [
+    "3. The receiving Party shall not, without prior written permission of the disclosing Party, furnish to any third Party any information, equipment or m"
+   ]
+  },
+  {
+   "doc_id": "dev/486",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 30,
+   "n_gold": 41,
+   "tp": 20,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7317073170731707,
+   "boundary_f1": 0.8450704225352113,
+   "ev_n": 5,
+   "ev_found": 4,
+   "ev_missed": [
+    "Such covenant and agreement shall survive termination of this Agreement for any reason whatsoever."
+   ]
+  },
+  {
+   "doc_id": "dev/488",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 11,
+   "n_gold": 21,
+   "tp": 7,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5238095238095238,
+   "boundary_f1": 0.6875000000000001,
+   "ev_n": 13,
+   "ev_found": 2,
+   "ev_missed": [
+    "2. Except as set forth in this Section 2, all Confidential Information shall be in tangible form and shall be marked as Confidential or proprietary in",
+    "If the Confidential Information is disclosed orally or visually, it shall be identified as such at the time of disclosure and confirmed in a writing t",
+    "3. Each of the parties agrees that it will not make use of, disseminate, or in any way disclose any Confidential Information of the other party to any",
+    "Each of the parties agrees that it shall disclose Confidential Information of the other party only to those of its employees, consultants, advisors an",
+    "4. There shall be no liability for disclosure or use of Confidential Information which is"
+   ]
+  },
+  {
+   "doc_id": "dev/507",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 25,
+   "n_gold": 33,
+   "tp": 17,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7575757575757576,
+   "boundary_f1": 0.8620689655172413,
+   "ev_n": 10,
+   "ev_found": 4,
+   "ev_missed": [
+    "In connection with a potential transaction (the \"Transaction\") between Holdings and Big Sky, Big Sky has and will furnish to Holdings certain informat",
+    "The term \"Information\" shall mean all information that Big Sky has furnished or is furnishing to Holdings, whether furnished before or after the date ",
+    "In consideration of Big Sky's disclosure to Holdings of the Information, Holdings agrees that it will keep the Information confidential and that the I",
+    "Moreover, Big Sky agrees to transmit the Information only to such of its Representatives who need to know the Information for the sole purpose of assi",
+    "Without the prior written consent of Big Sky, neither Holdings nor its Representatives shall disclose to any person the fact that Holdings has receive"
+   ]
+  },
+  {
+   "doc_id": "dev/547",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 22,
+   "n_gold": 52,
+   "tp": 7,
+   "boundary_p": 1.0,
+   "boundary_r": 0.4230769230769231,
+   "boundary_f1": 0.5945945945945945,
+   "ev_n": 12,
+   "ev_found": 0,
+   "ev_missed": [
+    "The term “Confidential Information” means all confidential and proprietary information belonging to one party (the “Disclosing Party”) that is reveale",
+    "2011. Confidential Information, regardless of the form in which it appears, may include, without limitation, information about customers, business and",
+    "The Receiving Party agrees to use the Confidential Information for the sole purpose of evaluating and negotiating the Business Transaction.",
+    "The Receiving Party will disclose Confidential Information only to its employees and to its representative whose participation is necessary or helpful",
+    "Notwithstanding anything to the contrary in this Agreement, the Receiving Party is not prohibited from disclosing Confidential Information it is legal"
+   ]
+  },
+  {
+   "doc_id": "dev/563",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 54,
+   "n_gold": 80,
+   "tp": 44,
+   "boundary_p": 1.0,
+   "boundary_r": 0.675,
+   "boundary_f1": 0.8059701492537313,
+   "ev_n": 25,
+   "ev_found": 6,
+   "ev_missed": [
+    "(i) any information, data, intellectual property (including trade secrets), facts and financial information relating to the existing or proposed busin",
+    "(ii) the existence of, and either party's potential participation in, the Proposed Transaction (including the contents and details of any discussions ",
+    "(iii) any reports, analyses, forecasts, memoranda, compilations, studies, notes or summaries of such information, or other written or electronic docum",
+    "The Recipient will not disclose the Confidential Information or use or permit the Confidential Information to be disclosed or used, to or by any perso",
+    "In any such case Confidential Information will be disclosed only to those Representatives with a need to know the Confidential Information for the pur"
+   ]
+  },
+  {
+   "doc_id": "dev/575",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 44,
+   "n_gold": 84,
+   "tp": 21,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5238095238095238,
+   "boundary_f1": 0.6875000000000001,
+   "ev_n": 16,
+   "ev_found": 3,
+   "ev_missed": [
+    "“Confidential Information” shall, mean all intellectual property, business plans, financial records and strategies, marketing plans, contacts, trade s",
+    "“Confidential Information” shall not include:",
+    "Vapotherm agrees to disclose the Confidential Information only for the following specific purpose (‘Permitted Purpose”):",
+    "________________________________________________________________________________________________",
+    "________________________________________________________________________________________________"
+   ]
+  },
+  {
+   "doc_id": "dev/582",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 38,
+   "n_gold": 74,
+   "tp": 23,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5135135135135135,
+   "boundary_f1": 0.6785714285714285,
+   "ev_n": 13,
+   "ev_found": 2,
+   "ev_missed": [
+    "1. You hereby agree that the Confidential Information will be used solely for the purpose of evaluating and implementing the Transaction and that such",
+    "2. The term “Confidential Information” does not include any information which",
+    "(c) becomes available to you or your Representatives on a non-confidential basis from a Person who is not known by you or your Representatives (as app",
+    "(d) is or was independently developed by you or your Representatives without reference to, incorporation of, or other use of any Confidential Informat",
+    "4. In the event you or any of your Representatives become legally compelled (by deposition, interrogatory, request for documents, subpoena, civil inve"
+   ]
+  },
+  {
+   "doc_id": "dev/586",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 36,
+   "n_gold": 115,
+   "tp": 12,
+   "boundary_p": 1.0,
+   "boundary_r": 0.3130434782608696,
+   "boundary_f1": 0.4768211920529802,
+   "ev_n": 26,
+   "ev_found": 1,
+   "ev_missed": [
+    "In the course of such discussions, each Party expects to make available to the other Party and its Representatives (as defined herein) Evaluation Mate",
+    "(iii) the term \"Representatives\" means the directors, officers, employees, agents or advisors (including, without limitation, attorneys, accountants, ",
+    "(iv) the term \"Evaluation Material\" means all proprietary and confidential information concerning the Furnishing Party or any of its subsidiaries or a",
+    "Notwithstanding the foregoing, the term \"Evaluation Material\" shall not include, and the Parties' obligations herein (other than their obligations und",
+    "(b) was or is independently developed by the Receiving Party without use of the Evaluation Material;"
+   ]
+  },
+  {
+   "doc_id": "dev/590",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 57,
+   "n_gold": 131,
+   "tp": 30,
+   "boundary_p": 1.0,
+   "boundary_r": 0.4351145038167939,
+   "boundary_f1": 0.6063829787234043,
+   "ev_n": 30,
+   "ev_found": 2,
+   "ev_missed": [
+    "1.1 “Proprietary Information” means any and all information and material disclosed by Disclosing Party or any of its Representatives to Receiving Part",
+    "In addition, Proprietary Information shall include",
+    "(x) the fact that discussions or negotiations are taking place concerning the Proposed Transaction or that Interested Party has made or may make an of",
+    "(y) the proposed terms and conditions of the Proposed Transaction (including any financial terms and conditions) and the status thereof, and",
+    "(z) the existence, context, and scope of this Agreement."
+   ]
+  },
+  {
+   "doc_id": "dev/595",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 62,
+   "n_gold": 142,
+   "tp": 39,
+   "boundary_p": 1.0,
+   "boundary_r": 0.43661971830985913,
+   "boundary_f1": 0.607843137254902,
+   "ev_n": 23,
+   "ev_found": 0,
+   "ev_missed": [
+    "As used in this letter agreement (this “Agreement”), the term “Evaluation Material” means all information regarding the Company, its businesses, techn",
+    "The term “Representatives” includes, without limitation, FLIR Systems, Inc.’s affiliates and its and their respective directors, officers, employees, ",
+    "You and your Representatives",
+    "(i) will use the Evaluation Material solely for the purpose of evaluating a possible Transaction with the Company involving you or your affiliates and",
+    "(ii) will keep the Evaluation Material strictly confidential and (except as required by applicable law, regulation or legal process, and only after co"
+   ]
+  },
+  {
+   "doc_id": "dev/598",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 23,
+   "n_gold": 63,
+   "tp": 7,
+   "boundary_p": 1.0,
+   "boundary_r": 0.36507936507936506,
+   "boundary_f1": 0.5348837209302325,
+   "ev_n": 22,
+   "ev_found": 0,
+   "ev_missed": [
+    "1. Confidential Information: “Confidential Information” means all information which is non-public, confidential or proprietary in nature, whether tran",
+    "Confidential Information shall not include information that",
+    "(i) is or becomes generally available to the public other than as a result of a disclosure, in violation of this agreement, by the Recipient or any of",
+    "(iii) is or becomes available to the Recipient or its Representatives from a source other than the Corporation or its representatives; provided that t",
+    "(iv) has otherwise been independently acquired or developed by the Recipient or its Representatives without violating any obligations under this agree"
+   ]
+  },
+  {
+   "doc_id": "dev/605",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 35,
+   "n_gold": 67,
+   "tp": 26,
+   "boundary_p": 1.0,
+   "boundary_r": 0.5223880597014925,
+   "boundary_f1": 0.6862745098039216,
+   "ev_n": 14,
+   "ev_found": 0,
+   "ev_missed": [
+    "(b) “Blueknight Non-public Information” shall mean information pertaining to Blueknight, the General Partner and/or their respective Affiliates that h",
+    "The term Blueknight Non-public Information shall not include, however, information which",
+    "(ii) was or becomes available to Receiving Party on a non-confidential basis prior to or after its disclosure by Blueknight or the General Partner fro",
+    "(iii) is developed independently by Receiving Party without use of Blueknight Non-public Information and without violating any of the provisions of th",
+    "Receiving Party shall"
+   ]
+  },
+  {
+   "doc_id": "dev/610",
+   "method": "lines",
+   "setting": "oracle",
+   "n_pred": 47,
+   "n_gold": 100,
+   "tp": 25,
+   "boundary_p": 1.0,
+   "boundary_r": 0.47,
+   "boundary_f1": 0.6394557823129251,
+   "ev_n": 21,
+   "ev_found": 1,
+   "ev_missed": [
+    "As a condition to such information being furnished to each party, its affiliates, its subsidiaries and other individuals and entities controlled, dire",
+    "“Confidential Information” means any information, technical data or know-how, including, but not limited to, that which relates to research, product o",
+    "Notwithstanding the foregoing, Confidential Information does not include information, technical data or know-how which:",
+    "(iii) is obtained by the receiving party or its Associates from a source other than the disclosing party or its Associates, which source would not be ",
+    "receiving party or its Associates to have any obligation of confidentiality to the disclosing party with respect to such information;"
+   ]
+  },
+  {
+   "doc_id": "dev/3",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 95,
+   "n_gold": 97,
+   "tp": 93,
+   "boundary_p": 1.0,
+   "boundary_r": 0.979381443298969,
+   "boundary_f1": 0.9895833333333333,
+   "ev_n": 18,
+   "ev_found": 16,
+   "ev_missed": [
+    "The Parties are willing to exchange Confidential Information in the form of certain scientific, technical and commercial information, that will includ",
+    "(the “Permitted Purpose”) subject to the terms and conditions of this Agreement."
+   ]
+  },
+  {
+   "doc_id": "dev/7",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 166,
+   "n_gold": 208,
+   "tp": 126,
+   "boundary_p": 0.9939759036144579,
+   "boundary_r": 0.7932692307692307,
+   "boundary_f1": 0.8823529411764706,
+   "ev_n": 22,
+   "ev_found": 15,
+   "ev_missed": [
+    "2.1",
+    "In consideration of the mutual exchange and disclosure of Confidential Information, each party undertakes in relation to the other party's Confidentia",
+    "4.3",
+    "In the event of termination of this Agreement, the Company shall when directed to do so by AHPL, and instruct all its agents and sub-contractors to er",
+    "Each party agrees to keep the existence and nature of this Agreement confidential and not to use the same or the name of the other party or of any oth"
+   ]
+  },
+  {
+   "doc_id": "dev/9",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 132,
+   "n_gold": 144,
+   "tp": 113,
+   "boundary_p": 0.9696969696969697,
+   "boundary_r": 0.8888888888888888,
+   "boundary_f1": 0.927536231884058,
+   "ev_n": 7,
+   "ev_found": 5,
+   "ev_missed": [
+    "VENDOR acknowledges that in the course of providing services to BPS and its students, only VENDOR and its employees or representatives will be given o",
+    "Authorized vendors shall strictly comply with all federal and state laws that apply to the use and release of Confidential Information, including but "
+   ]
+  },
+  {
+   "doc_id": "dev/10",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 97,
+   "n_gold": 112,
+   "tp": 90,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8660714285714286,
+   "boundary_f1": 0.9282296650717704,
+   "ev_n": 9,
+   "ev_found": 9,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/12",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 55,
+   "n_gold": 61,
+   "tp": 49,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9016393442622951,
+   "boundary_f1": 0.9482758620689655,
+   "ev_n": 9,
+   "ev_found": 5,
+   "ev_missed": [
+    "1.1",
+    "With the understanding that CLIENT’s Formulations and Processing Procedures are proprietary to CLIENT, to the extent that CLIENT shall disclose to BRO",
+    "3.3",
+    "Rightfully receives without obligation of confidentiality from a third party;"
+   ]
+  },
+  {
+   "doc_id": "dev/13",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 143,
+   "n_gold": 149,
+   "tp": 137,
+   "boundary_p": 1.0,
+   "boundary_r": 0.959731543624161,
+   "boundary_f1": 0.9794520547945206,
+   "ev_n": 34,
+   "ev_found": 30,
+   "ev_missed": [
+    "In addition, if disclosure is required by Law or Authority, the Party to the extent practicable (and permitted by law), will",
+    "(1) promptly notify the Disclosing Party of the circumstances surrounding the requirement,",
+    "(3) disclose such Confidential Information only after using all reasonable efforts to comply with subsections",
+    "(1) and"
+   ]
+  },
+  {
+   "doc_id": "dev/14",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 22,
+   "n_gold": 23,
+   "tp": 21,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9565217391304348,
+   "boundary_f1": 0.9777777777777777,
+   "ev_n": 3,
+   "ev_found": 3,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/15",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 31,
+   "n_gold": 35,
+   "tp": 29,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8857142857142857,
+   "boundary_f1": 0.9393939393939393,
+   "ev_n": 10,
+   "ev_found": 10,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/16",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 42,
+   "n_gold": 52,
+   "tp": 33,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8076923076923077,
+   "boundary_f1": 0.8936170212765957,
+   "ev_n": 13,
+   "ev_found": 13,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/17",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 76,
+   "n_gold": 96,
+   "tp": 66,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7916666666666666,
+   "boundary_f1": 0.8837209302325582,
+   "ev_n": 5,
+   "ev_found": 5,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/19",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 52,
+   "n_gold": 72,
+   "tp": 32,
+   "boundary_p": 0.9807692307692307,
+   "boundary_r": 0.7083333333333334,
+   "boundary_f1": 0.8225806451612903,
+   "ev_n": 7,
+   "ev_found": 5,
+   "ev_missed": [
+    "5. Continuing Obligations and Remedies:",
+    "The obligations of Confidant under this Agreement shall not terminate but shall continue without limitation of time."
+   ]
+  },
+  {
+   "doc_id": "dev/20",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 50,
+   "n_gold": 62,
+   "tp": 35,
+   "boundary_p": 0.98,
+   "boundary_r": 0.7903225806451613,
+   "boundary_f1": 0.8749999999999999,
+   "ev_n": 12,
+   "ev_found": 8,
+   "ev_missed": [
+    "2.1",
+    "For the purpose of this Agreement, “Confidential Information” means any information received by a Party (the “Receiving Party”) regarding the other Pa",
+    "This Agreement will not be deemed to restrict either Party from complying with a lawfully issued governmental order, order of a court of competent jur",
+    "The Parties shall only use Confidential Information for the purpose of negotiation and/or evaluation of any co-operation between the Parties."
+   ]
+  },
+  {
+   "doc_id": "dev/27",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 79,
+   "n_gold": 97,
+   "tp": 61,
+   "boundary_p": 0.9873417721518988,
+   "boundary_r": 0.8041237113402062,
+   "boundary_f1": 0.8863636363636364,
+   "ev_n": 11,
+   "ev_found": 8,
+   "ev_missed": [
+    "The obligations of confidentiality in this Agreement do not extend to any item of Confidential Information which",
+    "If the Recipient receives a request to disclose all or any part of the Confidential Information under the terms of a valid subpoena or order issued by",
+    "(i) immediately notify the Discloser of the existence, terms and circumstances surrounding such a request, so that the Discloser may seek an appropria"
+   ]
+  },
+  {
+   "doc_id": "dev/28",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 68,
+   "n_gold": 76,
+   "tp": 63,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8947368421052632,
+   "boundary_f1": 0.9444444444444444,
+   "ev_n": 15,
+   "ev_found": 11,
+   "ev_missed": [
+    "The Recipient may disclose Confidential Information received hereunder to",
+    "(i) its Affiliates, to its employees and agents, and its Affiliates’ employees and agents, who have a need to know the Confidential Information, and w",
+    "9. Each party agrees to protect Confidential Information received from the other by exercising, at a minimum, the same level of care it uses to protec",
+    "(a) use such Confidential Information only for the purposes of this Agreement;"
+   ]
+  },
+  {
+   "doc_id": "dev/29",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 45,
+   "n_gold": 56,
+   "tp": 39,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8035714285714286,
+   "boundary_f1": 0.8910891089108911,
+   "ev_n": 12,
+   "ev_found": 5,
+   "ev_missed": [
+    "CI does not include information that",
+    "(C) becomes known to Recipient, free of any confidentiality obligations, from a source other than Discloser, or",
+    "(D) is independently developed by Recipient without use of CI.",
+    "Recipient may disclose CI",
+    "(B) as necessary to respond to a valid order by a court or other governmental body, as required by law, or as necessary to establish the rights of eit"
+   ]
+  },
+  {
+   "doc_id": "dev/32",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 74,
+   "n_gold": 91,
+   "tp": 61,
+   "boundary_p": 0.972972972972973,
+   "boundary_r": 0.7912087912087912,
+   "boundary_f1": 0.8727272727272727,
+   "ev_n": 14,
+   "ev_found": 10,
+   "ev_missed": [
+    "“Confidential Information” means confidential and proprietary information (regardless of whether such Confidential Information is in written, oral, vi",
+    "(a) that consists of Trade Secrets (as hereinafter defined), discoveries, technical, engineering, financial, pricing and/or other business data and do",
+    "The receiving party is entitled to use the Confidential Information of the disclosing party solely for the purpose of quoting and manufacturing produc",
+    "The receiving party agrees to immediately return and to deliver all originals and copies of any Confidential Information in its possession or subject "
+   ]
+  },
+  {
+   "doc_id": "dev/33",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 89,
+   "n_gold": 108,
+   "tp": 71,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8240740740740741,
+   "boundary_f1": 0.9035532994923858,
+   "ev_n": 15,
+   "ev_found": 11,
+   "ev_missed": [
+    "Each party may disclose the Confidential Information of the other party:",
+    "No right or licence is granted to either party in relation to the other party's Confidential Information except as expressly set out in this Agreement",
+    "Without prejudice to the generality of Clause 8.2, each party may retain:",
+    "Neither party shall disclose or announce the Purpose to another person without the prior written consent of the other party (such consent not to be un"
+   ]
+  },
+  {
+   "doc_id": "dev/35",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 117,
+   "n_gold": 156,
+   "tp": 78,
+   "boundary_p": 1.0,
+   "boundary_r": 0.75,
+   "boundary_f1": 0.8571428571428571,
+   "ev_n": 20,
+   "ev_found": 15,
+   "ev_missed": [
+    "During the course of the proposed discussions, the Parties anticipate that the Disclosing Party will disclose Confidential Information to the Receivin",
+    "For purposes of this Agreement, \"Confidential Information\" shall include, without limitation, any information or other data relating to the Disclosing",
+    "Should the Receiving Party or any of its employees, officers, directors, representatives, advisers or Affiliates be obliged by any law, or a valid ord",
+    "The Receiving Party shall ensure that its employees, officers, directors, representatives, advisers and Affiliates which may gain access to the Confid",
+    "The Disclosing Party may, at any time, request the Receiving Party to return any material containing, pertaining to or relating to Confidential Inform"
+   ]
+  },
+  {
+   "doc_id": "dev/37",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 119,
+   "n_gold": 147,
+   "tp": 93,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8095238095238095,
+   "boundary_f1": 0.8947368421052632,
+   "ev_n": 24,
+   "ev_found": 17,
+   "ev_missed": [
+    "In consideration of the Disclosing Party providing Confidential Information, at its discretion, to the Receiving Party, the Receiving Party shall:",
+    "The Receiving Party may disclose Confidential Information to those of its directors, officers, employees, consultants and professional advisers and au",
+    "The Receiving Party and each Receiving Party Authorised Person shall be entitled to disclose Confidential Information to the extent that it is require",
+    "Before making a disclosure pursuant to Clause 3.2, the Receiving Party or relevant Receiving Party Authorised Person shall, if the circumstances permi",
+    "The provisions of Clauses 5.1.1 and 5.1.2 shall not apply to the extent that the Receiving Party or Receiving Party Authorised Person is required to r"
+   ]
+  },
+  {
+   "doc_id": "dev/39",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 54,
+   "n_gold": 64,
+   "tp": 45,
+   "boundary_p": 1.0,
+   "boundary_r": 0.84375,
+   "boundary_f1": 0.9152542372881356,
+   "ev_n": 8,
+   "ev_found": 8,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/44",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 29,
+   "n_gold": 32,
+   "tp": 26,
+   "boundary_p": 1.0,
+   "boundary_r": 0.90625,
+   "boundary_f1": 0.9508196721311475,
+   "ev_n": 9,
+   "ev_found": 5,
+   "ev_missed": [
+    "(a) disclose any Confidential Information to any third party nor give any third party access thereto, nor",
+    "(b) use any Confidential Information except as required in taking the Test.",
+    "6. Attendee acknowledges that all",
+    "Test documents, materials, drawings, and other physical media of expression incorporating or containing any Confidential Information that BOMI furnish"
+   ]
+  },
+  {
+   "doc_id": "dev/45",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 39,
+   "n_gold": 47,
+   "tp": 35,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8297872340425532,
+   "boundary_f1": 0.9069767441860465,
+   "ev_n": 12,
+   "ev_found": 11,
+   "ev_missed": [
+    "The receiving party further agrees to use the same degree of care, but no less than a reasonable degree of care, with any “Confidential Information” a"
+   ]
+  },
+  {
+   "doc_id": "dev/54",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 57,
+   "n_gold": 58,
+   "tp": 56,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9827586206896551,
+   "boundary_f1": 0.9913043478260869,
+   "ev_n": 11,
+   "ev_found": 11,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/56",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 69,
+   "n_gold": 72,
+   "tp": 66,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9583333333333334,
+   "boundary_f1": 0.9787234042553191,
+   "ev_n": 16,
+   "ev_found": 15,
+   "ev_missed": [
+    "h. Neither disclosure of Confidential Information, nor this Agreement shall be construed as"
+   ]
+  },
+  {
+   "doc_id": "dev/61",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 63,
+   "n_gold": 65,
+   "tp": 61,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9692307692307692,
+   "boundary_f1": 0.9843749999999999,
+   "ev_n": 21,
+   "ev_found": 19,
+   "ev_missed": [
+    "3. Company shall not",
+    "(i) use any portion of the Confidential Information for any purpose except to evaluate the RFP, including assessment of each Statement of Work under t"
+   ]
+  },
+  {
+   "doc_id": "dev/63",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 51,
+   "n_gold": 60,
+   "tp": 44,
+   "boundary_p": 1.0,
+   "boundary_r": 0.85,
+   "boundary_f1": 0.9189189189189189,
+   "ev_n": 15,
+   "ev_found": 13,
+   "ev_missed": [
+    "(d) use, and require its",
+    "Representatives to use, the Confidential Information only for the purpose expressly stated herein; provided that nothing in this Agreement is intended"
+   ]
+  },
+  {
+   "doc_id": "dev/64",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 171,
+   "n_gold": 255,
+   "tp": 125,
+   "boundary_p": 0.9824561403508771,
+   "boundary_r": 0.6588235294117647,
+   "boundary_f1": 0.7887323943661971,
+   "ev_n": 15,
+   "ev_found": 12,
+   "ev_missed": [
+    "The term “Information” shall not include any Information which:",
+    "All copies of the Information, in documentary or other tangible form, shall be returned to the Delivering Party immediately upon the earlier to occur ",
+    "The provisions of this Confidentiality Agreement shall not be deemed by implication or otherwise to grant or convey to Receiving Party or its Represen"
+   ]
+  },
+  {
+   "doc_id": "dev/69",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 91,
+   "n_gold": 115,
+   "tp": 77,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7913043478260869,
+   "boundary_f1": 0.883495145631068,
+   "ev_n": 19,
+   "ev_found": 16,
+   "ev_missed": [
+    "The term “Confidential Information” does not include information",
+    "(iii) which a Receiving Party can prove",
+    "This Agreement shall be in effect for a period of two (2) years from the date hereof, provided that"
+   ]
+  },
+  {
+   "doc_id": "dev/70",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 35,
+   "n_gold": 37,
+   "tp": 33,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9459459459459459,
+   "boundary_f1": 0.9722222222222222,
+   "ev_n": 6,
+   "ev_found": 6,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/71",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 27,
+   "n_gold": 35,
+   "tp": 25,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7714285714285715,
+   "boundary_f1": 0.870967741935484,
+   "ev_n": 3,
+   "ev_found": 3,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/72",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 88,
+   "n_gold": 100,
+   "tp": 79,
+   "boundary_p": 1.0,
+   "boundary_r": 0.88,
+   "boundary_f1": 0.9361702127659575,
+   "ev_n": 14,
+   "ev_found": 14,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/73",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 176,
+   "n_gold": 201,
+   "tp": 150,
+   "boundary_p": 0.9886363636363636,
+   "boundary_r": 0.8656716417910447,
+   "boundary_f1": 0.923076923076923,
+   "ev_n": 39,
+   "ev_found": 31,
+   "ev_missed": [
+    "(iv) shall reveal the Confidential Information and the Confidential Materials only to its Representatives who need to know the Confidential Informatio",
+    "(A) are informed by the Receiving Party of the confidential and proprietary nature of the Confidential Information and the Confidential Materials, and",
+    "(B) before receiving the Confidential Information or the Confidential Materials, agree to maintain their confidentiality in accordance with the terms ",
+    "(v) except as provided in Section 7 below, shall not, without the Disclosing Party’s prior written consent, disclose",
+    "(A) to any other person, other than its Representatives, the fact that the Confidential Information or the Confidential Materials have been made avail"
+   ]
+  },
+  {
+   "doc_id": "dev/75",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 55,
+   "n_gold": 64,
+   "tp": 46,
+   "boundary_p": 1.0,
+   "boundary_r": 0.859375,
+   "boundary_f1": 0.9243697478991597,
+   "ev_n": 9,
+   "ev_found": 9,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/79",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 62,
+   "n_gold": 65,
+   "tp": 59,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9538461538461539,
+   "boundary_f1": 0.9763779527559054,
+   "ev_n": 11,
+   "ev_found": 11,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/81",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 46,
+   "n_gold": 59,
+   "tp": 41,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7796610169491526,
+   "boundary_f1": 0.8761904761904762,
+   "ev_n": 14,
+   "ev_found": 12,
+   "ev_missed": [
+    "The confidential, proprietary and trade secret information of the disclosing party (“Confidential Information”) to be disclosed hereunder is",
+    "(i) information in tangible form that bears a “confidential,” “proprietary,” “secret,” or similar legend, and"
+   ]
+  },
+  {
+   "doc_id": "dev/82",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 39,
+   "n_gold": 41,
+   "tp": 37,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9512195121951219,
+   "boundary_f1": 0.975,
+   "ev_n": 8,
+   "ev_found": 8,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/152",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 43,
+   "n_gold": 48,
+   "tp": 39,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8958333333333334,
+   "boundary_f1": 0.945054945054945,
+   "ev_n": 10,
+   "ev_found": 8,
+   "ev_missed": [
+    "7. Both parties may only make such copies as are strictly necessary for the purposes identified in 1.",
+    "above and for disclosures that are not in breach of this agreement."
+   ]
+  },
+  {
+   "doc_id": "dev/205",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 108,
+   "n_gold": 94,
+   "tp": 56,
+   "boundary_p": 0.7870370370370371,
+   "boundary_r": 0.9042553191489362,
+   "boundary_f1": 0.8415841584158417,
+   "ev_n": 23,
+   "ev_found": 12,
+   "ev_missed": [
+    "1.1. “Confidential Information” shall mean information that is revealed by or obtained through a party (whether in writing, orally or by any other mea",
+    "1.2. The confidentiality obligations set forth under this Agreement do not extend to Excluded Information.",
+    "For the purposes of this Agreement, “Excluded Information” means information that the Receiving Party can demonstrate",
+    "2.2. The Receiving Party shall not disclose, duplicate, transmit or otherwise disseminate in any manner the Disclosing Party’s Confidential Informatio",
+    "2.3. Each party may only make as many copies of Confidential Information as are reasonably necessary for its permitted use under the terms hereof, and"
+   ]
+  },
+  {
+   "doc_id": "dev/381",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 105,
+   "n_gold": 115,
+   "tp": 95,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9130434782608695,
+   "boundary_f1": 0.9545454545454545,
+   "ev_n": 5,
+   "ev_found": 5,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/398",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 96,
+   "n_gold": 99,
+   "tp": 93,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9696969696969697,
+   "boundary_f1": 0.9846153846153847,
+   "ev_n": 12,
+   "ev_found": 11,
+   "ev_missed": [
+    "Confidential Information shall not include any information or documents that"
+   ]
+  },
+  {
+   "doc_id": "dev/405",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 82,
+   "n_gold": 89,
+   "tp": 75,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9213483146067416,
+   "boundary_f1": 0.9590643274853802,
+   "ev_n": 13,
+   "ev_found": 8,
+   "ev_missed": [
+    "The term \"Evaluation Materials\" does not include information which",
+    "You and your representatives will keep the Evaluation Materials completely confidential and will not disclose the Evaluation Materials, in any manner,",
+    "(i) any of such information may only be disclosed to those of your directors, officers, employees, agents, representatives (including attorneys, accou",
+    "In the event that you or any of your representatives receive a request or are required (by deposition, interrogatory, request for documents, subpoena,",
+    "(i) immediately notify the Company of the existence, terms and circumstances surrounding such a request,"
+   ]
+  },
+  {
+   "doc_id": "dev/406",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 52,
+   "n_gold": 66,
+   "tp": 41,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7878787878787878,
+   "boundary_f1": 0.8813559322033898,
+   "ev_n": 22,
+   "ev_found": 9,
+   "ev_missed": [
+    "1. a.",
+    "\"Proprietary Information\" means information including, but not limited to clients, pricing and information which is related to the business of Health ",
+    "(1) derives economic value, actual or potential, from not being generally known to other persons who can obtain economic value from its disclosure or ",
+    "(2) is the subject of efforts by Health Card that are reasonable under the circumstances to maintain its secrecy, including without limitation",
+    "(i) with respect to information which has been reduced to tangible form, marking such information clearly and conspicuously with a legend identifying "
+   ]
+  },
+  {
+   "doc_id": "dev/411",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 39,
+   "n_gold": 46,
+   "tp": 36,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8478260869565217,
+   "boundary_f1": 0.9176470588235294,
+   "ev_n": 2,
+   "ev_found": 2,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/435",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 47,
+   "n_gold": 55,
+   "tp": 34,
+   "boundary_p": 0.9574468085106383,
+   "boundary_r": 0.8181818181818182,
+   "boundary_f1": 0.8823529411764706,
+   "ev_n": 18,
+   "ev_found": 16,
+   "ev_missed": [
+    "4. There shall be no liability for disclosure or use of Confidential Information which is",
+    "(b) rightfully received from a third party without any obligation of confidentiality,"
+   ]
+  },
+  {
+   "doc_id": "dev/440",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 73,
+   "n_gold": 78,
+   "tp": 63,
+   "boundary_p": 0.9726027397260274,
+   "boundary_r": 0.9102564102564102,
+   "boundary_f1": 0.9403973509933774,
+   "ev_n": 22,
+   "ev_found": 20,
+   "ev_missed": [
+    "(Subparagraphs",
+    "(a),"
+   ]
+  },
+  {
+   "doc_id": "dev/456",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 17,
+   "n_gold": 20,
+   "tp": 14,
+   "boundary_p": 1.0,
+   "boundary_r": 0.85,
+   "boundary_f1": 0.9189189189189189,
+   "ev_n": 4,
+   "ev_found": 4,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/478",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 83,
+   "n_gold": 82,
+   "tp": 78,
+   "boundary_p": 0.9759036144578314,
+   "boundary_r": 0.9878048780487805,
+   "boundary_f1": 0.9818181818181818,
+   "ev_n": 19,
+   "ev_found": 19,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/482",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 31,
+   "n_gold": 32,
+   "tp": 30,
+   "boundary_p": 1.0,
+   "boundary_r": 0.96875,
+   "boundary_f1": 0.9841269841269841,
+   "ev_n": 8,
+   "ev_found": 8,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/486",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 38,
+   "n_gold": 41,
+   "tp": 35,
+   "boundary_p": 1.0,
+   "boundary_r": 0.926829268292683,
+   "boundary_f1": 0.9620253164556963,
+   "ev_n": 5,
+   "ev_found": 5,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/488",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 18,
+   "n_gold": 21,
+   "tp": 16,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8571428571428571,
+   "boundary_f1": 0.923076923076923,
+   "ev_n": 13,
+   "ev_found": 10,
+   "ev_missed": [
+    "4. There shall be no liability for disclosure or use of Confidential Information which is",
+    "(b) rightfully received from a third party without any obligation of confidentiality,",
+    "(d) independently developed by the receiving party without use of any Confidential Information and by persons who have not had access to any Confident"
+   ]
+  },
+  {
+   "doc_id": "dev/507",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 33,
+   "n_gold": 33,
+   "tp": 33,
+   "boundary_p": 1.0,
+   "boundary_r": 1.0,
+   "boundary_f1": 1.0,
+   "ev_n": 10,
+   "ev_found": 10,
+   "ev_missed": []
+  },
+  {
+   "doc_id": "dev/547",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 44,
+   "n_gold": 52,
+   "tp": 36,
+   "boundary_p": 0.9772727272727273,
+   "boundary_r": 0.8269230769230769,
+   "boundary_f1": 0.8958333333333334,
+   "ev_n": 12,
+   "ev_found": 9,
+   "ev_missed": [
+    "The term “Confidential Information” means all confidential and proprietary information belonging to one party (the “Disclosing Party”) that is reveale",
+    "2011. Confidential Information, regardless of the form in which it appears, may include, without limitation, information about customers, business and",
+    "If such protective order or other remedy is not obtained and the Disclosing Party has not waived compliance with the provisions of this Agreement, the"
+   ]
+  },
+  {
+   "doc_id": "dev/563",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 76,
+   "n_gold": 80,
+   "tp": 73,
+   "boundary_p": 1.0,
+   "boundary_r": 0.95,
+   "boundary_f1": 0.9743589743589743,
+   "ev_n": 25,
+   "ev_found": 20,
+   "ev_missed": [
+    "Notwithstanding the immediately preceding sentence, the parties agree that destruction will not be made of",
+    "(i) any electronic copy of any Confidential Information that was created pursuant to the standard electronic backup and archival procedures of the Rec",
+    "(x) personnel of the Recipient whose functions are not primarily internal information technology in nature do not have access to such retained copies ",
+    "19. Each of the parties hereto expressly agree that they will not, and will not permit any of its",
+    "Representatives to directly or indirectly, hire an employee of the other party, or solicit or induce any employee of the other party to leave such emp"
+   ]
+  },
+  {
+   "doc_id": "dev/575",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 78,
+   "n_gold": 84,
+   "tp": 73,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9285714285714286,
+   "boundary_f1": 0.962962962962963,
+   "ev_n": 16,
+   "ev_found": 13,
+   "ev_missed": [
+    "Vapotherm agrees to disclose the Confidential Information only for the following specific purpose (‘Permitted Purpose”):",
+    "________________________________________________________________________________________________",
+    "________________________________________________________________________________________________"
+   ]
+  },
+  {
+   "doc_id": "dev/582",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 65,
+   "n_gold": 74,
+   "tp": 56,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8783783783783784,
+   "boundary_f1": 0.935251798561151,
+   "ev_n": 13,
+   "ev_found": 7,
+   "ev_missed": [
+    "2. The term “Confidential Information” does not include any information which",
+    "4. In the event you or any of your Representatives become legally compelled (by deposition, interrogatory, request for documents, subpoena, civil inve",
+    "(i) to promptly notify the other party prior to any such disclosure to the extent practicable and legally permissible and",
+    "14. This Agreement shall terminate upon the earlier to occur of",
+    "(a) the closing of the Transaction contemplated by this Agreement, and"
+   ]
+  },
+  {
+   "doc_id": "dev/586",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 102,
+   "n_gold": 115,
+   "tp": 88,
+   "boundary_p": 0.9803921568627451,
+   "boundary_r": 0.8695652173913043,
+   "boundary_f1": 0.9216589861751152,
+   "ev_n": 26,
+   "ev_found": 15,
+   "ev_missed": [
+    "Notwithstanding the foregoing, the term \"Evaluation Material\" shall not include, and the Parties' obligations herein (other than their obligations und",
+    "All Evaluation Material",
+    "If the Receiving Party or its Representatives are requested or required in any judicial, arbital or administrative proceeding or by any governmental o",
+    "(3)(c) of this Agreement, the Receiving Party shall give the Furnishing Party prompt notice of such request so that the Furnishing Party may seek an a",
+    "Except"
+   ]
+  },
+  {
+   "doc_id": "dev/590",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 123,
+   "n_gold": 131,
+   "tp": 115,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9389312977099237,
+   "boundary_f1": 0.9685039370078741,
+   "ev_n": 30,
+   "ev_found": 21,
+   "ev_missed": [
+    "In addition, Proprietary Information shall include",
+    "(x) the fact that discussions or negotiations are taking place concerning the Proposed Transaction or that Interested Party has made or may make an of",
+    "Without the written consent of Disclosing Party and except as otherwise required by applicable law, Receiving Party shall keep, and shall cause its Re",
+    "Representatives not to disclose or reveal, in any manner whatsoever, in whole or in part, any Proprietary Information to any person, other than to its",
+    "If Receiving Party or any of its Representatives are requested pursuant to, or required by, applicable law or regulation (including, without limitatio"
+   ]
+  },
+  {
+   "doc_id": "dev/595",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 128,
+   "n_gold": 142,
+   "tp": 114,
+   "boundary_p": 1.0,
+   "boundary_r": 0.9014084507042254,
+   "boundary_f1": 0.9481481481481481,
+   "ev_n": 23,
+   "ev_found": 12,
+   "ev_missed": [
+    "You and your Representatives",
+    "(i) will use the Evaluation Material solely for the purpose of evaluating a possible Transaction with the Company involving you or your affiliates and",
+    "The term “Evaluation Material” does not include any information which",
+    "In the event that you are requested or required to disclose all or any part of the information contained in the Evaluation Material pursuant to the te",
+    "(i) notify the Company in writing immediately of the existence, terms and circumstances surrounding such request or requirement,"
+   ]
+  },
+  {
+   "doc_id": "dev/598",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 48,
+   "n_gold": 63,
+   "tp": 35,
+   "boundary_p": 1.0,
+   "boundary_r": 0.7619047619047619,
+   "boundary_f1": 0.8648648648648648,
+   "ev_n": 22,
+   "ev_found": 11,
+   "ev_missed": [
+    "Confidential Information shall not include information that",
+    "(i) is or becomes generally available to the public other than as a result of a disclosure, in violation of this agreement, by the Recipient or any of",
+    "2. Non-disclosure of Confidential Information: During the period commencing on the date of this agreement and ending on the date of termination in sec",
+    "(i) to the Recipient’s Representatives under the limited terms and conditions set forth in section 3, or",
+    "If the Recipient or any of its Representatives is requested to disclose any Confidential Information in connection with any legal or administrative pr"
+   ]
+  },
+  {
+   "doc_id": "dev/605",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 60,
+   "n_gold": 67,
+   "tp": 53,
+   "boundary_p": 1.0,
+   "boundary_r": 0.8955223880597015,
+   "boundary_f1": 0.9448818897637796,
+   "ev_n": 14,
+   "ev_found": 8,
+   "ev_missed": [
+    "The term Blueknight Non-public Information shall not include, however, information which",
+    "Receiving Party shall",
+    "Furthermore, the parties agree that",
+    "(y) all conduct of, or oral statements made by, Blueknight, the General Partner, Receiving Party or their respective representatives at the Refinancin",
+    "(1) is or becomes generally available to the public other than as a result of disclosure by the party receiving the information at the Refinancing Mee"
+   ]
+  },
+  {
+   "doc_id": "dev/610",
+   "method": "rules",
+   "setting": "oracle",
+   "n_pred": 94,
+   "n_gold": 100,
+   "tp": 86,
+   "boundary_p": 0.9893617021276596,
+   "boundary_r": 0.93,
+   "boundary_f1": 0.9587628865979382,
+   "ev_n": 21,
+   "ev_found": 19,
+   "ev_missed": [
+    "In the event that a receiving party or its Associates is or becomes legally compelled under applicable law, regulation or securities exchange listing ",
+    "Associates to, provide the disclosing party with prompt written notice (unless prohibited by law) of such legal compulsion, and shall delay disclosure"
+   ]
+  },
+  {
+   "doc_id": "dev/3",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 55,
+   "n_gold": 97,
+   "tp": 39,
+   "ev_n": 18,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/7",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 102,
+   "n_gold": 208,
+   "tp": 49,
+   "ev_n": 22,
+   "ev_found": 9
+  },
+  {
+   "doc_id": "dev/9",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 44,
+   "n_gold": 144,
+   "tp": 15,
+   "ev_n": 7,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/10",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 82,
+   "n_gold": 112,
+   "tp": 63,
+   "ev_n": 9,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/12",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 30,
+   "n_gold": 61,
+   "tp": 8,
+   "ev_n": 9,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/13",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 46,
+   "n_gold": 149,
+   "tp": 14,
+   "ev_n": 34,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/14",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 20,
+   "n_gold": 23,
+   "tp": 10,
+   "ev_n": 3,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/15",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 24,
+   "n_gold": 35,
+   "tp": 20,
+   "ev_n": 10,
+   "ev_found": 7
+  },
+  {
+   "doc_id": "dev/16",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 24,
+   "n_gold": 52,
+   "tp": 15,
+   "ev_n": 13,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/17",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 21,
+   "n_gold": 96,
+   "tp": 12,
+   "ev_n": 5,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/19",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 32,
+   "n_gold": 72,
+   "tp": 13,
+   "ev_n": 7,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/20",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 19,
+   "n_gold": 62,
+   "tp": 5,
+   "ev_n": 12,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/27",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 22,
+   "n_gold": 97,
+   "tp": 6,
+   "ev_n": 11,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/28",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 23,
+   "n_gold": 76,
+   "tp": 10,
+   "ev_n": 15,
+   "ev_found": 4
+  },
+  {
+   "doc_id": "dev/29",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 17,
+   "n_gold": 56,
+   "tp": 13,
+   "ev_n": 12,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/32",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 18,
+   "n_gold": 91,
+   "tp": 1,
+   "ev_n": 14,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/33",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 79,
+   "n_gold": 108,
+   "tp": 58,
+   "ev_n": 15,
+   "ev_found": 9
+  },
+  {
+   "doc_id": "dev/35",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 73,
+   "n_gold": 156,
+   "tp": 4,
+   "ev_n": 20,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/37",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 115,
+   "n_gold": 147,
+   "tp": 69,
+   "ev_n": 24,
+   "ev_found": 9
+  },
+  {
+   "doc_id": "dev/39",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 34,
+   "n_gold": 64,
+   "tp": 23,
+   "ev_n": 8,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/44",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 12,
+   "n_gold": 32,
+   "tp": 1,
+   "ev_n": 9,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/45",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 23,
+   "n_gold": 47,
+   "tp": 11,
+   "ev_n": 12,
+   "ev_found": 4
+  },
+  {
+   "doc_id": "dev/54",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 47,
+   "n_gold": 58,
+   "tp": 33,
+   "ev_n": 11,
+   "ev_found": 4
+  },
+  {
+   "doc_id": "dev/56",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 41,
+   "n_gold": 72,
+   "tp": 17,
+   "ev_n": 16,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/61",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 31,
+   "n_gold": 65,
+   "tp": 14,
+   "ev_n": 21,
+   "ev_found": 8
+  },
+  {
+   "doc_id": "dev/63",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 25,
+   "n_gold": 60,
+   "tp": 12,
+   "ev_n": 15,
+   "ev_found": 7
+  },
+  {
+   "doc_id": "dev/64",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 92,
+   "n_gold": 255,
+   "tp": 103,
+   "ev_n": 15,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/69",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 40,
+   "n_gold": 115,
+   "tp": 31,
+   "ev_n": 19,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/70",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 22,
+   "n_gold": 37,
+   "tp": 7,
+   "ev_n": 6,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/71",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 14,
+   "n_gold": 35,
+   "tp": 9,
+   "ev_n": 3,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/72",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 58,
+   "n_gold": 100,
+   "tp": 44,
+   "ev_n": 14,
+   "ev_found": 6
+  },
+  {
+   "doc_id": "dev/73",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 42,
+   "n_gold": 201,
+   "tp": 10,
+   "ev_n": 39,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/75",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 15,
+   "n_gold": 64,
+   "tp": 4,
+   "ev_n": 9,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/79",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 20,
+   "n_gold": 65,
+   "tp": 1,
+   "ev_n": 11,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/81",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 22,
+   "n_gold": 59,
+   "tp": 9,
+   "ev_n": 14,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/82",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 32,
+   "n_gold": 41,
+   "tp": 30,
+   "ev_n": 8,
+   "ev_found": 8
+  },
+  {
+   "doc_id": "dev/152",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 30,
+   "n_gold": 48,
+   "tp": 21,
+   "ev_n": 10,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/205",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 46,
+   "n_gold": 94,
+   "tp": 22,
+   "ev_n": 23,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/381",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 49,
+   "n_gold": 115,
+   "tp": 25,
+   "ev_n": 5,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/398",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 51,
+   "n_gold": 99,
+   "tp": 21,
+   "ev_n": 12,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/405",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 43,
+   "n_gold": 89,
+   "tp": 21,
+   "ev_n": 13,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/406",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 27,
+   "n_gold": 66,
+   "tp": 16,
+   "ev_n": 22,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/411",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 24,
+   "n_gold": 46,
+   "tp": 15,
+   "ev_n": 2,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/435",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 24,
+   "n_gold": 55,
+   "tp": 28,
+   "ev_n": 18,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/440",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 34,
+   "n_gold": 78,
+   "tp": 14,
+   "ev_n": 22,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/456",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 14,
+   "n_gold": 20,
+   "tp": 5,
+   "ev_n": 4,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/478",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 45,
+   "n_gold": 82,
+   "tp": 28,
+   "ev_n": 19,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/482",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 25,
+   "n_gold": 32,
+   "tp": 19,
+   "ev_n": 8,
+   "ev_found": 7
+  },
+  {
+   "doc_id": "dev/486",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 29,
+   "n_gold": 41,
+   "tp": 16,
+   "ev_n": 5,
+   "ev_found": 4
+  },
+  {
+   "doc_id": "dev/488",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 12,
+   "n_gold": 21,
+   "tp": 8,
+   "ev_n": 13,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/507",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 28,
+   "n_gold": 33,
+   "tp": 14,
+   "ev_n": 10,
+   "ev_found": 4
+  },
+  {
+   "doc_id": "dev/547",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 33,
+   "n_gold": 52,
+   "tp": 10,
+   "ev_n": 12,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/563",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 61,
+   "n_gold": 80,
+   "tp": 34,
+   "ev_n": 25,
+   "ev_found": 6
+  },
+  {
+   "doc_id": "dev/575",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 53,
+   "n_gold": 84,
+   "tp": 19,
+   "ev_n": 15,
+   "ev_found": 4
+  },
+  {
+   "doc_id": "dev/582",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 37,
+   "n_gold": 74,
+   "tp": 20,
+   "ev_n": 13,
+   "ev_found": 1
+  },
+  {
+   "doc_id": "dev/586",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 40,
+   "n_gold": 115,
+   "tp": 11,
+   "ev_n": 26,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/590",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 69,
+   "n_gold": 131,
+   "tp": 23,
+   "ev_n": 30,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/595",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 60,
+   "n_gold": 142,
+   "tp": 37,
+   "ev_n": 23,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/598",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 30,
+   "n_gold": 63,
+   "tp": 5,
+   "ev_n": 22,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/605",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 32,
+   "n_gold": 67,
+   "tp": 26,
+   "ev_n": 14,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/610",
+   "method": "lines",
+   "setting": "e2e",
+   "n_pred": 43,
+   "n_gold": 100,
+   "tp": 21,
+   "ev_n": 21,
+   "ev_found": 0
+  },
+  {
+   "doc_id": "dev/3",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 79,
+   "n_gold": 97,
+   "tp": 73,
+   "ev_n": 18,
+   "ev_found": 13
+  },
+  {
+   "doc_id": "dev/7",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 140,
+   "n_gold": 208,
+   "tp": 89,
+   "ev_n": 22,
+   "ev_found": 12
+  },
+  {
+   "doc_id": "dev/9",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 113,
+   "n_gold": 144,
+   "tp": 87,
+   "ev_n": 7,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/10",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 95,
+   "n_gold": 112,
+   "tp": 86,
+   "ev_n": 9,
+   "ev_found": 9
+  },
+  {
+   "doc_id": "dev/12",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 46,
+   "n_gold": 61,
+   "tp": 34,
+   "ev_n": 9,
+   "ev_found": 4
+  },
+  {
+   "doc_id": "dev/13",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 134,
+   "n_gold": 149,
+   "tp": 123,
+   "ev_n": 34,
+   "ev_found": 30
+  },
+  {
+   "doc_id": "dev/14",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 26,
+   "n_gold": 23,
+   "tp": 19,
+   "ev_n": 3,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/15",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 27,
+   "n_gold": 35,
+   "tp": 26,
+   "ev_n": 10,
+   "ev_found": 8
+  },
+  {
+   "doc_id": "dev/16",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 39,
+   "n_gold": 52,
+   "tp": 36,
+   "ev_n": 13,
+   "ev_found": 13
+  },
+  {
+   "doc_id": "dev/17",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 65,
+   "n_gold": 96,
+   "tp": 44,
+   "ev_n": 5,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/19",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 43,
+   "n_gold": 72,
+   "tp": 26,
+   "ev_n": 7,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/20",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 35,
+   "n_gold": 62,
+   "tp": 17,
+   "ev_n": 12,
+   "ev_found": 4
+  },
+  {
+   "doc_id": "dev/27",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 61,
+   "n_gold": 97,
+   "tp": 52,
+   "ev_n": 11,
+   "ev_found": 8
+  },
+  {
+   "doc_id": "dev/28",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 50,
+   "n_gold": 76,
+   "tp": 42,
+   "ev_n": 15,
+   "ev_found": 11
+  },
+  {
+   "doc_id": "dev/29",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 40,
+   "n_gold": 56,
+   "tp": 39,
+   "ev_n": 12,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/32",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 71,
+   "n_gold": 91,
+   "tp": 61,
+   "ev_n": 14,
+   "ev_found": 11
+  },
+  {
+   "doc_id": "dev/33",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 85,
+   "n_gold": 108,
+   "tp": 67,
+   "ev_n": 15,
+   "ev_found": 9
+  },
+  {
+   "doc_id": "dev/35",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 94,
+   "n_gold": 156,
+   "tp": 14,
+   "ev_n": 20,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/37",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 124,
+   "n_gold": 147,
+   "tp": 76,
+   "ev_n": 24,
+   "ev_found": 11
+  },
+  {
+   "doc_id": "dev/39",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 47,
+   "n_gold": 64,
+   "tp": 39,
+   "ev_n": 8,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/44",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 28,
+   "n_gold": 32,
+   "tp": 24,
+   "ev_n": 9,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/45",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 35,
+   "n_gold": 47,
+   "tp": 31,
+   "ev_n": 12,
+   "ev_found": 12
+  },
+  {
+   "doc_id": "dev/54",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 53,
+   "n_gold": 58,
+   "tp": 44,
+   "ev_n": 11,
+   "ev_found": 10
+  },
+  {
+   "doc_id": "dev/56",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 57,
+   "n_gold": 72,
+   "tp": 41,
+   "ev_n": 16,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/61",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 57,
+   "n_gold": 65,
+   "tp": 48,
+   "ev_n": 21,
+   "ev_found": 16
+  },
+  {
+   "doc_id": "dev/63",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 44,
+   "n_gold": 60,
+   "tp": 38,
+   "ev_n": 15,
+   "ev_found": 13
+  },
+  {
+   "doc_id": "dev/64",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 139,
+   "n_gold": 255,
+   "tp": 152,
+   "ev_n": 15,
+   "ev_found": 11
+  },
+  {
+   "doc_id": "dev/69",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 84,
+   "n_gold": 115,
+   "tp": 88,
+   "ev_n": 19,
+   "ev_found": 14
+  },
+  {
+   "doc_id": "dev/70",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 35,
+   "n_gold": 37,
+   "tp": 24,
+   "ev_n": 6,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/71",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 27,
+   "n_gold": 35,
+   "tp": 27,
+   "ev_n": 3,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/72",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 77,
+   "n_gold": 100,
+   "tp": 74,
+   "ev_n": 14,
+   "ev_found": 14
+  },
+  {
+   "doc_id": "dev/73",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 138,
+   "n_gold": 201,
+   "tp": 117,
+   "ev_n": 39,
+   "ev_found": 28
+  },
+  {
+   "doc_id": "dev/75",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 38,
+   "n_gold": 64,
+   "tp": 31,
+   "ev_n": 9,
+   "ev_found": 7
+  },
+  {
+   "doc_id": "dev/79",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 56,
+   "n_gold": 65,
+   "tp": 48,
+   "ev_n": 11,
+   "ev_found": 11
+  },
+  {
+   "doc_id": "dev/81",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 43,
+   "n_gold": 59,
+   "tp": 37,
+   "ev_n": 14,
+   "ev_found": 12
+  },
+  {
+   "doc_id": "dev/82",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 36,
+   "n_gold": 41,
+   "tp": 33,
+   "ev_n": 8,
+   "ev_found": 8
+  },
+  {
+   "doc_id": "dev/152",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 39,
+   "n_gold": 48,
+   "tp": 35,
+   "ev_n": 10,
+   "ev_found": 7
+  },
+  {
+   "doc_id": "dev/205",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 107,
+   "n_gold": 94,
+   "tp": 53,
+   "ev_n": 23,
+   "ev_found": 12
+  },
+  {
+   "doc_id": "dev/381",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 74,
+   "n_gold": 115,
+   "tp": 60,
+   "ev_n": 5,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/398",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 80,
+   "n_gold": 99,
+   "tp": 61,
+   "ev_n": 12,
+   "ev_found": 9
+  },
+  {
+   "doc_id": "dev/405",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 75,
+   "n_gold": 89,
+   "tp": 60,
+   "ev_n": 13,
+   "ev_found": 8
+  },
+  {
+   "doc_id": "dev/406",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 48,
+   "n_gold": 66,
+   "tp": 38,
+   "ev_n": 22,
+   "ev_found": 9
+  },
+  {
+   "doc_id": "dev/411",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 37,
+   "n_gold": 46,
+   "tp": 32,
+   "ev_n": 2,
+   "ev_found": 2
+  },
+  {
+   "doc_id": "dev/435",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 39,
+   "n_gold": 55,
+   "tp": 44,
+   "ev_n": 18,
+   "ev_found": 14
+  },
+  {
+   "doc_id": "dev/440",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 61,
+   "n_gold": 78,
+   "tp": 48,
+   "ev_n": 22,
+   "ev_found": 18
+  },
+  {
+   "doc_id": "dev/456",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 17,
+   "n_gold": 20,
+   "tp": 10,
+   "ev_n": 4,
+   "ev_found": 3
+  },
+  {
+   "doc_id": "dev/478",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 73,
+   "n_gold": 82,
+   "tp": 64,
+   "ev_n": 19,
+   "ev_found": 19
+  },
+  {
+   "doc_id": "dev/482",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 29,
+   "n_gold": 32,
+   "tp": 26,
+   "ev_n": 8,
+   "ev_found": 8
+  },
+  {
+   "doc_id": "dev/486",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 37,
+   "n_gold": 41,
+   "tp": 30,
+   "ev_n": 5,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/488",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 18,
+   "n_gold": 21,
+   "tp": 16,
+   "ev_n": 13,
+   "ev_found": 10
+  },
+  {
+   "doc_id": "dev/507",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 36,
+   "n_gold": 33,
+   "tp": 29,
+   "ev_n": 10,
+   "ev_found": 10
+  },
+  {
+   "doc_id": "dev/547",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 54,
+   "n_gold": 52,
+   "tp": 37,
+   "ev_n": 12,
+   "ev_found": 9
+  },
+  {
+   "doc_id": "dev/563",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 82,
+   "n_gold": 80,
+   "tp": 61,
+   "ev_n": 25,
+   "ev_found": 20
+  },
+  {
+   "doc_id": "dev/575",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 87,
+   "n_gold": 84,
+   "tp": 72,
+   "ev_n": 15,
+   "ev_found": 15
+  },
+  {
+   "doc_id": "dev/582",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 64,
+   "n_gold": 74,
+   "tp": 52,
+   "ev_n": 13,
+   "ev_found": 5
+  },
+  {
+   "doc_id": "dev/586",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 106,
+   "n_gold": 115,
+   "tp": 85,
+   "ev_n": 26,
+   "ev_found": 13
+  },
+  {
+   "doc_id": "dev/590",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 137,
+   "n_gold": 131,
+   "tp": 105,
+   "ev_n": 30,
+   "ev_found": 21
+  },
+  {
+   "doc_id": "dev/595",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 127,
+   "n_gold": 142,
+   "tp": 109,
+   "ev_n": 23,
+   "ev_found": 12
+  },
+  {
+   "doc_id": "dev/598",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 56,
+   "n_gold": 63,
+   "tp": 32,
+   "ev_n": 22,
+   "ev_found": 11
+  },
+  {
+   "doc_id": "dev/605",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 57,
+   "n_gold": 67,
+   "tp": 53,
+   "ev_n": 14,
+   "ev_found": 8
+  },
+  {
+   "doc_id": "dev/610",
+   "method": "rules",
+   "setting": "e2e",
+   "n_pred": 90,
+   "n_gold": 100,
+   "tp": 78,
+   "ev_n": 21,
+   "ev_found": 13
+  }
+ ]
+}

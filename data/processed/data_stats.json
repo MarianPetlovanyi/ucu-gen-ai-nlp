@@ -1,0 +1,202 @@
+{
+  "splits": {
+    "train": {
+      "n_docs": 423,
+      "chars_median": 9936,
+      "chars_p90": 20439,
+      "chars_max": 54571,
+      "approx_tokens_median": 2484,
+      "approx_tokens_max": 13643,
+      "spans_median": 71,
+      "spans_max": 354,
+      "span_chars_median": 101,
+      "span_chars_p95": 431,
+      "labels": {
+        "NotMentioned": 2820,
+        "Entailment": 3530,
+        "Contradiction": 841
+      },
+      "evidence_spans_per_pair_median": 2,
+      "evidence_spans_per_pair_max": 32,
+      "document_types": {
+        "search-pdf": 261,
+        "sec-text": 83,
+        "sec-html": 79
+      },
+      "annotation_sets_per_doc": {
+        "1": 423
+      },
+      "docs_with_many_accented_letters": 0
+    },
+    "dev": {
+      "n_docs": 61,
+      "chars_median": 11299,
+      "chars_p90": 22109,
+      "chars_max": 32359,
+      "approx_tokens_median": 2825,
+      "approx_tokens_max": 8090,
+      "spans_median": 72,
+      "spans_max": 255,
+      "span_chars_median": 102.0,
+      "span_chars_p95": 435,
+      "labels": {
+        "Entailment": 519,
+        "Contradiction": 95,
+        "NotMentioned": 423
+      },
+      "evidence_spans_per_pair_median": 2.0,
+      "evidence_spans_per_pair_max": 10,
+      "document_types": {
+        "search-pdf": 38,
+        "sec-text": 12,
+        "sec-html": 11
+      },
+      "annotation_sets_per_doc": {
+        "1": 61
+      },
+      "docs_with_many_accented_letters": 0
+    },
+    "test": {
+      "n_docs": 123,
+      "chars_median": 9614,
+      "chars_p90": 20823,
+      "chars_max": 41779,
+      "approx_tokens_median": 2404,
+      "approx_tokens_max": 10445,
+      "spans_median": 72,
+      "spans_max": 249,
+      "span_chars_median": 93,
+      "span_chars_p95": 415,
+      "labels": {
+        "NotMentioned": 903,
+        "Entailment": 968,
+        "Contradiction": 220
+      },
+      "evidence_spans_per_pair_median": 2.0,
+      "evidence_spans_per_pair_max": 18,
+      "document_types": {
+        "search-pdf": 76,
+        "sec-text": 24,
+        "sec-html": 23
+      },
+      "annotation_sets_per_doc": {
+        "1": 123
+      },
+      "docs_with_many_accented_letters": 0
+    }
+  },
+  "per_hypothesis": {
+    "nda-11": {
+      "short": "No reverse engineering",
+      "E": 67,
+      "C": 1,
+      "N": 416
+    },
+    "nda-16": {
+      "short": "Return of confidential information",
+      "E": 203,
+      "C": 3,
+      "N": 278
+    },
+    "nda-15": {
+      "short": "No licensing",
+      "E": 366,
+      "C": 0,
+      "N": 118
+    },
+    "nda-10": {
+      "short": "Confidentiality of Agreement",
+      "E": 188,
+      "C": 2,
+      "N": 294
+    },
+    "nda-2": {
+      "short": "None-inclusion of non-technical information",
+      "E": 29,
+      "C": 353,
+      "N": 102
+    },
+    "nda-1": {
+      "short": "Explicit identification",
+      "E": 110,
+      "C": 122,
+      "N": 252
+    },
+    "nda-19": {
+      "short": "Survival of obligations",
+      "E": 343,
+      "C": 11,
+      "N": 130
+    },
+    "nda-12": {
+      "short": "Permissible development of similar information",
+      "E": 303,
+      "C": 0,
+      "N": 181
+    },
+    "nda-20": {
+      "short": "Permissible post-agreement possession",
+      "E": 131,
+      "C": 206,
+      "N": 147
+    },
+    "nda-3": {
+      "short": "Inclusion of verbally conveyed information",
+      "E": 315,
+      "C": 4,
+      "N": 165
+    },
+    "nda-18": {
+      "short": "No solicitation",
+      "E": 104,
+      "C": 0,
+      "N": 380
+    },
+    "nda-7": {
+      "short": "Sharing with third-parties",
+      "E": 298,
+      "C": 125,
+      "N": 61
+    },
+    "nda-17": {
+      "short": "Permissible copy",
+      "E": 100,
+      "C": 84,
+      "N": 300
+    },
+    "nda-8": {
+      "short": "Notice on compelled disclosure",
+      "E": 321,
+      "C": 0,
+      "N": 163
+    },
+    "nda-13": {
+      "short": "Permissible acquirement of similar information",
+      "E": 358,
+      "C": 0,
+      "N": 126
+    },
+    "nda-5": {
+      "short": "Sharing with employees",
+      "E": 399,
+      "C": 15,
+      "N": 70
+    },
+    "nda-4": {
+      "short": "Limited use",
+      "E": 414,
+      "C": 10,
+      "N": 60
+    }
+  },
+  "duplicates": {
+    "groups": 3,
+    "cross_split_groups": 1,
+    "examples": [
+      [
+        "train/538",
+        "test/537"
+      ]
+    ]
+  }
+}

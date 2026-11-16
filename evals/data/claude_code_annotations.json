@@ -1,0 +1,708 @@
+[
+ {
+  "kind": "memo",
+  "id": "dev/3/R05",
+  "n": 1,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/3/R10",
+  "n": 2,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/7/R05",
+  "n": 3,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/10/R05",
+  "n": 4,
+  "claude_code": false,
+  "claude_code_note": "marking is only one alternative ('or clearly intended to be disclosed in confidence'), so 'imposes a marking requirement' overstates the cited text",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/10/R09",
+  "n": 5,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/12/R09",
+  "n": 6,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/12/R10",
+  "n": 7,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/13/R05",
+  "n": 8,
+  "claude_code": false,
+  "claude_code_note": "headline 'No requirement to mark' contradicts the cited spans, which do require marking",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/13/R06",
+  "n": 9,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/13/R10",
+  "n": 10,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/15/R05",
+  "n": 11,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": false
+ },
+ {
+  "kind": "memo",
+  "id": "dev/16/R10",
+  "n": 12,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": false
+ },
+ {
+  "kind": "memo",
+  "id": "dev/27/R10",
+  "n": 13,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/28/R05",
+  "n": 14,
+  "claude_code": false,
+  "claude_code_note": "'reduced to writing and marked within ten days' is not in the cited spans",
+  "judge": false
+ },
+ {
+  "kind": "memo",
+  "id": "dev/29/R05",
+  "n": 15,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/29/R09",
+  "n": 16,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/33/R10",
+  "n": 17,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/37/R10",
+  "n": 18,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/39/R06",
+  "n": 19,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": false
+ },
+ {
+  "kind": "memo",
+  "id": "dev/44/R03",
+  "n": 20,
+  "claude_code": false,
+  "claude_code_note": "cited span (a consent clause) supports nothing in the claim",
+  "judge": false
+ },
+ {
+  "kind": "memo",
+  "id": "dev/45/R05",
+  "n": 21,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/54/R05",
+  "n": 22,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/54/R09",
+  "n": 23,
+  "claude_code": false,
+  "claude_code_note": "cited span ('Any commercial relations must be agreed separately') is unrelated to return/destruction",
+  "judge": false
+ },
+ {
+  "kind": "memo",
+  "id": "dev/63/R10",
+  "n": 24,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/64/R05",
+  "n": 25,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/64/R10",
+  "n": 26,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/69/R05",
+  "n": 27,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/75/R10",
+  "n": 28,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/79/R04",
+  "n": 29,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/79/R09",
+  "n": 30,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/82/R03",
+  "n": 31,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/205/R10",
+  "n": 32,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/405/R09",
+  "n": 33,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/406/R05",
+  "n": 34,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/435/R05",
+  "n": 35,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/435/R10",
+  "n": 36,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/478/R05",
+  "n": 37,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/482/R05",
+  "n": 38,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/488/R05",
+  "n": 39,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/488/R02",
+  "n": 40,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/547/R10",
+  "n": 41,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/563/R10",
+  "n": 42,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/582/R10",
+  "n": 43,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/590/R10",
+  "n": 44,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/590/R09",
+  "n": 45,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/598/R10",
+  "n": 46,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "memo",
+  "id": "dev/610/R10",
+  "n": 47,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true
+ },
+ {
+  "kind": "redline",
+  "id": "dev/73/R12",
+  "n": 1,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": false,
+  "judge_score": 3,
+  "judge_problems": "Limits the non-solicitation to employees contacted in connection with the transaction, whereas the position requires protection of 'some' representatives, potentially broader.",
+  "stratum": "judge<4 (all)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/54/R12",
+  "n": 2,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/435/R01",
+  "n": 3,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": false,
+  "judge_score": 2,
+  "judge_problems": "Replaces the definition of 'Residual Information' with a use restriction, destroying the defined term and leaving the contract with an undefined 'Residual Information' reference elsewhere.",
+  "stratum": "judge<4 (all)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/37/R11",
+  "n": 4,
+  "claude_code": false,
+  "claude_code_note": "inserted after the definitions lead-in 'In this Agreement:', so it would read as part of the definition list",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/71/R03",
+  "n": 5,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/605/R03",
+  "n": 6,
+  "claude_code": true,
+  "claude_code_note": "inserted inside an (a)/(b) list; minor placement flaw",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/54/R04",
+  "n": 7,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/10/R03",
+  "n": 8,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/478/R02",
+  "n": 9,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/456/R09",
+  "n": 10,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/547/R10",
+  "n": 11,
+  "claude_code": false,
+  "claude_code_note": "VIOLATION handled by insert: the backup-retention clause stays, and the new text re-creates a backup exception",
+  "judge": false,
+  "judge_score": 2,
+  "judge_problems": "Retains the backup exception, which the position explicitly forbids to prevent long-term leak risks.",
+  "stratum": "judge<4 (all)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/456/R08",
+  "n": 12,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/54/R11",
+  "n": 13,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/482/R09",
+  "n": 14,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/63/R12",
+  "n": 15,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/7/R12",
+  "n": 16,
+  "claude_code": true,
+  "claude_code_note": "inserted inside a numbered list; minor placement flaw",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/64/R05",
+  "n": 17,
+  "claude_code": false,
+  "claude_code_note": "replaces recital B, which defines 'Delivering Party', 'Receiving Party' and 'Representatives': removes definitions used elsewhere",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/20/R12",
+  "n": 18,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/71/R07",
+  "n": 19,
+  "claude_code": false,
+  "claude_code_note": "'Confidential Information' is not a term used in this contract, so the clause has no effect; inserted right after the title",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/28/R12",
+  "n": 20,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/27/R12",
+  "n": 21,
+  "claude_code": true,
+  "claude_code_note": "'Disclosing Party' is not this contract's term ('Discloser'); adds 'representative'",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/69/R12",
+  "n": 22,
+  "claude_code": false,
+  "claude_code_note": "inserted after a span that ends mid-sentence ('attempt to solicit,'), which breaks the existing clause",
+  "judge": true,
+  "judge_score": 4,
+  "judge_problems": "Narrower scope (contact-based) and shorter duration than the original clause context implies, though it satisfies the core position.",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/563/R10",
+  "n": 23,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/575/R12",
+  "n": 24,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": false,
+  "judge_score": 3,
+  "judge_problems": "Inserts non-solicitation clause after unrelated waiver clause, disrupting logical flow and structure.",
+  "stratum": "judge<4 (all)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/205/R12",
+  "n": 25,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/27/R10",
+  "n": 26,
+  "claude_code": false,
+  "claude_code_note": "keeps an 'as required by applicable law' retention exception, so the no-retention position is not achieved",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/15/R09",
+  "n": 27,
+  "claude_code": false,
+  "claude_code_note": "inserted inside the list of exclusions from Confidential Information, so it would read as an exclusion",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/45/R05",
+  "n": 28,
+  "claude_code": true,
+  "claude_code_note": "also drops the subject-area scope of the definition (broader change than needed)",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/14/R11",
+  "n": 29,
+  "claude_code": true,
+  "claude_code_note": "",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ },
+ {
+  "kind": "redline",
+  "id": "dev/64/R02",
+  "n": 30,
+  "claude_code": true,
+  "claude_code_note": "inserted after a list lead-in ('expressly agrees that:'); minor placement flaw",
+  "judge": true,
+  "judge_score": 5,
+  "judge_problems": "",
+  "stratum": "judge>=4 (random 26, seed 13)"
+ }
+]

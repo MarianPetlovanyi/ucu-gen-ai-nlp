@@ -1,0 +1,12 @@
+{
+ "zeroshot": {
+  "t_entail": 0.8,
+  "t_contra": 0.98,
+  "tuned_on": "dev"
+ },
+ "finetuned": {
+  "t_entail": 0.98,
+  "t_contra": 0.95,
+  "tuned_on": "dev"
+ }
+}

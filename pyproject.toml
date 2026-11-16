@@ -1,0 +1,51 @@
+[project]
+name = "nda-review"
+version = "0.1.0"
+description = "Playbook-driven NDA review: document-level NLI, evidence, redlines and a negotiation memo"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "groq>=0.30",
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "rank-bm25>=0.2.2",
+    "torch==2.6.0",
+    "sentence-transformers>=3.0",
+    "pymupdf>=1.24",
+    "streamlit>=1.38",
+    "tqdm>=4.66",
+    "fastapi>=0.163.1",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.6", "pytest>=8.0"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nda_review"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]  # line length is enforced by `ruff format`; long strings/comments are allowed
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

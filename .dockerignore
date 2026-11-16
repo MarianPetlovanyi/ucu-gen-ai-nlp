@@ -1,0 +1,7 @@
+# Build context of deploy/api.Dockerfile: only what the image copies. Everything else is bind-mounted.
+*
+!pyproject.toml
+!uv.lock
+!src
+!app
+**/__pycache__

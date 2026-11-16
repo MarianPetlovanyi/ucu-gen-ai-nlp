@@ -1,0 +1,44 @@
+# Run on the droplet from /srv/nda/deploy (deploy.sh does this): DOMAIN=... docker compose up -d --build
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/api.Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ../.env:/app/.env:ro                     # Groq key, loaded by python-dotenv in llm.py
+      - ../data:/app/data:ro                     # ContractNLI (dev examples) + C3 exemplars
+      - ../playbooks:/app/playbooks:ro
+      - ../evals/results:/app/evals/results:ro   # evaluation dashboard
+      - ../.cache:/app/.cache                    # LLM response cache + traces (cached demos are instant)
+
+  web:
+    build:
+      context: ../web
+      args:
+        NDA_API_URL: http://api:8000
+    restart: unless-stopped
+    environment:
+      NDA_API_URL: http://api:8000
+    depends_on:
+      - api
+
+  caddy:
+    image: caddy:2.10
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN:-ucu.nlp.justsolution.co}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./auth.caddy:/etc/caddy/auth.caddy:ro   # demo login, from deploy/set_login.sh
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - web
+
+volumes:
+  caddy_data:
+  caddy_config:

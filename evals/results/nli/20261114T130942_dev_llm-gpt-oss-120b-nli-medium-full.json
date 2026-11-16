@@ -1,0 +1,547 @@
+{
+ "component": "nli",
+ "split": "dev",
+ "n": 2,
+ "timestamp": "20261114T130942",
+ "git": "no-commit",
+ "config": {
+  "method": "llm",
+  "limit": 2,
+  "model": "openai/gpt-oss-120b",
+  "prompt": "nli",
+  "effort": "medium",
+  "prompt_hash": "f31e5640e9db",
+  "context": "full",
+  "k": null
+ },
+ "metrics": {
+  "macro_f1": 0.7218728162124388,
+  "accuracy": 0.8823529411764706,
+  "contradiction_f1": 0.3333333333333333,
+  "per_class": {
+   "Entailment": {
+    "p": 0.9615384615384616,
+    "r": 0.9259259259259259,
+    "f1": 0.9433962264150944,
+    "support": 27
+   },
+   "Contradiction": {
+    "p": 0.25,
+    "r": 0.5,
+    "f1": 0.3333333333333333,
+    "support": 2
+   },
+   "NotMentioned": {
+    "p": 1.0,
+    "r": 0.8,
+    "f1": 0.888888888888889,
+    "support": 5
+   }
+  },
+  "confusion": {
+   "Entailment": {
+    "Entailment": 25,
+    "Contradiction": 2,
+    "NotMentioned": 0
+   },
+   "Contradiction": {
+    "Entailment": 1,
+    "Contradiction": 1,
+    "NotMentioned": 0
+   },
+   "NotMentioned": {
+    "Entailment": 0,
+    "Contradiction": 1,
+    "NotMentioned": 4
+   }
+  },
+  "evidence": {
+   "micro_p": 0.8055555555555556,
+   "micro_r": 0.5087719298245614,
+   "micro_f1": 0.6236559139784946,
+   "macro_f1": 0.6571428571428571,
+   "n_pairs": 29
+  },
+  "n_pairs": 34,
+  "per_hypothesis_accuracy": {
+   "nda-1": 1,
+   "nda-2": 0.5,
+   "nda-3": 1,
+   "nda-4": 1,
+   "nda-5": 1,
+   "nda-7": 0.5,
+   "nda-8": 1,
+   "nda-10": 1,
+   "nda-11": 1,
+   "nda-12": 1,
+   "nda-13": 1,
+   "nda-15": 1,
+   "nda-16": 1,
+   "nda-17": 0.5,
+   "nda-18": 1,
+   "nda-19": 1,
+   "nda-20": 0.5
+  }
+ },
+ "records": [
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-1",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    18
+   ],
+   "pred_evidence": [
+    18,
+    19
+   ],
+   "rationale": "Contract requires marking or identifying all disclosed Confidential Information."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-2",
+   "gold": "Contradiction",
+   "pred": "Contradiction",
+   "gold_evidence": [
+    17
+   ],
+   "pred_evidence": [
+    17
+   ],
+   "rationale": "Definition includes business information, not limited to technical data."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-3",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    18
+   ],
+   "pred_evidence": [
+    19
+   ],
+   "rationale": "Oral or visual disclosures are covered and must be identified."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-4",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    12,
+    13,
+    33,
+    36
+   ],
+   "pred_evidence": [
+    36
+   ],
+   "rationale": "Prohibits use beyond the Permitted Purpose."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-5",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    23,
+    43
+   ],
+   "pred_evidence": [
+    43
+   ],
+   "rationale": "Employees may access info on need‑to‑know basis for purpose."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-7",
+   "gold": "Entailment",
+   "pred": "Contradiction",
+   "gold_evidence": [
+    23,
+    43
+   ],
+   "pred_evidence": [
+    35
+   ],
+   "rationale": "Disclosing to third parties prohibited without prior written consent."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-8",
+   "gold": "NotMentioned",
+   "pred": "NotMentioned",
+   "gold_evidence": [],
+   "pred_evidence": [],
+   "rationale": "No clause requiring notification of legal compelled disclosure."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-10",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    89,
+    90
+   ],
+   "pred_evidence": [
+    89,
+    90
+   ],
+   "rationale": "Agreement’s existence may not be disclosed to third parties."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-11",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    33,
+    39
+   ],
+   "pred_evidence": [
+    39
+   ],
+   "rationale": "Prohibits reverse engineering of Confidential Information."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-12",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    25,
+    29
+   ],
+   "pred_evidence": [
+    29
+   ],
+   "rationale": "Independent development without using disclosed info is excluded from confidentiality."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-13",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    25,
+    28
+   ],
+   "pred_evidence": [
+    28
+   ],
+   "rationale": "Info from third parties without confidentiality obligations is excluded."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-15",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    51
+   ],
+   "pred_evidence": [
+    50
+   ],
+   "rationale": "Agreement grants no rights beyond permitted purpose."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-16",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    47
+   ],
+   "pred_evidence": [
+    47
+   ],
+   "rationale": "Must return or destroy all Confidential Information at termination."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-17",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    48
+   ],
+   "pred_evidence": [
+    48
+   ],
+   "rationale": "One copy may be kept for regulatory/insurance purposes."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-18",
+   "gold": "NotMentioned",
+   "pred": "NotMentioned",
+   "gold_evidence": [],
+   "pred_evidence": [],
+   "rationale": "No provision about soliciting Disclosing Party’s representatives."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-19",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    65
+   ],
+   "pred_evidence": [
+    65
+   ],
+   "rationale": "Certain obligations survive three years after termination."
+  },
+  {
+   "doc_id": "dev/3",
+   "hypothesis": "nda-20",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    48
+   ],
+   "pred_evidence": [
+    48
+   ],
+   "rationale": "One copy may be retained after return/destruction."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-1",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    24
+   ],
+   "pred_evidence": [
+    24
+   ],
+   "rationale": "Definition requires disclosing party to label information as Confidential in writing."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-2",
+   "gold": "Entailment",
+   "pred": "Contradiction",
+   "gold_evidence": [
+    24,
+    25,
+    27
+   ],
+   "pred_evidence": [
+    24,
+    25,
+    26,
+    27
+   ],
+   "rationale": "Definition lists commercial, marketing, financial and other non‑technical information, not only technical."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-3",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    24,
+    27
+   ],
+   "pred_evidence": [
+    24
+   ],
+   "rationale": "Orally disclosed information can be Confidential if confirmed in writing within 15 days."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-4",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    41,
+    42,
+    43
+   ],
+   "pred_evidence": [
+    43
+   ],
+   "rationale": "Recipient may use Confidential Information only for the Purpose and no other purpose."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-5",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    41,
+    42,
+    48
+   ],
+   "pred_evidence": [
+    48,
+    49
+   ],
+   "rationale": "Disclosure to employees is permitted when they need to know for the Purpose."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-7",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    41,
+    42,
+    48
+   ],
+   "pred_evidence": [
+    48,
+    50
+   ],
+   "rationale": "Consultants, agents and professional advisors may receive Confidential Information under confidentiality obligations."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-8",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    60
+   ],
+   "pred_evidence": [
+    60
+   ],
+   "rationale": "Legal disclosure requires at least two business days' notice to the other party."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-10",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    86
+   ],
+   "pred_evidence": [
+    86
+   ],
+   "rationale": "Parties must keep the existence and nature of the Agreement confidential."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-11",
+   "gold": "NotMentioned",
+   "pred": "NotMentioned",
+   "gold_evidence": [],
+   "pred_evidence": [],
+   "rationale": "No clause addresses reverse engineering."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-12",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    30,
+    32
+   ],
+   "pred_evidence": [
+    32
+   ],
+   "rationale": "Independently developed information is excluded from Confidential Information."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-13",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    30,
+    33
+   ],
+   "pred_evidence": [
+    33
+   ],
+   "rationale": "Information from a third party without breach is excluded from Confidential Information."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-15",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    82,
+    93,
+    94
+   ],
+   "pred_evidence": [
+    82
+   ],
+   "rationale": "No rights to Confidential Information are granted; all rights remain with the Discloser."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-16",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    62,
+    63,
+    71,
+    72,
+    78
+   ],
+   "pred_evidence": [
+    63
+   ],
+   "rationale": "Recipient must return all Confidential Information within one month of termination."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-17",
+   "gold": "Contradiction",
+   "pred": "Entailment",
+   "gold_evidence": [
+    42,
+    47
+   ],
+   "pred_evidence": [
+    47
+   ],
+   "rationale": "Copies may be made only as reasonably necessary for the Purpose."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-18",
+   "gold": "NotMentioned",
+   "pred": "NotMentioned",
+   "gold_evidence": [],
+   "pred_evidence": [],
+   "rationale": "Contract contains no provision on soliciting representatives."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-19",
+   "gold": "Entailment",
+   "pred": "Entailment",
+   "gold_evidence": [
+    62,
+    64
+   ],
+   "pred_evidence": [
+    64
+   ],
+   "rationale": "Obligations continue even after return of Confidential Information."
+  },
+  {
+   "doc_id": "dev/7",
+   "hypothesis": "nda-20",
+   "gold": "NotMentioned",
+   "pred": "Contradiction",
+   "gold_evidence": [],
+   "pred_evidence": [
+    63
+   ],
+   "rationale": "Recipient must return all Confidential Information; retention is not permitted."
+  }
+ ]
+}

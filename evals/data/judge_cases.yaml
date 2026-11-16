@@ -1,0 +1,17 @@
+# Known-bad redlines for judge validation (playbook: disclosing_party). Authored by Claude Code (a model,
+# not a lawyer): each "opposite" clause deliberately takes the position the client rejects.
+# Known-good = the playbook's preferred clause; wrong-topic = the preferred clause of another rule.
+opposite:
+  R01: The Receiving Party may use the Confidential Information for any purpose it considers appropriate, including the development of its own products.
+  R02: The Receiving Party may examine, test, disassemble and reverse engineer any prototypes, samples or software provided under this Agreement.
+  R03: The Disclosing Party grants the Receiving Party a non-exclusive, royalty-free licence to use the Confidential Information and any intellectual property embodied in it.
+  R04: All obligations under this Agreement shall terminate automatically upon its expiration or termination.
+  R05: Information shall be Confidential Information only if it is marked "Confidential" at the time of disclosure, and oral information only if confirmed as confidential in writing within ten (10) days.
+  R06: Confidential Information means only technical information, and excludes commercial, financial and business information.
+  R07: Information disclosed orally or visually shall not constitute Confidential Information.
+  R08: The Receiving Party may disclose Confidential Information if required by law, without any obligation to notify the Disclosing Party.
+  R09: The Receiving Party may keep all Confidential Information after termination of this Agreement and shall have no obligation to return or destroy it.
+  R10: The Receiving Party may retain copies of the Confidential Information after its return or destruction for archival or any other internal purposes.
+  R11: Either party may freely disclose the existence and terms of this Agreement and the fact that discussions are taking place.
+  R12: Nothing in this Agreement restricts the Receiving Party from soliciting or hiring any employee of the Disclosing Party.
+irrelevant_clause: This Agreement shall be governed by and construed in accordance with the laws of the State of New York, and may be executed in counterparts.

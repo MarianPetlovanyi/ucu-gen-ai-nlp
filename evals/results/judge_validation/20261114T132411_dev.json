@@ -1,0 +1,1918 @@
+{
+ "component": "judge_validation",
+ "split": "dev",
+ "n": 61,
+ "timestamp": "20261114T132411",
+ "git": "no-commit",
+ "config": {
+  "judge_model": "qwen/qwen3.8-27b",
+  "parts": "BC"
+ },
+ "metrics": {
+  "B_mean_score_preferred": 4.916666666666667,
+  "B_mean_score_opposite": 1,
+  "B_mean_score_wrong_topic": 1,
+  "B_pass_fail_accuracy": 1,
+  "B_kappa": 1.0,
+  "B_n": 36,
+  "B_failed_calls": 0,
+  "C_acc_true_claim": 0.7,
+  "C_acc_wrong_citation": 0.975,
+  "C_acc_false_silence": 0.85,
+  "C_accuracy": 0.8416666666666667,
+  "C_kappa": 0.6322580645161291,
+  "C_n": 120,
+  "C_failed_calls": 0
+ },
+ "records": {
+  "B": [
+   {
+    "rule_id": "R01",
+    "position": "Use restricted to the stated purpose. The contract MUST provide that: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement. Reason: Our information may only be used to evaluate the proposed collaboration, never to build a competing product.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Receiving Party shall use the Confidential Information solely for the purpose of evaluating, negotiating and performing the Purpose and for no other purpose whatsoever.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R01",
+    "position": "Use restricted to the stated purpose. The contract MUST provide that: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement. Reason: Our information may only be used to evaluate the proposed collaboration, never to build a competing product.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Receiving Party may use the Confidential Information for any purpose it considers appropriate, including the development of its own products.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by permitting use for any purpose, including competing products."
+   },
+   {
+    "rule_id": "R01",
+    "position": "Use restricted to the stated purpose. The contract MUST provide that: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement. Reason: Our information may only be used to evaluate the proposed collaboration, never to build a competing product.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Confidential Information includes technical, commercial, financial and business information of any kind, including product plans, pricing, supplier and customer information.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Inserts a definition of Confidential Information instead of the required use restriction clause."
+   },
+   {
+    "rule_id": "R02",
+    "position": "No reverse engineering. The contract MUST provide that: Receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information. Reason: We hand over physical prototypes and firmware binaries; reverse engineering would expose our core IP.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Receiving Party shall not reverse engineer, disassemble, decompile or analyse the composition of any prototypes, samples, software or other objects which embody the Disclosing Party's Confidential Information.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R02",
+    "position": "No reverse engineering. The contract MUST provide that: Receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information. Reason: We hand over physical prototypes and firmware binaries; reverse engineering would expose our core IP.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Receiving Party may examine, test, disassemble and reverse engineer any prototypes, samples or software provided under this Agreement.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by permitting reverse engineering instead of prohibiting it."
+   },
+   {
+    "rule_id": "R02",
+    "position": "No reverse engineering. The contract MUST provide that: Receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information. Reason: We hand over physical prototypes and firmware binaries; reverse engineering would expose our core IP.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Confidential Information includes technical, commercial, financial and business information of any kind, including product plans, pricing, supplier and customer information.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Inserts a definition of Confidential Information instead of the required reverse engineering prohibition."
+   },
+   {
+    "rule_id": "R03",
+    "position": "No licence or IP rights granted. The contract MUST provide that: Agreement shall not grant Receiving Party any right to Confidential Information. Reason: Disclosure must never be construed as granting a licence to our patents, designs or software.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Nothing in this Agreement grants the Receiving Party any licence, ownership or other right in or to the Confidential Information or any intellectual property of the Disclosing Party, except the limited right to use it for the Purpose.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R03",
+    "position": "No licence or IP rights granted. The contract MUST provide that: Agreement shall not grant Receiving Party any right to Confidential Information. Reason: Disclosure must never be construed as granting a licence to our patents, designs or software.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Disclosing Party grants the Receiving Party a non-exclusive, royalty-free licence to use the Confidential Information and any intellectual property embodied in it.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by granting a licence instead of explicitly stating no rights are granted."
+   },
+   {
+    "rule_id": "R03",
+    "position": "No licence or IP rights granted. The contract MUST provide that: Agreement shall not grant Receiving Party any right to Confidential Information. Reason: Disclosure must never be construed as granting a licence to our patents, designs or software.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "For twelve (12) months after the date of this Agreement, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Inserts a non-solicitation clause instead of the required IP non-licence provision."
+   },
+   {
+    "rule_id": "R04",
+    "position": "Obligations survive termination. The contract MUST provide that: Some obligations of Agreement may survive termination of Agreement. Reason: Confidentiality must outlast the evaluation period; product cycles are 3–5 years.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The obligations of confidentiality and non-use under this Agreement shall survive any expiration or termination of this Agreement for a period of five (5) years, and with respect to trade secrets for so long as they remain trade secrets under applicable law.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R04",
+    "position": "Obligations survive termination. The contract MUST provide that: Some obligations of Agreement may survive termination of Agreement. Reason: Confidentiality must outlast the evaluation period; product cycles are 3–5 years.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "All obligations under this Agreement shall terminate automatically upon its expiration or termination.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Contradicts the required position by stating all obligations terminate, failing to ensure confidentiality survives."
+   },
+   {
+    "rule_id": "R04",
+    "position": "Obligations survive termination. The contract MUST provide that: Some obligations of Agreement may survive termination of Agreement. Reason: Confidentiality must outlast the evaluation period; product cycles are 3–5 years.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "For twelve (12) months after the date of this Agreement, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Inserts non-solicitation clause instead of required survival clause; fails to address confidentiality duration."
+   },
+   {
+    "rule_id": "R05",
+    "position": "No requirement to mark or identify information as confidential. The contract must NOT provide that: All Confidential Information shall be expressly identified by the Disclosing Party. (it should say the opposite or nothing) Reason: Engineers share drawings and demos informally; a marking requirement would leave most disclosures unprotected.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Confidential Information includes all information disclosed by the Disclosing Party, whether or not marked or identified as confidential, that a reasonable person would understand to be confidential given its nature and the circumstances of disclosure.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R05",
+    "position": "No requirement to mark or identify information as confidential. The contract must NOT provide that: All Confidential Information shall be expressly identified by the Disclosing Party. (it should say the opposite or nothing) Reason: Engineers share drawings and demos informally; a marking requirement would leave most disclosures unprotected.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Information shall be Confidential Information only if it is marked \"Confidential\" at the time of disclosure, and oral information only if confirmed as confidential in writing within ten (10) days.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by imposing a strict marking requirement, which the client explicitly wants to avoid."
+   },
+   {
+    "rule_id": "R05",
+    "position": "No requirement to mark or identify information as confidential. The contract must NOT provide that: All Confidential Information shall be expressly identified by the Disclosing Party. (it should say the opposite or nothing) Reason: Engineers share drawings and demos informally; a marking requirement would leave most disclosures unprotected.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Nothing in this Agreement grants the Receiving Party any licence, ownership or other right in or to the Confidential Information or any intellectual property of the Disclosing Party, except the limited right to use it for the Purpose.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Does not address the marking requirement; inserts unrelated IP license clause."
+   },
+   {
+    "rule_id": "R06",
+    "position": "Confidential information not limited to technical information. The contract must NOT provide that: Confidential Information shall only include technical information. (it should say the opposite or nothing) Reason: Our pricing, supplier list and business plans are as sensitive as the technology.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Confidential Information includes technical, commercial, financial and business information of any kind, including product plans, pricing, supplier and customer information.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R06",
+    "position": "Confidential information not limited to technical information. The contract must NOT provide that: Confidential Information shall only include technical information. (it should say the opposite or nothing) Reason: Our pricing, supplier list and business plans are as sensitive as the technology.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Confidential Information means only technical information, and excludes commercial, financial and business information.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by limiting Confidential Information to technical data only."
+   },
+   {
+    "rule_id": "R06",
+    "position": "Confidential information not limited to technical information. The contract must NOT provide that: Confidential Information shall only include technical information. (it should say the opposite or nothing) Reason: Our pricing, supplier list and business plans are as sensitive as the technology.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "For twelve (12) months after the date of this Agreement, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Inserts a non-solicitation clause instead of broadening the definition of Confidential Information to include business information."
+   },
+   {
+    "rule_id": "R07",
+    "position": "Verbally disclosed information is covered. The contract MUST provide that: Confidential Information may include verbally conveyed information. Reason: Many disclosures happen in meetings and factory visits.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Confidential Information includes information disclosed orally or visually, including during meetings, demonstrations and site visits.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R07",
+    "position": "Verbally disclosed information is covered. The contract MUST provide that: Confidential Information may include verbally conveyed information. Reason: Many disclosures happen in meetings and factory visits.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Information disclosed orally or visually shall not constitute Confidential Information.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by excluding oral information from Confidential Information."
+   },
+   {
+    "rule_id": "R07",
+    "position": "Verbally disclosed information is covered. The contract MUST provide that: Confidential Information may include verbally conveyed information. Reason: Many disclosures happen in meetings and factory visits.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The obligations of confidentiality and non-use under this Agreement shall survive any expiration or termination of this Agreement for a period of five (5) years, and with respect to trade secrets for so long as they remain trade secrets under applicable law.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Proposed text addresses survival period, not the required inclusion of verbally disclosed information."
+   },
+   {
+    "rule_id": "R08",
+    "position": "Notice before compelled disclosure. The contract MUST provide that: Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information. Reason: If a court or regulator demands our information we need time to seek a protective order.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "If the Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information, it shall, to the extent legally permitted, give the Disclosing Party prompt prior written notice and reasonable assistance so that the Disclosing Party may seek a protective order.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R08",
+    "position": "Notice before compelled disclosure. The contract MUST provide that: Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information. Reason: If a court or regulator demands our information we need time to seek a protective order.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Receiving Party may disclose Confidential Information if required by law, without any obligation to notify the Disclosing Party.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the requirement for notice; explicitly waives the obligation to notify."
+   },
+   {
+    "rule_id": "R08",
+    "position": "Notice before compelled disclosure. The contract MUST provide that: Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information. Reason: If a court or regulator demands our information we need time to seek a protective order.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "For twelve (12) months after the date of this Agreement, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Inserts a non-solicitation clause instead of the required compelled disclosure notice provision."
+   },
+   {
+    "rule_id": "R09",
+    "position": "Return or destruction on termination. The contract MUST provide that: Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement. Reason: Prototypes and files must come back or be destroyed when talks end.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Upon termination of this Agreement or upon the Disclosing Party's written request, the Receiving Party shall promptly return or destroy all Confidential Information and all copies thereof, and certify such destruction in writing.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R09",
+    "position": "Return or destruction on termination. The contract MUST provide that: Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement. Reason: Prototypes and files must come back or be destroyed when talks end.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Receiving Party may keep all Confidential Information after termination of this Agreement and shall have no obligation to return or destroy it.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by explicitly waiving the obligation to return or destroy Confidential Information."
+   },
+   {
+    "rule_id": "R09",
+    "position": "Return or destruction on termination. The contract MUST provide that: Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement. Reason: Prototypes and files must come back or be destroyed when talks end.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Nothing in this Agreement grants the Receiving Party any licence, ownership or other right in or to the Confidential Information or any intellectual property of the Disclosing Party, except the limited right to use it for the Purpose.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Proposed text addresses IP rights, not return or destruction of Confidential Information upon termination."
+   },
+   {
+    "rule_id": "R10",
+    "position": "No retention of information after return/destruction. The contract must NOT provide that: Receiving Party may retain some Confidential Information even after the return or destruction of Confidential Information. (it should say the opposite or nothing) Reason: Archive copies held by the counterparty are a long-term leak risk.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Receiving Party shall not retain any copies, extracts or other reproductions of the Confidential Information after its return or destruction.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R10",
+    "position": "No retention of information after return/destruction. The contract must NOT provide that: Receiving Party may retain some Confidential Information even after the return or destruction of Confidential Information. (it should say the opposite or nothing) Reason: Archive copies held by the counterparty are a long-term leak risk.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The Receiving Party may retain copies of the Confidential Information after its return or destruction for archival or any other internal purposes.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by explicitly permitting retention of Confidential Information after return or destruction."
+   },
+   {
+    "rule_id": "R10",
+    "position": "No retention of information after return/destruction. The contract must NOT provide that: Receiving Party may retain some Confidential Information even after the return or destruction of Confidential Information. (it should say the opposite or nothing) Reason: Archive copies held by the counterparty are a long-term leak risk.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "The obligations of confidentiality and non-use under this Agreement shall survive any expiration or termination of this Agreement for a period of five (5) years, and with respect to trade secrets for so long as they remain trade secrets under applicable law.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Inserts a survival clause, which is unrelated to the requirement to prohibit retention of information after return/destruction."
+   },
+   {
+    "rule_id": "R11",
+    "position": "Existence of the negotiations is confidential. The contract MUST provide that: Receiving Party shall not disclose the fact that Agreement was agreed or negotiated. Reason: News of a partnership could move our fundraising; we prefer silence.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Neither party shall disclose the existence or terms of this Agreement or the fact that discussions are taking place without the other party's prior written consent.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 5,
+    "problems": ""
+   },
+   {
+    "rule_id": "R11",
+    "position": "Existence of the negotiations is confidential. The contract MUST provide that: Receiving Party shall not disclose the fact that Agreement was agreed or negotiated. Reason: News of a partnership could move our fundraising; we prefer silence.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Either party may freely disclose the existence and terms of this Agreement and the fact that discussions are taking place.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Directly contradicts the required position by permitting disclosure of existence and negotiations."
+   },
+   {
+    "rule_id": "R11",
+    "position": "Existence of the negotiations is confidential. The contract MUST provide that: Receiving Party shall not disclose the fact that Agreement was agreed or negotiated. Reason: News of a partnership could move our fundraising; we prefer silence.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "For twelve (12) months after the date of this Agreement, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Inserts a non-solicitation clause instead of the required confidentiality of the negotiation's existence."
+   },
+   {
+    "rule_id": "R12",
+    "position": "No solicitation of our staff. The contract MUST provide that: Receiving Party shall not solicit some of Disclosing Party's representatives. Reason: Our engineers are our most valuable asset.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "For twelve (12) months after the date of this Agreement, the Receiving Party shall not solicit for employment any employee of the Disclosing Party with whom it had contact in connection with the Purpose.",
+    "expected": "good",
+    "case": "preferred",
+    "score": 4,
+    "problems": "Uses 'employee' instead of 'representative' as required by the position, though it covers the core intent."
+   },
+   {
+    "rule_id": "R12",
+    "position": "No solicitation of our staff. The contract MUST provide that: Receiving Party shall not solicit some of Disclosing Party's representatives. Reason: Our engineers are our most valuable asset.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Nothing in this Agreement restricts the Receiving Party from soliciting or hiring any employee of the Disclosing Party.",
+    "expected": "bad",
+    "case": "opposite",
+    "score": 1,
+    "problems": "Contradicts the required position by explicitly permitting solicitation of Disclosing Party's employees."
+   },
+   {
+    "rule_id": "R12",
+    "position": "No solicitation of our staff. The contract MUST provide that: Receiving Party shall not solicit some of Disclosing Party's representatives. Reason: Our engineers are our most valuable asset.",
+    "action": "insert",
+    "original": "(end of the contract)",
+    "new_text": "Nothing in this Agreement grants the Receiving Party any licence, ownership or other right in or to the Confidential Information or any intellectual property of the Disclosing Party, except the limited right to use it for the Purpose.",
+    "expected": "bad",
+    "case": "wrong_topic",
+    "score": 1,
+    "problems": "Proposed text is an IP license clause, not a non-solicitation clause. Fails to address the required position."
+   }
+  ],
+  "C": [
+   {
+    "rule_id": "nda-10",
+    "claim": "The contract provides that receiving Party shall not disclose the fact that Agreement was agreed or negotiated.",
+    "cited": [
+     "WHEREAS, as a condition to furnishing the Confidential Information and the Confidential Materials to the Receiving Party and in order to protect the Confidential Information and the Confidential Materials, the Disclosing Party has required the Receiving Party to enter into this Agreement and abide by its terms; and",
+     "WHEREAS, the Receiving Party, as a condition to receiving the Confidential Information and the Confidential Materials, has agreed to enter into this Agreement and agrees to keep such Confidential Information and Confidential Materials confidential in accordance with the terms and conditions of this Agreement.",
+     "(a) “Confidential Information” shall include all information pertaining to the Assignors and their respective affiliates, employees, salespersons, independent contractors, agents, officers, directors, customers, suppliers, vendors, manufacturers, distributors, dealers, predecessors, successors and assigns disclosed by the Disclosing Party (or by a third party at the direction of the Disclosing Party) to the Receiving Party, regardless of the form or manner of disclosure (including, but not limited to, information learned by the Receiving Party from the Disclosing Party’s employees, agents, officers, directors, professional advisors or other representatives or through inspection of the Assigned Assets or the books and records of the Assignors), and including, but not limited to:",
+     "(vi) the existence and terms and conditions of this Agreement and the existence and content of the discussions between the Disclosing Party and the Receiving Party regarding a Possible Transaction.",
+     "The Receiving Party:",
+     "(v) except as provided in Section 7 below, shall not, without the Disclosing Party’s prior written consent, disclose",
+     "(A) to any other person, other than its Representatives, the fact that the Confidential Information or the Confidential Materials have been made available to the Receiving Party,",
+     "(B) that discussions or negotiations are taking place concerning a Possible Transaction, or",
+     "(C) any of the terms, conditions, or other facts with respect thereto;"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly prohibit disclosing the fact of the Agreement and negotiations."
+   },
+   {
+    "rule_id": "nda-10",
+    "claim": "The contract provides that receiving Party shall not disclose the fact that Agreement was agreed or negotiated.",
+    "cited": [
+     "(iii) shall not copy or reproduce any of the Confidential Information or the Confidential Materials without the prior written consent of the Disclosing Party;",
+     "(ii) become available to the Receiving Party on a non-confidential basis from a source (other than the Disclosing Party or one of the Disclosing Party’s employees, officers, directors, members, managers, affiliates, agents, attorneys, accountants or other representatives or advisors) that is not prohibited from disclosing such Confidential Information to the Receiving Party by a legal, contractual, or fiduciary obligation to the Disclosing Party or the Assignors;"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans address copying and public availability, not the prohibition on disclosing the existence of the agreement."
+   },
+   {
+    "rule_id": "nda-10",
+    "claim": "The contract is silent on this point: Receiving Party shall not disclose the fact that Agreement was agreed or negotiated.",
+    "cited": [
+     "WHEREAS, as a condition to furnishing the Confidential Information and the Confidential Materials to the Receiving Party and in order to protect the Confidential Information and the Confidential Materials, the Disclosing Party has required the Receiving Party to enter into this Agreement and abide by its terms; and",
+     "WHEREAS, the Receiving Party, as a condition to receiving the Confidential Information and the Confidential Materials, has agreed to enter into this Agreement and agrees to keep such Confidential Information and Confidential Materials confidential in accordance with the terms and conditions of this Agreement.",
+     "(a) “Confidential Information” shall include all information pertaining to the Assignors and their respective affiliates, employees, salespersons, independent contractors, agents, officers, directors, customers, suppliers, vendors, manufacturers, distributors, dealers, predecessors, successors and assigns disclosed by the Disclosing Party (or by a third party at the direction of the Disclosing Party) to the Receiving Party, regardless of the form or manner of disclosure (including, but not limited to, information learned by the Receiving Party from the Disclosing Party’s employees, agents, officers, directors, professional advisors or other representatives or through inspection of the Assigned Assets or the books and records of the Assignors), and including, but not limited to:",
+     "(vi) the existence and terms and conditions of this Agreement and the existence and content of the discussions between the Disclosing Party and the Receiving Party regarding a Possible Transaction.",
+     "The Receiving Party:",
+     "(v) except as provided in Section 7 below, shall not, without the Disclosing Party’s prior written consent, disclose",
+     "(A) to any other person, other than its Representatives, the fact that the Confidential Information or the Confidential Materials have been made available to the Receiving Party,",
+     "(B) that discussions or negotiations are taking place concerning a Possible Transaction, or",
+     "(C) any of the terms, conditions, or other facts with respect thereto;"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly regulate the disclosure of the Agreement's existence and negotiations, contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "The receiving party will not disclose any of the disclosing party’s Confidential Information to any employees or to any third parties except to the receiving party’s employees, parent company, affiliates and subsidiaries who have a need to know and who agree to abide by nondisclosure terms at least as comprehensive as those set forth herein; provided that the receiving party will be liable for breach by any such entity."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "The cited span explicitly permits disclosure to employees with a need to know."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "For the purposes of this Agreement, the term \"employees\" shall include independent contractors of each party.",
+     "The receiving party will not make any copies of the Confidential Information received from the disclosing party except as necessary for its employees, parent company, affiliates and subsidiaries with a need to know."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": true,
+    "reason": "The cited span explicitly permits sharing with employees, supporting the memo's claim."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract is silent on this point: Receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "The receiving party will not disclose any of the disclosing party’s Confidential Information to any employees or to any third parties except to the receiving party’s employees, parent company, affiliates and subsidiaries who have a need to know and who agree to abide by nondisclosure terms at least as comprehensive as those set forth herein; provided that the receiving party will be liable for breach by any such entity."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited span explicitly permits sharing with employees, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-11",
+    "claim": "The contract provides that receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information.",
+    "cited": [
+     "Models sent must not be analysed."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Cited span restricts analysis of models, not reverse engineering of objects embodying Confidential Information."
+   },
+   {
+    "rule_id": "nda-11",
+    "claim": "The contract provides that receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information.",
+    "cited": [
+     "8. Any and all confidential information, including any and all protected and other rights created and/or produced in connection with the confidential information provided, no matter when or by whom, are the property of Fronius.",
+     "5. The DISCLOSEE may not make confidential information available within its enterprise or organisation other than to staff who necessarily require it to perform their duties."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans do not mention reverse engineering; they address ownership and internal disclosure only."
+   },
+   {
+    "rule_id": "nda-11",
+    "claim": "The contract is silent on this point: Receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information.",
+    "cited": [
+     "Models sent must not be analysed."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span explicitly prohibits analysis, contradicting the claim that the contract is silent on reverse engineering."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract provides that agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "The exposure of the Receiving Party to the Confidential Information or its disclosure shall not be construed in any way to grant to the Receiving Party any right or license with respect to the Information other than the right to use such Confidential Information strictly in accordance with this Agreement.",
+     "No license, intellectual property right or other ownership or use right is conveyed solely by this Agreement, except the limited right to use Confidential Information described in Sections 1 and 2 of this Agreement."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly state no rights or licenses are granted to the Receiving Party."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract provides that agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "(iii) which a Receiving Party can prove",
+     "Moreover, each Receiving Party shall have the right to disclose that it is evaluating the Transaction and transmit Confidential Information to its Representatives only if and to the extent that such Representatives need to know the Confidential Information for the purpose of evaluating the Transaction and are informed by such Receiving Party of the confidential nature of the Confidential Information and agree (in writing) to be bound by the terms of this Agreement."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss disclosure rights and proof, not the lack of rights to Confidential Information."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract is silent on this point: Agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "The exposure of the Receiving Party to the Confidential Information or its disclosure shall not be construed in any way to grant to the Receiving Party any right or license with respect to the Information other than the right to use such Confidential Information strictly in accordance with this Agreement.",
+     "No license, intellectual property right or other ownership or use right is conveyed solely by this Agreement, except the limited right to use Confidential Information described in Sections 1 and 2 of this Agreement."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Contract explicitly states no rights are granted, contradicting the claim that it is silent."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract provides that some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "9.3 Notwithstanding the termination or cancellation of this Agreement for any reason whatsoever, the confidentiality undertakings set out in this Agreement (and in particular 4) shall survive any such termination or cancellation."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "The cited span explicitly states that confidentiality undertakings survive termination, supporting the claim."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract provides that some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "Accordingly, the Receiving Party hereby undertakes to the Disclosing Party that, for as long as this Agreement remains in force, it will (and it will procure that its employees, officers, directors, representatives, advisers and any Affiliate to which it discloses the Confidential Information will) –",
+     "The Receiving Party agrees that, save as contemplated in any definitive transaction agreement concluded between the Parties for purposes of the Transaction, it will not, for a period of 24 months after the Signature Date, directly or indirectly, and on its own behalf or on behalf of any other person, encourage, entice, induce or persuade any person -"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans do not mention survival of obligations after termination; they define duration and non-solicit periods."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract is silent on this point: Some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "9.3 Notwithstanding the termination or cancellation of this Agreement for any reason whatsoever, the confidentiality undertakings set out in this Agreement (and in particular 4) shall survive any such termination or cancellation."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span explicitly states confidentiality obligations survive termination, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-3",
+    "claim": "The contract provides that confidential Information may include verbally conveyed information.",
+    "cited": [
+     "B. “Delivering Party” has furnished, is furnishing, or will be furnishing, either directly or indirectly through a representative, to the other party (“Receiving Party”) or to the Receiving Party’s representatives, including without limitation, any agents, brokers, lender, appraisers, escrow, professional advisors, consultants, affiliates, officers, directors, partners, shareholders, accountants, legal counsel and employees (collectively, “Representatives”) of the Receiving Party, certain information, in whatever form or by whatever mode or medium whatsoever, about the Delivering Party, the Delivering Party’s Property or the Delivering Party’s Business, which, at the time of such delivery, was, is or will be identified as confidential information because it is either nonpublic, confidential or proprietary in nature.",
+     "SuchF information provided, whether provided in documentary, oral, visual, electronic, tangible or any other form, including without limitation, in the form of designs, sketches, drawings, photographs, videotapes, specifications, blueprints, plans, studies, findings, computer printouts, computer disks, documents, memoranda, reports, notebooks, manuals, notes, contracts, correspondence, files, lists and other records, and the like, and all photocopies or other reproductions, together with any analysis, compilations, forecasts, studies, reports or other documents or information prepared, developed or concluded by the Receiving Party or its Representatives, which contains, is derived from, or otherwise reflects such information about the Property or the Business, as the case may be (“Work Product”), is hereinafter collectively referred to as the “Information”.",
+     "Non-tangible information will be Information only to the extent that it is first disclosed in non-tangible form and is orally identified at the time of disclosure as confidential information and is summarized in tangible form conspicuously marked as “confidential information” and delivered to Receiving Party in such tangible form within thirty (30) days of the original disclosure."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly define Information to include oral forms and specify conditions for non-tangible/oral disclosures."
+   },
+   {
+    "rule_id": "nda-3",
+    "claim": "The contract provides that confidential Information may include verbally conveyed information.",
+    "cited": [
+     "The Retained Information shall be held by the Receiving Party, and kept confidential in strict accordance with the terms of this Confidentiality Agreement, or shall be destroyed, unless the Receiving Party is prohibited from destroying it.",
+     "(4) Receiving party can show was independently developed by the Receiving Party entirely without reference to or under any further investigation of the Information."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss retention and independent development, not the definition of Information or verbal conveyance."
+   },
+   {
+    "rule_id": "nda-3",
+    "claim": "The contract is silent on this point: Confidential Information may include verbally conveyed information.",
+    "cited": [
+     "B. “Delivering Party” has furnished, is furnishing, or will be furnishing, either directly or indirectly through a representative, to the other party (“Receiving Party”) or to the Receiving Party’s representatives, including without limitation, any agents, brokers, lender, appraisers, escrow, professional advisors, consultants, affiliates, officers, directors, partners, shareholders, accountants, legal counsel and employees (collectively, “Representatives”) of the Receiving Party, certain information, in whatever form or by whatever mode or medium whatsoever, about the Delivering Party, the Delivering Party’s Property or the Delivering Party’s Business, which, at the time of such delivery, was, is or will be identified as confidential information because it is either nonpublic, confidential or proprietary in nature.",
+     "SuchF information provided, whether provided in documentary, oral, visual, electronic, tangible or any other form, including without limitation, in the form of designs, sketches, drawings, photographs, videotapes, specifications, blueprints, plans, studies, findings, computer printouts, computer disks, documents, memoranda, reports, notebooks, manuals, notes, contracts, correspondence, files, lists and other records, and the like, and all photocopies or other reproductions, together with any analysis, compilations, forecasts, studies, reports or other documents or information prepared, developed or concluded by the Receiving Party or its Representatives, which contains, is derived from, or otherwise reflects such information about the Property or the Business, as the case may be (“Work Product”), is hereinafter collectively referred to as the “Information”.",
+     "Non-tangible information will be Information only to the extent that it is first disclosed in non-tangible form and is orally identified at the time of disclosure as confidential information and is summarized in tangible form conspicuously marked as “confidential information” and delivered to Receiving Party in such tangible form within thirty (30) days of the original disclosure."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly regulate verbally conveyed information, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract provides that agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "6. No licence, user or similar rights to any patent, patent application or knowhow may be deduced from this agreement, either directly or indirectly.",
+     "8. Any and all confidential information, including any and all protected and other rights created and/or produced in connection with the confidential information provided, no matter when or by whom, are the property of Fronius.",
+     "The DISCLOSEE cannot deduce any rights from knowing the information and knowhow the DISCLOSER provides in respect of applying for protected rights against the DISCLOSER, particularly in terms of prior use."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans confirm no rights are granted or deducible from the agreement or information."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract provides that agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "4. The DISCLOSEE also agrees not to use the confidential information other than for the purpose as provided herein and not to use that information commercially in any way without the DISCLOSER's consent in writing.",
+     "The term 'confidential information' includes, but is not limited to, all documents, drawings, data, subjects, information, records, knowhow, protected rights, inventions, ideas, concepts, knowledge, technology, design, specifications, including dimensions, tolerances, materials and connections, blueprints, diagrams, software, improvements, production procedures, production processes, formulae, all documents and information concerning the company, in particular administrative and commercial facts and details concerning customers, products, suppliers and other business partners and any and all documents and information insofar as it relates to the collaboration proposed which is disclosed during the term of the contract and is accessible only to a limited circle of persons or where the DISCLOSER intends that it should only be available to a limited circle of persons, however that information may be disclosed, e.g. in writing, orally, by telephone, encoded, presented in graphic form, etc. and whatever the media and recording process used, e.g. optically, electronically or magnetically."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans define information and restrict use; they do not state the agreement grants no rights."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract is silent on this point: Agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "6. No licence, user or similar rights to any patent, patent application or knowhow may be deduced from this agreement, either directly or indirectly.",
+     "8. Any and all confidential information, including any and all protected and other rights created and/or produced in connection with the confidential information provided, no matter when or by whom, are the property of Fronius.",
+     "The DISCLOSEE cannot deduce any rights from knowing the information and knowhow the DISCLOSER provides in respect of applying for protected rights against the DISCLOSER, particularly in terms of prior use."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": true,
+    "reason": "Cited spans confirm no rights are granted or deducible, supporting the claim of silence on granting rights."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract provides that receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "The obligation of confidentiality set forth in this Agreement shall not apply to any information that:",
+     "(d) was independently developed by the receiving party as evidenced by its records without use of the Confidential Information; or"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited span (d) explicitly states the obligation does not apply to independently developed information."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract provides that receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "The receiving party agrees to immediately return and to deliver all originals and copies of any Confidential Information in its possession or subject to its control to the disclosing party at the address first written above upon the first to occur of the following: termination or expiration of this Agreement; or completion of or termination of the purpose set forth in Section 2 of this Agreement.",
+     "The receiving party shall exercise the same degree of care and protection with respect to the Confidential Information of the disclosing party that it exercises with respect to the protection of its own confidential information of a similar nature but not less than a reasonable degree of care and shall prevent disclosure of the Confidential Information to anyone except to those of its employees that have a need to know such information solely in connection with the permitted use as set forth in Section 2 and who shall be required to observe the restrictions set forth in this Agreement."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans address return of materials and care standards, not independent development rights."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract is silent on this point: Receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "The obligation of confidentiality set forth in this Agreement shall not apply to any information that:",
+     "(d) was independently developed by the receiving party as evidenced by its records without use of the Confidential Information; or"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span (d) explicitly states the obligation does not apply to independently developed information, contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "3. Recipient shall not disclose Confidential Information to any person or entity, except its employees or partners involved in the Project, or to use the Confidential Information for any purpose other than fulfilling its obligations under the Project.",
+     "Access to or disclosure of Confidential Information by Recipient shall be limited to those employees or partners covered by a then effective legal obligation or agreement with Recipient that prohibits the disclosure or unauthorized use of confidential information deemed confidential by Recipient (Authorized Employees)."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Cited spans restrict disclosure to employees/partners, not third-party consultants or advisors."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "This information received from a party (including of any of the Corporations), either orally or in writing, during the course of the Project shall be deemed to be confidential information (Confidential Information) for purposes of this Confidentiality Agreement.",
+     "Some of the information in each of these categories is confidential in nature or constitutes a trade secret."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans define Confidential Information but do not mention sharing with third parties, consultants, or advisors."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract is silent on this point: Receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "3. Recipient shall not disclose Confidential Information to any person or entity, except its employees or partners involved in the Project, or to use the Confidential Information for any purpose other than fulfilling its obligations under the Project.",
+     "Access to or disclosure of Confidential Information by Recipient shall be limited to those employees or partners covered by a then effective legal obligation or agreement with Recipient that prohibits the disclosure or unauthorized use of confidential information deemed confidential by Recipient (Authorized Employees)."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": true,
+    "reason": "Cited spans restrict disclosure to employees/partners, omitting consultants, agents, or advisors, supporting the silence claim."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "1. Subject to the limitations set forth herein, “Confidential Information” means any and all confidential, proprietary or trade secret information of Disclosing Party (whether oral, written, electronic or otherwise), including but not limited to marketing and sales data, customer lists, customer requirements, price lists, product and service lists, market studies, financial statements, business plans, the names and backgrounds of key personnel, research and development, service methods, processes, improvements, devices, know-how, inventions, discoveries, concepts, ideas, designs, methods and information, and all related notes, analyses, compilations, studies, specifications, designs, plans, enhancements, data of Disclosing Party and any notes or other materials prepared by Receiving Party or any of its partners, directors, officers, employees, agents, contractors, affiliates, attorneys and other advisors or representatives (collectively, “Representatives”) that contain or are generated from such information.",
+     "2. Upon receipt of any Confidential Information, Receiving Party shall:",
+     "(a) only disclose such Confidential Information to those of its Representatives with a need to have access to and knowledge of the Confidential Information for the limited purpose expressly stated herein and not disclose to any other person except with the prior written approval of Disclosing Party;"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Span 2(a) permits disclosure to Representatives, defined in Span 1 to include agents and advisors."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "(a) prior written notice of such order, and",
+     "10. Each Party hereto agrees, and shall cause its Representatives, not to announce or disclose to any third person its participation in discussions with the other party concerning the matters contained in this Agreement without the advance written consent of the other Party."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss notice of orders and non-disclosure of discussions, not sharing Confidential Information with third parties."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract is silent on this point: Receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "1. Subject to the limitations set forth herein, “Confidential Information” means any and all confidential, proprietary or trade secret information of Disclosing Party (whether oral, written, electronic or otherwise), including but not limited to marketing and sales data, customer lists, customer requirements, price lists, product and service lists, market studies, financial statements, business plans, the names and backgrounds of key personnel, research and development, service methods, processes, improvements, devices, know-how, inventions, discoveries, concepts, ideas, designs, methods and information, and all related notes, analyses, compilations, studies, specifications, designs, plans, enhancements, data of Disclosing Party and any notes or other materials prepared by Receiving Party or any of its partners, directors, officers, employees, agents, contractors, affiliates, attorneys and other advisors or representatives (collectively, “Representatives”) that contain or are generated from such information.",
+     "2. Upon receipt of any Confidential Information, Receiving Party shall:",
+     "(a) only disclose such Confidential Information to those of its Representatives with a need to have access to and knowledge of the Confidential Information for the limited purpose expressly stated herein and not disclose to any other person except with the prior written approval of Disclosing Party;"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span 2(a) explicitly regulates disclosure to third parties (Representatives), contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-18",
+    "claim": "The contract provides that receiving Party shall not solicit some of Disclosing Party's representatives.",
+    "cited": [
+     "In consideration of our Agreement to supply to you certain written or oral information relating to the Business and entering into discussions relating to the sale of the Business to you (howsoever structured), you the Recipient hereby undertake to us, the Vendor for our benefit and that of the Business, except to the extent that we have given prior written consent, whether or not negotiations for the sale of the Business proceed, that you:",
+     "1.7 shall not, and shall procure that any associated company of yours shall not, employ, seek to employ, or solicit any person employed by us or the Business or who holds or otherwise has access to Confidential Information either at the date of this Agreement or at any time during negotiations for the sale of the Business or during the period of twelve months from the date of this Agreement."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Contract prohibits soliciting employees or those with access to Confidential Information, not specifically 'representatives'."
+   },
+   {
+    "rule_id": "nda-18",
+    "claim": "The contract provides that receiving Party shall not solicit some of Disclosing Party's representatives.",
+    "cited": [
+     "2.4 the provisions of this Agreement shall continue in effect notwithstanding any decision not to proceed with any possible transaction relating to the Business or any return or destruction of the Confidential Information.",
+     "1.6 shall, immediately upon written request from us, or without such request if you cease to be interested in purchasing the Business, return to us all written Confidential Information and expunge any Confidential Information from any computer, word processor or other similar device in your possession or under your custody or control, without keeping any copies, extracts or other reproductions thereof, and either return to us or destroy (such destruction to be certified in writing by you or a senior employee of yours who has supervised such destruction) all notes and memoranda prepared by you, your employees, agents or advisers, and any copies thereof relating to any of the Confidential Information or the negotiations concerning the proposed sale of the Business;"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans address survival and return of information, not solicitation of representatives."
+   },
+   {
+    "rule_id": "nda-18",
+    "claim": "The contract is silent on this point: Receiving Party shall not solicit some of Disclosing Party's representatives.",
+    "cited": [
+     "In consideration of our Agreement to supply to you certain written or oral information relating to the Business and entering into discussions relating to the sale of the Business to you (howsoever structured), you the Recipient hereby undertake to us, the Vendor for our benefit and that of the Business, except to the extent that we have given prior written consent, whether or not negotiations for the sale of the Business proceed, that you:",
+     "1.7 shall not, and shall procure that any associated company of yours shall not, employ, seek to employ, or solicit any person employed by us or the Business or who holds or otherwise has access to Confidential Information either at the date of this Agreement or at any time during negotiations for the sale of the Business or during the period of twelve months from the date of this Agreement."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span 1.7 explicitly prohibits soliciting employees, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract provides that receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "VENDOR shall immediately notify BPS (see below) in writing of any subpoena, court order or other legal process seeking or purporting to compel disclosure of any of the Confidential Information and shall challenge, oppose or appeal any such subpoena, order or legal process to the extent deemed appropriate by BPS."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Memo claims notification for any legal requirement; contract only covers subpoenas, court orders, or legal process."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract provides that receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "Authorized vendors shall strictly comply with all federal and state laws that apply to the use and release of Confidential Information, including but not limited to FERPA and its regulations, set forth at 34 C.F.R. § 99. VENDOR, its employees and/or representatives, shall use the Confidential Information and routing data solely in connection with performance by VENDOR of the services provided to BPS as outline by this agreement and pursuant to the Challenge Document and for no other purpose.",
+     "Any individual person or organization who is identified to receive and utilize the confidential information applicable to the related Challenge, whether as an employee or representative, must be disclosed to and approved by BPS and sign this agreement prior to commencing work on or engaging in participation in the Transportation Data Challenge."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss vendor compliance and approval, not legal disclosure notification obligations."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract is silent on this point: Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "VENDOR shall immediately notify BPS (see below) in writing of any subpoena, court order or other legal process seeking or purporting to compel disclosure of any of the Confidential Information and shall challenge, oppose or appeal any such subpoena, order or legal process to the extent deemed appropriate by BPS."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited span explicitly regulates notification of legal compulsion, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract provides that agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "All Inventions will be immediately reported to Vapotherm and shall be the exclusive property of Vapotherm.",
+     "No license or other right is created or granted hereby, except the specific right to receive the Confidential Information and evaluate it as set forth herein, nor shall any license or any other right with respect to the subject matter hereof be created or granted except by written agreement signed by the duly authorized representative of each of the parties hereto."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "The cited span explicitly states no license or other right is created or granted, supporting the claim."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract provides that agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "Receiving Party shall disclose Confidential Information only to those of its employees, agents and independent contractors who have a need to know such information for the Permitted Purpose.",
+     "The Receiving Party further agrees:"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss disclosure restrictions, not the lack of rights granted to Receiving Party."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract is silent on this point: Agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "All Inventions will be immediately reported to Vapotherm and shall be the exclusive property of Vapotherm.",
+     "No license or other right is created or granted hereby, except the specific right to receive the Confidential Information and evaluate it as set forth herein, nor shall any license or any other right with respect to the subject matter hereof be created or granted except by written agreement signed by the duly authorized representative of each of the parties hereto."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span explicitly states no license or other right is granted, contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract provides that receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "The receiving party agrees to immediately return and to deliver all originals and copies of any Confidential Information in its possession or subject to its control to the disclosing party at the address first written above upon the first to occur of the following: termination or expiration of this Agreement; or completion of or termination of the purpose set forth in Section 2 of this Agreement."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Memo claims 'destroy or return', but cited span only mandates 'return', omitting destruction."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract provides that receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "“Confidential Information” means confidential and proprietary information (regardless of whether such Confidential Information is in written, oral, visual or electronic form)",
+     "The receiving party is entitled to use the Confidential Information of the disclosing party solely for the purpose of quoting and manufacturing products for Champion."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans define terms and usage rights; they do not mention destruction or return upon termination."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract is silent on this point: Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "The receiving party agrees to immediately return and to deliver all originals and copies of any Confidential Information in its possession or subject to its control to the disclosing party at the address first written above upon the first to occur of the following: termination or expiration of this Agreement; or completion of or termination of the purpose set forth in Section 2 of this Agreement."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited span explicitly regulates the return of Confidential Information, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract provides that receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "Each party shall:",
+     "(a) within one (1) month of completion of the purpose or receipt of a written request from the other party, return to the other party all documents and materials (and all copies thereof) containing the other party's Confidential Information and certify in writing to the other party that it has complied with the requirements of this sub-clause; and",
+     "4.3",
+     "In the event of termination of this Agreement, the Company shall when directed to do so by AHPL, and instruct all its agents and sub-contractors to erase all data provided by AHPL and all copies of any part of the data provided by AHPL from the Company’s systems and magnetic data.",
+     "Upon completion of this Agreement, the data will be either returned to AHPL or disposed of under the Company’s supervision in accordance with the applicable laws and regulations, and the written instructions of AHPL."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly detail obligations to return, destroy, or erase Confidential Information upon termination or completion."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract provides that receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "(ii) which the Recipient can show has been known or has been developed by or for the Recipient at any time independently of the information disclosed to it by the Discloser;",
+     "8.2"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans do not mention destruction or return of Confidential Information upon termination."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract is silent on this point: Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "Each party shall:",
+     "(a) within one (1) month of completion of the purpose or receipt of a written request from the other party, return to the other party all documents and materials (and all copies thereof) containing the other party's Confidential Information and certify in writing to the other party that it has complied with the requirements of this sub-clause; and",
+     "4.3",
+     "In the event of termination of this Agreement, the Company shall when directed to do so by AHPL, and instruct all its agents and sub-contractors to erase all data provided by AHPL and all copies of any part of the data provided by AHPL from the Company’s systems and magnetic data.",
+     "Upon completion of this Agreement, the data will be either returned to AHPL or disposed of under the Company’s supervision in accordance with the applicable laws and regulations, and the written instructions of AHPL."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly regulate the return or destruction of Confidential Information, contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "The Investor acknowledges and agrees that the Confidential Information is strictly confidential and is intended solely for the Investor’s limited use and benefit in determining whether the Investor desires to express any further interest in the acquisition and development of the Property.",
+     "Investor’s use of the Confidential Information shall solely be for the purpose of evaluating the Property and the Development."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Memo claims general purpose restriction; contract restricts use solely to evaluating the Property/Development."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "Undersigned acknowledges that the location of the Property is Confidential Information.",
+     "(iii) information that becomes available to the Investor from a source not subject, to the best knowledge of the Investor after due inquiry, to any prohibition against disclosing the information to the undersigned."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans define exceptions and specific info, not the general purpose limitation clause."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract is silent on this point: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "The Investor acknowledges and agrees that the Confidential Information is strictly confidential and is intended solely for the Investor’s limited use and benefit in determining whether the Investor desires to express any further interest in the acquisition and development of the Property.",
+     "Investor’s use of the Confidential Information shall solely be for the purpose of evaluating the Property and the Development."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly regulate the purpose of use, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "2. Access/Use of Confidential Information: Subject to the terms and conditions of this Agreement, Confidant may use the Confidential Information only for the Permitted Use and for no other purpose whatsoever."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "The cited span explicitly restricts use to the Permitted Use and no other purpose."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "5. Continuing Obligations and Remedies:",
+     "b) Confidant shall restrict access to Confidential Information only to its employees with a need to know to carry out the Permitted Use, and prior to disclosing same, each such employee shall be made aware of the terms and conditions of this Agreement; and"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited span restricts access to employees, not general use purposes; does not support the claim."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract is silent on this point: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "2. Access/Use of Confidential Information: Subject to the terms and conditions of this Agreement, Confidant may use the Confidential Information only for the Permitted Use and for no other purpose whatsoever."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited span explicitly regulates the use of Confidential Information, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-3",
+    "claim": "The contract provides that confidential Information may include verbally conveyed information.",
+    "cited": [
+     "(a) “Confidential Information” shall include all information pertaining to the Assignors and their respective affiliates, employees, salespersons, independent contractors, agents, officers, directors, customers, suppliers, vendors, manufacturers, distributors, dealers, predecessors, successors and assigns disclosed by the Disclosing Party (or by a third party at the direction of the Disclosing Party) to the Receiving Party, regardless of the form or manner of disclosure (including, but not limited to, information learned by the Receiving Party from the Disclosing Party’s employees, agents, officers, directors, professional advisors or other representatives or through inspection of the Assigned Assets or the books and records of the Assignors), and including, but not limited to:"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "The phrase \"regardless of the form or manner of disclosure\" supports the inclusion of verbal information."
+   },
+   {
+    "rule_id": "nda-3",
+    "claim": "The contract provides that confidential Information may include verbally conveyed information.",
+    "cited": [
+     "If any information that the Disclosing Party deems to be a trade secret of the Assignors is found by a court of competent jurisdiction not to be a trade secret, then such information nevertheless shall be considered Confidential Information for purposes of this Agreement.",
+     "(B) that discussions or negotiations are taking place concerning a Possible Transaction, or"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans do not mention verbally conveyed information; one discusses trade secrets, the other negotiations."
+   },
+   {
+    "rule_id": "nda-3",
+    "claim": "The contract is silent on this point: Confidential Information may include verbally conveyed information.",
+    "cited": [
+     "(a) “Confidential Information” shall include all information pertaining to the Assignors and their respective affiliates, employees, salespersons, independent contractors, agents, officers, directors, customers, suppliers, vendors, manufacturers, distributors, dealers, predecessors, successors and assigns disclosed by the Disclosing Party (or by a third party at the direction of the Disclosing Party) to the Receiving Party, regardless of the form or manner of disclosure (including, but not limited to, information learned by the Receiving Party from the Disclosing Party’s employees, agents, officers, directors, professional advisors or other representatives or through inspection of the Assigned Assets or the books and records of the Assignors), and including, but not limited to:"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": true,
+    "reason": "The cited span explicitly states 'regardless of the form or manner of disclosure', which includes verbal information."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract provides that receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "Notwithstanding the foregoing, the term \"Evaluation Material\" shall not include, and the Parties' obligations herein (other than their obligations under paragraph 6 of this Agreement) shall not extend to, information which",
+     "(b) was or is independently developed by the Receiving Party without use of the Evaluation Material;",
+     "The terms of this Agreement shall not be construed to limit either Party's right to independently develop or acquire products without use of the other Party's Evaluation Material.",
+     "The Furnishing Party acknowledges that the Receiving Party may currently or in the future develop information internally, or receive information from other parties, that is similar to the Evaluation Material.",
+     "Accordingly, nothing in this Agreement will be construed as a representation or agreement that the Receiving Party will not develop or have developed for it products, concepts, systems, or techniques that are similar to or compete with the products, concepts, systems or techniques contemplated by or embodied in the Evaluation Material, provided that",
+     "the Receiving Party does not violate any of its obligations under this Agreement in connection with such development."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly state the Receiving Party may develop similar information without violating obligations."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract provides that receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "(3)(c) of this Agreement, the Receiving Party shall give the Furnishing Party prompt notice of such request so that the Furnishing Party may seek an appropriate protective order or other appropriate remedy and/or waive compliance with the provisions of this Agreement, and, upon the Furnishing Party's request and at the Furnishing Party's expense, shall reasonably cooperate with the Furnishing Party in seeking such an order.",
+     "(ii) with the prior written consent of the other Party, neither Party shall:"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss protective orders and consent, not independent development rights."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract is silent on this point: Receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "Notwithstanding the foregoing, the term \"Evaluation Material\" shall not include, and the Parties' obligations herein (other than their obligations under paragraph 6 of this Agreement) shall not extend to, information which",
+     "(b) was or is independently developed by the Receiving Party without use of the Evaluation Material;",
+     "The terms of this Agreement shall not be construed to limit either Party's right to independently develop or acquire products without use of the other Party's Evaluation Material.",
+     "The Furnishing Party acknowledges that the Receiving Party may currently or in the future develop information internally, or receive information from other parties, that is similar to the Evaluation Material.",
+     "Accordingly, nothing in this Agreement will be construed as a representation or agreement that the Receiving Party will not develop or have developed for it products, concepts, systems, or techniques that are similar to or compete with the products, concepts, systems or techniques contemplated by or embodied in the Evaluation Material, provided that",
+     "the Receiving Party does not violate any of its obligations under this Agreement in connection with such development."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly state the contract addresses independent development of similar information, contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "Receiving Party shall disclose Confidential Information only to those of its employees, agents and independent contractors who have a need to know such information for the Permitted Purpose."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "The cited span explicitly permits disclosure to employees with a need to know."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "Vapotherm agrees to disclose the Confidential Information only for the following specific purpose (‘Permitted Purpose”):",
+     "All Inventions will be immediately reported to Vapotherm and shall be the exclusive property of Vapotherm."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss Permitted Purpose and Inventions, not employee sharing of Confidential Information."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract is silent on this point: Receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "Receiving Party shall disclose Confidential Information only to those of its employees, agents and independent contractors who have a need to know such information for the Permitted Purpose."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited span explicitly regulates sharing with employees, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-20",
+    "claim": "The contract provides that receiving Party may retain some Confidential Information even after the return or destruction of Confidential Information.",
+    "cited": [
+     "Without prejudice to the generality of Clause 8.2, each party may retain:",
+     "(a) any minutes of meetings of their Board which reflect or have been generated from any part of the other party’s Confidential Information; and",
+     "(b) a document to the extent a party is required to do so by law or a competent judicial governmental, supervisory or regulatory body; and",
+     "(c) a copy of any document to the extent that this is required for the purpose of the relevant party's own internal records,"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly list exceptions allowing retention of Confidential Information despite return/destruction obligations."
+   },
+   {
+    "rule_id": "nda-20",
+    "claim": "The contract provides that receiving Party may retain some Confidential Information even after the return or destruction of Confidential Information.",
+    "cited": [
+     "Neither party shall disclose or announce the Purpose to another person without the prior written consent of the other party (such consent not to be unreasonably withheld or delayed) except to the extent that such disclosure or announcement is required as specified in Clause 9.2",
+     "4.1.3 where disclosure is required by law, by a court of competent jurisdiction or by another appropriate regulatory body provided that the Receiving Party shall give to the Disclosing Party not less than two business days’ notice of such disclosure; or"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss disclosure consent and legal requirements, not retention of Confidential Information."
+   },
+   {
+    "rule_id": "nda-20",
+    "claim": "The contract is silent on this point: Receiving Party may retain some Confidential Information even after the return or destruction of Confidential Information.",
+    "cited": [
+     "Without prejudice to the generality of Clause 8.2, each party may retain:",
+     "(a) any minutes of meetings of their Board which reflect or have been generated from any part of the other party’s Confidential Information; and",
+     "(b) a document to the extent a party is required to do so by law or a competent judicial governmental, supervisory or regulatory body; and",
+     "(c) a copy of any document to the extent that this is required for the purpose of the relevant party's own internal records,"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited spans explicitly regulate retention rights, contradicting the claim that the contract is silent on this point."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "2. Not to supply any documents or portions of documents included in the Information or any information included therein or any information hereinafter obtained in the course hereof or with respect hereto to any person or corporation except to the Representatives (defined below) and as otherwise specifically provided for herein;",
+     "3. The Information is to be used by the undersigned, its affiliates, and their respective directors, officers, employees, accountants, attorneys, solicitors, financing sources, consultants, agents, representatives and advisors and their respective representatives, to the extent the foregoing are actually provided access to the Information by the undersigned (collectively the “Representatives”), only in connection with the consideration of a possible acquisition of the Assets;"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Span 3 explicitly permits sharing with employees who are Representatives."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "11. Upon receipt of a written request to the undersigned, the undersigned and its Representatives shall promptly return to BDO any and all Information received, printed, downloaded or otherwise copied together with personal notes including written materials and any notes of verbal conversations with representatives from Baldwin or BDO obtained in the course of any investigation and/or inspection of the business and the Assets being offered for sale;",
+     "9. The Information being made available is confidential and may not be photocopied, reproduced or distributed to any other person at any time, except for the purposes of obtaining professional advice, without the prior written consent of BDO."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans prohibit distribution to others without consent; they do not support sharing with employees."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract is silent on this point: Receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "2. Not to supply any documents or portions of documents included in the Information or any information included therein or any information hereinafter obtained in the course hereof or with respect hereto to any person or corporation except to the Representatives (defined below) and as otherwise specifically provided for herein;",
+     "3. The Information is to be used by the undersigned, its affiliates, and their respective directors, officers, employees, accountants, attorneys, solicitors, financing sources, consultants, agents, representatives and advisors and their respective representatives, to the extent the foregoing are actually provided access to the Information by the undersigned (collectively the “Representatives”), only in connection with the consideration of a possible acquisition of the Assets;"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly permit sharing with employees, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-11",
+    "claim": "The contract provides that receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information.",
+    "cited": [
+     "5. The Receiving Party shall not reverse engineer, disassemble, decompile, or otherwise analyze, restructure and/or copy or in any way recreate in whole or in part any Confidential Information of the Disclosing Party."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Memo claims restriction on 'objects embodying' CI; contract restricts reverse engineering of CI itself, not objects."
+   },
+   {
+    "rule_id": "nda-11",
+    "claim": "The contract provides that receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information.",
+    "cited": [
+     "(Subparagraphs",
+     "Subject only to the Receiving Party's limited use of the Confidential Information for the purpose set forth above in this Agreement, the Receiving Party acknowledges and agrees that nothing in this Agreement shall be construed as granting any rights, license or otherwise, to any Confidential Information disclosed pursuant to this Agreement, and the Receiving Party shall not violate any of the Disclosing Party's intellectual property or other rights in or to the Confidential Information."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss IP rights generally but do not explicitly prohibit reverse engineering."
+   },
+   {
+    "rule_id": "nda-11",
+    "claim": "The contract is silent on this point: Receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information.",
+    "cited": [
+     "5. The Receiving Party shall not reverse engineer, disassemble, decompile, or otherwise analyze, restructure and/or copy or in any way recreate in whole or in part any Confidential Information of the Disclosing Party."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span explicitly prohibits reverse engineering, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract provides that receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "The term “Confidential Information” does not include information",
+     "(iii) which a Receiving Party can prove",
+     "(2) was developed by the Receiving Party independently of any Information received from the Disclosing Party and without otherwise violating any of the terms of this Agreement."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly state Confidential Information excludes independently developed information."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract provides that receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "(f) “Representatives” means all Persons acting on behalf of a specified Party or its Affiliates, including without limitation, its directors, officers, lenders, employees, agents, representatives, financial advisors, attorneys, accountants, consultants, reserve and valuation and other experts.",
+     "(c) Should it be necessary for a Receiving Party, or anyone to whom it transmits Confidential Information pursuant to this Agreement, to disclose any of the Confidential Information it received from a Disclosing Party in order to comply with applicable law or legal process (including, without limitation, the disclosure requirements of any securities exchange), the Receiving Party will provide the Disclosing Party with prompt written notice of such requirement(s) so that the Disclosing Party may seek a protective order or other appropriate remedy or waive compliance with the provisions of this Agreement."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans define Representatives and legal disclosure; neither mentions independent development rights."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract is silent on this point: Receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "The term “Confidential Information” does not include information",
+     "(iii) which a Receiving Party can prove",
+     "(2) was developed by the Receiving Party independently of any Information received from the Disclosing Party and without otherwise violating any of the terms of this Agreement."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited spans explicitly state that independently developed information is excluded from Confidential Information, contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "(i) is or becomes generally available to the public other than as a result of a disclosure, in violation of this agreement, by the Recipient or any of its officers, directors, employees, agents, advisors, members of its advisory committee, lawyers, accountants, auditors or representatives who have been informed of the Confidential Information by the Recipient (collectively, “Representatives”),",
+     "2. Non-disclosure of Confidential Information: During the period commencing on the date of this agreement and ending on the date of termination in section 9, the Recipient will take all commercially reasonable measures to ensure the continued confidentiality of the Confidential Information and shall not disclose it to anyone except",
+     "(i) to the Recipient’s Representatives under the limited terms and conditions set forth in section 3, or",
+     "The Recipient shall permit its Representatives access to the Confidential Information only to the extent necessary to allow them to assist the Recipient in the Purpose."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans confirm Recipient may share with Representatives, defined to include agents and advisors."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "Notwithstanding the foregoing, the obligation to return or to destroy the Confidential Information does not apply to any notes or information which has been incorporated into the books and records of any board of directors, advisory committee or similar governing body of the Recipient.",
+     "If the Recipient or any of its Representatives is requested to disclose any Confidential Information in connection with any legal or administrative proceeding or investigation, or is required by law, regulation, stock exchange or regulatory authority to disclose any Confidential Information, such person or entity will"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss record retention and legal disclosure, not general sharing with third parties."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract is silent on this point: Receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "(i) is or becomes generally available to the public other than as a result of a disclosure, in violation of this agreement, by the Recipient or any of its officers, directors, employees, agents, advisors, members of its advisory committee, lawyers, accountants, auditors or representatives who have been informed of the Confidential Information by the Recipient (collectively, “Representatives”),",
+     "2. Non-disclosure of Confidential Information: During the period commencing on the date of this agreement and ending on the date of termination in section 9, the Recipient will take all commercially reasonable measures to ensure the continued confidentiality of the Confidential Information and shall not disclose it to anyone except",
+     "(i) to the Recipient’s Representatives under the limited terms and conditions set forth in section 3, or",
+     "The Recipient shall permit its Representatives access to the Confidential Information only to the extent necessary to allow them to assist the Recipient in the Purpose."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly permit sharing with Representatives, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "Under no circumstances shall the Recipient or its Representatives use the Disclosing Party’s Confidential Information in any manner or for any purpose other than evaluating and negotiating the Proposed Transaction."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Memo claims purpose is 'stated in Agreement'; contract specifies 'evaluating and negotiating the Proposed Transaction'."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "(x) personnel of the Recipient whose functions are not primarily internal information technology in nature do not have access to such retained copies and",
+     "(i) any information, data, intellectual property (including trade secrets), facts and financial information relating to the existing or proposed business, products, customers or services of such party and its affiliates that are treated as confidential by it, or ought to be considered confidential from their nature or the circumstances surrounding their disclosure;"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans define personnel access and confidential information, not the restriction on use purposes."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract is silent on this point: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "Under no circumstances shall the Recipient or its Representatives use the Disclosing Party’s Confidential Information in any manner or for any purpose other than evaluating and negotiating the Proposed Transaction."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited span explicitly regulates the use of Confidential Information, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "3. The parties may disclose the Confidential Information to their respective officers, directors, employees, attorneys, subsidiaries and affiliates working in connection with the purpose for which the Confidential Information is disclosed but only to the extent necessary to carry out that purpose and subject to all requirements of confidentiality set forth in this Agreement."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "The cited span explicitly permits disclosure to employees, supporting the memo's claim."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "7. All right, title and interest in and to the Confidential Information and intellectual property produced based on the Confidential Information is and shall remain the sole property of the Disclosing Party.",
+     "Subject to the terms and conditions of this Agreement, discussions and/or communications between the parties hereto will not serve to impair the right of each party to develop, make, use, procure and/or market products or services now or in the future which may be competitive with those offered by the other party nor require either party to disclose any planning or other information to the other party, provided none of the foregoing activities violate the terms of this Agreement."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss ownership and competitive rights, not employee sharing permissions."
+   },
+   {
+    "rule_id": "nda-5",
+    "claim": "The contract is silent on this point: Receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "cited": [
+     "3. The parties may disclose the Confidential Information to their respective officers, directors, employees, attorneys, subsidiaries and affiliates working in connection with the purpose for which the Confidential Information is disclosed but only to the extent necessary to carry out that purpose and subject to all requirements of confidentiality set forth in this Agreement."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span explicitly permits disclosure to employees, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract provides that receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "The Receiving Party further agrees:",
+     "e. To return Confidential Information, including all copies and records thereof, to Vapotherm, at the Receiving Party’s expense, within five (5) business days after:",
+     "(iii) within thirty (30) days following the termination of this Agreement."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly state the Receiving Party must return Confidential Information within 30 days of termination."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract provides that receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "“Confidential Information” shall, mean all intellectual property, business plans, financial records and strategies, marketing plans, contacts, trade secrets, information, materials, documentation and software, as well as copies of all such materials made thereof as authorized by this Agreement, including written, oral, or verbal disclosures.",
+     "________________________________________________________________________________________________"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans define Confidential Information but do not mention destruction or return upon termination."
+   },
+   {
+    "rule_id": "nda-16",
+    "claim": "The contract is silent on this point: Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "cited": [
+     "The Receiving Party further agrees:",
+     "e. To return Confidential Information, including all copies and records thereof, to Vapotherm, at the Receiving Party’s expense, within five (5) business days after:",
+     "(iii) within thirty (30) days following the termination of this Agreement."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly regulate the return of Confidential Information upon termination, contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract provides that receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "2.4. In the event that the Receiving Party is required to disclose Confidential Information to comply with an order of a court of competent jurisdiction or with a mandatory requirement of a governing regulatory body, such party shall, to the extent permitted by law and as soon as reasonably practicable under the circumstances, inform the Disclosing Party to allow it an adequate opportunity to object to the disclosure order or to take such other actions as are necessary to preserve the confidentiality of the information."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited span confirms obligation to notify Disclosing Party when required by court order or regulatory body."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract provides that receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "(ii) enforcing this Agreement; and/or",
+     "2.2. The Receiving Party shall not disclose, duplicate, transmit or otherwise disseminate in any manner the Disclosing Party’s Confidential Information, except to the Receiving Party’s officers, directors and employees (collectively “Employees”), and the Receiving Party’s agents, contractors and advisors (including, without limitation, financial advisors, legal advisors, auditors and accountants) retained by the Receiving Party (collectively “Advisors”)."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans do not mention notification requirements for legally compelled disclosure."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract is silent on this point: Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "2.4. In the event that the Receiving Party is required to disclose Confidential Information to comply with an order of a court of competent jurisdiction or with a mandatory requirement of a governing regulatory body, such party shall, to the extent permitted by law and as soon as reasonably practicable under the circumstances, inform the Disclosing Party to allow it an adequate opportunity to object to the disclosure order or to take such other actions as are necessary to preserve the confidentiality of the information."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited span explicitly regulates the notification requirement, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract provides that agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "Unless expressly set forth in this NDA, Recipient does not receive any license or intellectual property rights to Discloser’s CI."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "The cited span confirms the Recipient receives no rights to CI, supporting the memo's claim."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract provides that agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "(C) becomes known to Recipient, free of any confidentiality obligations, from a source other than Discloser, or",
+     "Recipient will not reproduce, use, disseminate, or disclose CI to any person or entity, except to its employees and authorized representatives (i.e., temporary employees, consultants, and contractors) who need to know the CI to further the Purpose and are bound by confidentiality obligations at least as restrictive as this NDA before having access to the CI."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss exceptions and obligations, not the specific clause stating no rights are granted."
+   },
+   {
+    "rule_id": "nda-15",
+    "claim": "The contract is silent on this point: Agreement shall not grant Receiving Party any right to Confidential Information.",
+    "cited": [
+     "Unless expressly set forth in this NDA, Recipient does not receive any license or intellectual property rights to Discloser’s CI."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": true,
+    "reason": "The cited span confirms the contract explicitly states no rights are granted, supporting the claim."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "(a) Each of Stockholders severally agrees that such Stockholder shall not, at any time following the effectiveness of the Merger, print, publish, divulge or communicate to any person, firm, corporation or other business organization or use for his or their own account any business contacts, customers, suppliers, technology, product designs and specifications, know-how, trade secrets, marketing techniques, promotional materials or other secret or confidential information relating to the Business or any other businesses then being engaged in by AUGI or any of its subsidiaries, or any secret or confidential information relating to the affairs, dealings and concerns of the Company, AUGI or any of the subsidiaries of AUGI (collectively, the \"Confidential Information\") which the Stockholder has received or obtained while an employee or member of the Board of Directors of AUGI or the Company (whether or not developed, devised, or otherwise created in whole or in part by the efforts of the Stockholder)."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Cited span restricts use to 'own account', not 'purposes stated in Agreement'."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "(c) In the event that a Stockholder is requested pursuant to subpoena or other legal process to disclose any of the Confidential Information, such Stockholder will provide the Company with prompt notice (unless notice is prohibited by law) so that the Company may seek a protective order or other appropriate remedy and/or waive compliance with Section 2 of this Agreement."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited span addresses subpoena disclosure, not the general restriction on using Confidential Information."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract is silent on this point: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "(a) Each of Stockholders severally agrees that such Stockholder shall not, at any time following the effectiveness of the Merger, print, publish, divulge or communicate to any person, firm, corporation or other business organization or use for his or their own account any business contacts, customers, suppliers, technology, product designs and specifications, know-how, trade secrets, marketing techniques, promotional materials or other secret or confidential information relating to the Business or any other businesses then being engaged in by AUGI or any of its subsidiaries, or any secret or confidential information relating to the affairs, dealings and concerns of the Company, AUGI or any of the subsidiaries of AUGI (collectively, the \"Confidential Information\") which the Stockholder has received or obtained while an employee or member of the Board of Directors of AUGI or the Company (whether or not developed, devised, or otherwise created in whole or in part by the efforts of the Stockholder)."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The cited span explicitly regulates the use of Confidential Information, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "The term “Confidential Information” shall not include such portions of the Confidential Information that:",
+     "(i) are already published or available to the public other than as a result of disclosure by the Receiving Party or any of its employees, officers, directors, members, managers, affiliates, agents, attorneys, accountants or other representatives or advisors (collectively, the “Representatives”);",
+     "The Receiving Party:",
+     "(iv) shall reveal the Confidential Information and the Confidential Materials only to its Representatives who need to know the Confidential Information and the Confidential Materials in connection with a Possible Transaction, and who",
+     "(A) are informed by the Receiving Party of the confidential and proprietary nature of the Confidential Information and the Confidential Materials, and",
+     "(B) before receiving the Confidential Information or the Confidential Materials, agree to maintain their confidentiality in accordance with the terms and conditions of this Agreement;",
+     "(vi) shall take all reasonable precautions necessary to safeguard the Confidential Information and the Confidential Materials from disclosure to any person or entity other than its Representatives, including taking reasonable security precautions at least as great as the precautions the Receiving Party takes to protect its own confidential information; and",
+     "The Receiving Party agrees that the Disclosing Party shall be entitled to require that such Confidential Information or Confidential Materials be disclosed only to certain specified Representatives and to the Receiving Party’s legal counsel and that no further disclosure thereof be made."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly permit disclosure to Representatives, defined to include agents and advisors."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract provides that receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "(iii) third party confidential information in the custody or care of the Disclosing Party to the extent the same is subject to a duty of confidentiality to such third party;",
+     "In the event that the Receiving Party is issued any subpoena or other process requesting any of the Confidential Information or the Confidential Materials, the Receiving Party agrees that it will immediately furnish a copy of such subpoena or other process, via overnight delivery, to counsel to the Assignee, Edward J. Peterson, Esq. and Matthew B. Hale, Esq. of Stichter, Riedel, Blain & Postler, P.A., 110 East Madison Street, Suite 200, Tampa, Florida 33602, and to the Disclosing Party at the address set forth on Exhibit B attached to this Agreement."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss third-party custody and subpoenas, not permission to share with consultants or agents."
+   },
+   {
+    "rule_id": "nda-7",
+    "claim": "The contract is silent on this point: Receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).",
+    "cited": [
+     "The term “Confidential Information” shall not include such portions of the Confidential Information that:",
+     "(i) are already published or available to the public other than as a result of disclosure by the Receiving Party or any of its employees, officers, directors, members, managers, affiliates, agents, attorneys, accountants or other representatives or advisors (collectively, the “Representatives”);",
+     "The Receiving Party:",
+     "(iv) shall reveal the Confidential Information and the Confidential Materials only to its Representatives who need to know the Confidential Information and the Confidential Materials in connection with a Possible Transaction, and who",
+     "(A) are informed by the Receiving Party of the confidential and proprietary nature of the Confidential Information and the Confidential Materials, and",
+     "(B) before receiving the Confidential Information or the Confidential Materials, agree to maintain their confidentiality in accordance with the terms and conditions of this Agreement;",
+     "(vi) shall take all reasonable precautions necessary to safeguard the Confidential Information and the Confidential Materials from disclosure to any person or entity other than its Representatives, including taking reasonable security precautions at least as great as the precautions the Receiving Party takes to protect its own confidential information; and",
+     "The Receiving Party agrees that the Disclosing Party shall be entitled to require that such Confidential Information or Confidential Materials be disclosed only to certain specified Representatives and to the Receiving Party’s legal counsel and that no further disclosure thereof be made."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": true,
+    "reason": "Cited spans explicitly permit sharing with Representatives (including advisors) under conditions, contradicting the claim of silence."
+   },
+   {
+    "rule_id": "nda-10",
+    "claim": "The contract provides that receiving Party shall not disclose the fact that Agreement was agreed or negotiated.",
+    "cited": [
+     "Except",
+     "(i) for such public disclosure as may be necessary, in the good faith judgment of the disclosing Party consistent with advice of counsel, for the disclosing Party not to be in violation of any applicable law, regulation or order, or",
+     "(ii) with the prior written consent of the other Party, neither Party shall:",
+     "(x) make any disclosure (and each Party shall direct its Representatives not to make any disclosure) to any person of",
+     "(A) the fact that discussions, negotiations or investigations are taking or have taken place concerning a Transaction,",
+     "(B) the existence or contents of this Agreement, or the fact that either Party has requested or received Evaluation Material from the other Party, or",
+     "(C) any of the terms, conditions or other facts with respect to any proposed Transaction, including the status of the discussions or negotiations related thereto, or"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly prohibit disclosing the fact that negotiations or the Agreement exist."
+   },
+   {
+    "rule_id": "nda-10",
+    "claim": "The contract provides that receiving Party shall not disclose the fact that Agreement was agreed or negotiated.",
+    "cited": [
+     "Accordingly, nothing in this Agreement will be construed as a representation or agreement that the Receiving Party will not develop or have developed for it products, concepts, systems, or techniques that are similar to or compete with the products, concepts, systems or techniques contemplated by or embodied in the Evaluation Material, provided that",
+     "Notwithstanding the foregoing, the term \"Evaluation Material\" shall not include, and the Parties' obligations herein (other than their obligations under paragraph 6 of this Agreement) shall not extend to, information which"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss non-competition and definitions, not the confidentiality of the agreement's existence."
+   },
+   {
+    "rule_id": "nda-10",
+    "claim": "The contract is silent on this point: Receiving Party shall not disclose the fact that Agreement was agreed or negotiated.",
+    "cited": [
+     "Except",
+     "(i) for such public disclosure as may be necessary, in the good faith judgment of the disclosing Party consistent with advice of counsel, for the disclosing Party not to be in violation of any applicable law, regulation or order, or",
+     "(ii) with the prior written consent of the other Party, neither Party shall:",
+     "(x) make any disclosure (and each Party shall direct its Representatives not to make any disclosure) to any person of",
+     "(A) the fact that discussions, negotiations or investigations are taking or have taken place concerning a Transaction,",
+     "(B) the existence or contents of this Agreement, or the fact that either Party has requested or received Evaluation Material from the other Party, or",
+     "(C) any of the terms, conditions or other facts with respect to any proposed Transaction, including the status of the discussions or negotiations related thereto, or"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly regulate the disclosure of the fact that the Agreement was agreed or negotiated."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "The receiving party is entitled to use the Confidential Information of the disclosing party solely for the purpose of quoting and manufacturing products for Champion.",
+     "Confidential Information shall be used by the receiving party only for the purpose set forth in Section 2 of this Agreement and for no other purpose whatsoever."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans explicitly state Confidential Information is used only for purposes set forth in the Agreement."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "No public announcement or disclosure of the purpose set forth in this Agreement is to be made by either party unless such announcement has been approved by both parties.",
+     "(c) that is marked as confidential, proprietary or privileged by the disclosing party."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans address announcements and definitions, not the restriction on using Confidential Information."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract is silent on this point: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "The receiving party is entitled to use the Confidential Information of the disclosing party solely for the purpose of quoting and manufacturing products for Champion.",
+     "Confidential Information shall be used by the receiving party only for the purpose set forth in Section 2 of this Agreement and for no other purpose whatsoever."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly regulate the use of Confidential Information, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract provides that some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "Notwithstanding the foregoing, no such destruction or deletion shall be",
+     "required where prohibited by law, regulation, regulatory process or proceeding, or stock exchange regulation, or where the Confidential Information is part of the record of proceedings of your Board of Directors; provided, that any such Confidential Information so retained shall continue to be held confidential in accordance with the terms of this Agreement.",
+     "14. This Agreement shall terminate upon the earlier to occur of",
+     "(a) the closing of the Transaction contemplated by this Agreement, and",
+     "(b) one (1) year after the date hereof.",
+     ""
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Cited spans discuss termination triggers and data retention exceptions, not general survival of obligations."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract provides that some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "1. You hereby agree that the Confidential Information will be used solely for the purpose of evaluating and implementing the Transaction and that such information will be kept confidential by you; provided that any such information may be disclosed to your officers, directors, employees, affiliates, accountants, attorneys, financial advisors, consultants, other agents or representatives and financing sources (such Persons hereinafter collectively being referred to as your “Representatives” who need to know such information for the purpose of evaluating and implementing the Transaction, have been informed of the confidential nature of the Confidential Information, and have been advised that such information is to be kept confidential, and provided, further, that such officers, directors, employees, affiliates, accountants, attorneys, financial advisors, consultants, other agents or representatives and financing sources shall not be deemed to be your Representatives unless (but solely to the extent that) you furnish Confidential Information to them.",
+     "(c) becomes available to you or your Representatives on a non-confidential basis from a Person who is not known by you or your Representatives (as applicable) to be bound by a confidentiality agreement with the Company, or is not otherwise prohibited from transmitting the information to you or your Representatives (as applicable), or"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss confidentiality scope and exceptions, not survival of obligations after termination."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract is silent on this point: Some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "Notwithstanding the foregoing, no such destruction or deletion shall be",
+     "required where prohibited by law, regulation, regulatory process or proceeding, or stock exchange regulation, or where the Confidential Information is part of the record of proceedings of your Board of Directors; provided, that any such Confidential Information so retained shall continue to be held confidential in accordance with the terms of this Agreement.",
+     "14. This Agreement shall terminate upon the earlier to occur of",
+     "(a) the closing of the Transaction contemplated by this Agreement, and",
+     "(b) one (1) year after the date hereof.",
+     ""
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": true,
+    "reason": "Cited spans address termination and data retention exceptions but do not contain a survival clause."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract provides that receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "4. In the event you or any of your Representatives become legally compelled (by deposition, interrogatory, request for documents, subpoena, civil investigation, demand, order or similar process) to disclose any of the contents of the Confidential Information, or you or the Company or any of the respective Representatives of you or the Company become so legally compelled to disclose either the fact that discussions or negotiations are taking place concerning a possible Transaction between the Company and you, or any of the terms, conditions or other facts with respect to any such possible Transaction, including the status thereof, the Company and you each agrees that each party and its respective Representatives may do so without liability, but each party hereto also agrees",
+     "(i) to promptly notify the other party prior to any such disclosure to the extent practicable and legally permissible and"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Cited spans confirm the obligation to notify the other party when legally compelled to disclose."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract provides that receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "",
+     "(b) one (1) year after the date hereof."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited span only mentions a one-year duration, not the notification requirement for legal compulsion."
+   },
+   {
+    "rule_id": "nda-8",
+    "claim": "The contract is silent on this point: Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "cited": [
+     "4. In the event you or any of your Representatives become legally compelled (by deposition, interrogatory, request for documents, subpoena, civil investigation, demand, order or similar process) to disclose any of the contents of the Confidential Information, or you or the Company or any of the respective Representatives of you or the Company become so legally compelled to disclose either the fact that discussions or negotiations are taking place concerning a possible Transaction between the Company and you, or any of the terms, conditions or other facts with respect to any such possible Transaction, including the status thereof, the Company and you each agrees that each party and its respective Representatives may do so without liability, but each party hereto also agrees",
+     "(i) to promptly notify the other party prior to any such disclosure to the extent practicable and legally permissible and"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "The contract explicitly requires notification, contradicting the claim that it is silent on this point."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "Without BOMI’s prior written consent, which may be given or withheld by BOMI in its sole and absolute discretion, Attendee will not at any time, whether during or after the Testing Period,",
+     "(b) use any Confidential Information except as required in taking the Test."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Memo claims purpose is 'stated in Agreement'; contract restricts use to 'taking the Test'."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract provides that receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "After the completion of the Testing Period, Attendee will make no further use of any of the Confidential Information.",
+     "Attendee also understands that the obligation not to use or disclose Confidential Information shall survive the completion of Testing Period, for so long as the information remains Confidential Information."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans restrict use after Testing Period, not to purposes stated in Agreement."
+   },
+   {
+    "rule_id": "nda-4",
+    "claim": "The contract is silent on this point: Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "cited": [
+     "Without BOMI’s prior written consent, which may be given or withheld by BOMI in its sole and absolute discretion, Attendee will not at any time, whether during or after the Testing Period,",
+     "(b) use any Confidential Information except as required in taking the Test."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited spans explicitly regulate the use of Confidential Information, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract provides that some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "You acknowledge and confirm as follows:",
+     "2.4 the provisions of this Agreement shall continue in effect notwithstanding any decision not to proceed with any possible transaction relating to the Business or any return or destruction of the Confidential Information."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Span 2.4 explicitly states provisions continue in effect notwithstanding decisions, supporting survival of obligations."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract provides that some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "1.7 shall not, and shall procure that any associated company of yours shall not, employ, seek to employ, or solicit any person employed by us or the Business or who holds or otherwise has access to Confidential Information either at the date of this Agreement or at any time during negotiations for the sale of the Business or during the period of twelve months from the date of this Agreement.",
+     "In consideration of our Agreement to supply to you certain written or oral information relating to the Business and entering into discussions relating to the sale of the Business to you (howsoever structured), you the Recipient hereby undertake to us, the Vendor for our benefit and that of the Business, except to the extent that we have given prior written consent, whether or not negotiations for the sale of the Business proceed, that you:"
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans discuss non-solicitation and confidentiality, not survival of obligations after termination."
+   },
+   {
+    "rule_id": "nda-19",
+    "claim": "The contract is silent on this point: Some obligations of Agreement may survive termination of Agreement.",
+    "cited": [
+     "You acknowledge and confirm as follows:",
+     "2.4 the provisions of this Agreement shall continue in effect notwithstanding any decision not to proceed with any possible transaction relating to the Business or any return or destruction of the Confidential Information."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span 2.4 explicitly states provisions continue in effect, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract provides that receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "3. Company shall not",
+     "(ii) disclose the Confidential Information or any part of it to any third party without the prior written consent of the AOC; provided, however, that Confidential Information shall not include any information of the AOC that:",
+     "(d) is independently developed by the Company without use of or reference to the Confidential Information, as shown by documents and other competent evidence in the Company’s possession; or"
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": true,
+    "reason": "Span (d) explicitly states information independently developed without reference to Confidential Information is excluded."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract provides that receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "4. All Confidential Information, and any Derivative of it, whether created by the AOC or Company, remains the property of the AOC and no license or other rights to Confidential Information is granted to Company.",
+     "Company agrees that access to the Confidential Information shall be given by it only to those of its employees who have a need to know to engage in the business relationship contemplated by this Agreement and who have signed a non-use and non-disclosure agreement in content at least as protective of the Confidential Information as the provisions hereof, prior to any disclosure of the Confidential Information to such employees."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans do not mention independent development rights; they address ownership and employee access only."
+   },
+   {
+    "rule_id": "nda-12",
+    "claim": "The contract is silent on this point: Receiving Party may independently develop information similar to Confidential Information.",
+    "cited": [
+     "3. Company shall not",
+     "(ii) disclose the Confidential Information or any part of it to any third party without the prior written consent of the AOC; provided, however, that Confidential Information shall not include any information of the AOC that:",
+     "(d) is independently developed by the Company without use of or reference to the Confidential Information, as shown by documents and other competent evidence in the Company’s possession; or"
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Cited span (d) explicitly addresses independent development, contradicting the claim that the contract is silent."
+   },
+   {
+    "rule_id": "nda-1",
+    "claim": "The contract provides that all Confidential Information shall be expressly identified by the Disclosing Party.",
+    "cited": [
+     "1. “Confidential Information” is defined as any device, graphics, written information, or information in other tangible forms that is disclosed by a disclosing party to a receiving party, for the aforesaid purposes that relates to the above-identified subject area, and that is marked at the time of disclosure as being “Confidential” or “Proprietary” or with words of similar import.",
+     "Information disclosed orally or visually and identified at that time as “Confidential” shall be considered “Confidential Information” if it is reduced to tangible form, marked “Confidential,” and transmitted to the receiving party within thirty (30) days after the oral or visual disclosure."
+    ],
+    "expected": true,
+    "case": "true_claim",
+    "supported": false,
+    "reason": "Contract requires marking at disclosure, not express identification by Disclosing Party."
+   },
+   {
+    "rule_id": "nda-1",
+    "claim": "The contract provides that all Confidential Information shall be expressly identified by the Disclosing Party.",
+    "cited": [
+     "2. Unless otherwise expressly authorized by the disclosing party, the receiving party agrees to retain the “Confidential Information” in confidence for a period of three (3) years from the date of receipt of the “Confidential Information” or until such time as the information no longer qualifies as “Confidential Information” under Paragraph 3.",
+     "6. No license, express or implied, in the information disclosed is granted to either party other than to use the information in the manner and to the extent authorized by the Agreement."
+    ],
+    "expected": false,
+    "case": "wrong_citation",
+    "supported": false,
+    "reason": "Cited spans do not state that Confidential Information must be expressly identified by the Disclosing Party."
+   },
+   {
+    "rule_id": "nda-1",
+    "claim": "The contract is silent on this point: All Confidential Information shall be expressly identified by the Disclosing Party.",
+    "cited": [
+     "1. “Confidential Information” is defined as any device, graphics, written information, or information in other tangible forms that is disclosed by a disclosing party to a receiving party, for the aforesaid purposes that relates to the above-identified subject area, and that is marked at the time of disclosure as being “Confidential” or “Proprietary” or with words of similar import.",
+     "Information disclosed orally or visually and identified at that time as “Confidential” shall be considered “Confidential Information” if it is reduced to tangible form, marked “Confidential,” and transmitted to the receiving party within thirty (30) days after the oral or visual disclosure."
+    ],
+    "expected": false,
+    "case": "false_silence",
+    "supported": false,
+    "reason": "Contract requires marking, contradicting the claim that it is silent on identification."
+   }
+  ]
+ }
+}

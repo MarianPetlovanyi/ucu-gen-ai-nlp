@@ -1,0 +1,206 @@
+# Playbook of a fictional company, "Lumen Robotics" (hardware/robotics start-up).
+# Perspective: WE ARE THE DISCLOSING PARTY. We share prototypes, CAD files, firmware source and business plans
+# with potential manufacturing partners and investors, and want strong protection.
+#
+# stance semantics (label = NLI label of the hypothesis on the contract):
+#   must_entail         Entailment -> OK,        Contradiction -> VIOLATION, NotMentioned -> MISSING
+#   must_not_entail     Entailment -> VIOLATION, Contradiction -> OK,        NotMentioned -> OK
+#   review_if_entailed  Entailment -> REVIEW,    otherwise OK
+#   info                always INFO (reported, never an issue)
+# severity weights for the risk score: high=3, medium=2, low=1
+
+name: "Lumen Robotics: we disclose"
+perspective: disclosing_party
+scoring:  # business weights for the risk score (0 = no issues, 100 = every scored rule is an issue)
+  severity_weights: {high: 3, medium: 2, low: 1}
+  status_weights: {VIOLATION: 1.0, MISSING: 0.75, REVIEW: 0.25, OK: 0.0, INFO: 0.0}
+  # recommendation: sign if no high/medium issue and risk <= sign_max_risk; reject if risk >= reject_min_risk
+  sign_max_risk: 10
+  reject_min_risk: 60
+rules:
+  - id: R01
+    hypothesis: nda-4
+    title: Use restricted to the stated purpose
+    stance: must_entail
+    severity: high
+    rationale: Our information may only be used to evaluate the proposed collaboration, never to build a competing product.
+    preferred_clause: >-
+      The Receiving Party shall use the Confidential Information solely for the purpose of evaluating, negotiating
+      and performing the Purpose and for no other purpose whatsoever.
+    fallback: Accept "the Purpose and directly related internal activities" if the counterparty insists.
+
+  - id: R02
+    hypothesis: nda-11
+    title: No reverse engineering
+    stance: must_entail
+    severity: high
+    rationale: We hand over physical prototypes and firmware binaries; reverse engineering would expose our core IP.
+    preferred_clause: >-
+      The Receiving Party shall not reverse engineer, disassemble, decompile or analyse the composition of any
+      prototypes, samples, software or other objects which embody the Disclosing Party's Confidential Information.
+    fallback: Allow analysis that is strictly necessary for the Purpose, with prior written consent.
+
+  - id: R03
+    hypothesis: nda-15
+    title: No licence or IP rights granted
+    stance: must_entail
+    severity: high
+    rationale: Disclosure must never be construed as granting a licence to our patents, designs or software.
+    preferred_clause: >-
+      Nothing in this Agreement grants the Receiving Party any licence, ownership or other right in or to the
+      Confidential Information or any intellectual property of the Disclosing Party, except the limited right to use
+      it for the Purpose.
+    fallback: None. This is non-negotiable.
+
+  - id: R04
+    hypothesis: nda-19
+    title: Obligations survive termination
+    stance: must_entail
+    severity: high
+    rationale: Confidentiality must outlast the evaluation period; product cycles are 3–5 years.
+    preferred_clause: >-
+      The obligations of confidentiality and non-use under this Agreement shall survive any expiration or termination
+      of this Agreement for a period of five (5) years, and with respect to trade secrets for so long as they remain
+      trade secrets under applicable law.
+    fallback: Accept three (3) years of survival for non-trade-secret information.
+
+  - id: R05
+    hypothesis: nda-1
+    title: No requirement to mark or identify information as confidential
+    stance: must_not_entail
+    severity: high
+    rationale: Engineers share drawings and demos informally; a marking requirement would leave most disclosures unprotected.
+    preferred_clause: >-
+      Confidential Information includes all information disclosed by the Disclosing Party, whether or not marked or
+      identified as confidential, that a reasonable person would understand to be confidential given its nature and
+      the circumstances of disclosure.
+    fallback: Accept marking for written information if oral and visual disclosures are covered by the reasonable-person standard.
+
+  - id: R06
+    hypothesis: nda-2
+    title: Confidential information not limited to technical information
+    stance: must_not_entail
+    severity: medium
+    rationale: Our pricing, supplier list and business plans are as sensitive as the technology.
+    preferred_clause: >-
+      Confidential Information includes technical, commercial, financial and business information of any kind,
+      including product plans, pricing, supplier and customer information.
+    fallback: None.
+
+  - id: R07
+    hypothesis: nda-3
+    title: Verbally disclosed information is covered
+    stance: must_entail
+    severity: medium
+    rationale: Many disclosures happen in meetings and factory visits.
+    preferred_clause: >-
+      Confidential Information includes information disclosed orally or visually, including during meetings,
+      demonstrations and site visits.
+    fallback: Accept a requirement to summarise oral disclosures in writing within 30 days.
+
+  - id: R08
+    hypothesis: nda-8
+    title: Notice before compelled disclosure
+    stance: must_entail
+    severity: medium
+    rationale: If a court or regulator demands our information we need time to seek a protective order.
+    preferred_clause: >-
+      If the Receiving Party is required by law, regulation or judicial process to disclose any Confidential
+      Information, it shall, to the extent legally permitted, give the Disclosing Party prompt prior written notice
+      and reasonable assistance so that the Disclosing Party may seek a protective order.
+    fallback: Accept "notice as soon as practicable" instead of prior notice.
+
+  - id: R09
+    hypothesis: nda-16
+    title: Return or destruction on termination
+    stance: must_entail
+    severity: medium
+    rationale: Prototypes and files must come back or be destroyed when talks end.
+    preferred_clause: >-
+      Upon termination of this Agreement or upon the Disclosing Party's written request, the Receiving Party shall
+      promptly return or destroy all Confidential Information and all copies thereof, and certify such destruction
+      in writing.
+    fallback: Accept destruction without written certification.
+
+  - id: R10
+    hypothesis: nda-20
+    title: No retention of information after return/destruction
+    stance: must_not_entail
+    severity: medium
+    rationale: Archive copies held by the counterparty are a long-term leak risk.
+    preferred_clause: >-
+      The Receiving Party shall not retain any copies, extracts or other reproductions of the Confidential
+      Information after its return or destruction.
+    fallback: Allow copies retained solely in automatic electronic back-ups, which stay subject to confidentiality.
+
+  - id: R11
+    hypothesis: nda-10
+    title: Existence of the negotiations is confidential
+    stance: must_entail
+    severity: low
+    rationale: News of a partnership could move our fundraising; we prefer silence.
+    preferred_clause: >-
+      Neither party shall disclose the existence or terms of this Agreement or the fact that discussions are taking
+      place without the other party's prior written consent.
+    fallback: Drop if the counterparty is publicly listed and needs disclosure flexibility.
+
+  - id: R12
+    hypothesis: nda-18
+    title: No solicitation of our staff
+    stance: must_entail
+    severity: low
+    rationale: Our engineers are our most valuable asset.
+    preferred_clause: >-
+      For twelve (12) months after the date of this Agreement, the Receiving Party shall not solicit for employment
+      any employee of the Disclosing Party with whom it had contact in connection with the Purpose.
+    fallback: Exclude general job advertisements not targeted at our staff.
+
+  - id: R13
+    hypothesis: nda-7
+    title: Sharing with third parties (advisors, consultants)
+    stance: review_if_entailed
+    severity: low
+    rationale: Acceptable only if the third parties are bound by equivalent confidentiality obligations.
+    preferred_clause: >-
+      The Receiving Party may disclose Confidential Information only to its professional advisors and consultants who
+      have a need to know for the Purpose and who are bound by written confidentiality obligations no less
+      protective than this Agreement; the Receiving Party remains liable for their compliance.
+    fallback: Accept without the written obligation if advisors are bound by professional secrecy.
+
+  - id: R14
+    hypothesis: nda-17
+    title: Copies of confidential information
+    stance: review_if_entailed
+    severity: low
+    rationale: Copies should be limited to what the Purpose requires.
+    preferred_clause: >-
+      The Receiving Party shall not copy or reproduce Confidential Information except as strictly necessary for the
+      Purpose, and all copies shall bear the Disclosing Party's confidentiality notices.
+    fallback: None.
+
+  - id: R15
+    hypothesis: nda-5
+    title: Sharing with employees
+    stance: info
+    severity: low
+    rationale: Standard; employees with a need to know.
+    preferred_clause: ""
+    fallback: ""
+
+  - id: R16
+    hypothesis: nda-12
+    title: Independent development carve-out
+    stance: info
+    severity: low
+    rationale: Standard carve-out; we accept it but want to know it is there.
+    preferred_clause: ""
+    fallback: ""
+
+  - id: R17
+    hypothesis: nda-13
+    title: Information received from third parties carve-out
+    stance: info
+    severity: low
+    rationale: Standard carve-out.
+    preferred_clause: ""
+    fallback: ""
